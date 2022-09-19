@@ -14,4 +14,4 @@ To train: run
 ```
 
 ## References:
-[Deepmind-research](https://github.com/deepmind/deepmind-research/tree/master/graph_matching_networks) (using TensorFlow and Sonnet)
+[Deepmind-research](https://github.com/deepmind/deepmind-research/tree/master/graph_matching_networks)

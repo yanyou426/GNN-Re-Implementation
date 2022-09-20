@@ -1,7 +1,7 @@
 
 ## Some re-implementation of GNN-based models
 
-### Graph matching networks
+### Graph matching networks for graph edit distances
 (ICML 19)Graph matching networks for learning the similarity of graph structured objects
 
 ### Structure2vec + manually engineered features

@@ -70,5 +70,5 @@ propagation:
 
 ### Future work
 
-蹲一波Security22对GMN在二进制代码相似分析task上的source code:)
+给Security22的作者发了邮件，说会在这几天push一下GMN在二进制代码相似分析task上的code 蹲一波:)
 

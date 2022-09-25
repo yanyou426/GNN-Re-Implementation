@@ -58,6 +58,13 @@ NLP中：LSTM将一个句子看作是一段具有依赖关系的单词，以递�
 
 作者类比：设计了一个Siamese结构，每个LSTM单元在每个时间步上依次接受一个输入，当到达最后一个指令嵌入时，最后一层的最后一个LSTM单元提供基本块的语义表示。最后，将两个基本块的相似度视为两个块嵌入的距离。
 
+### Datasets & Results
+
+利用LLVM编译openssl, httpd, sqlite3等开源库，在x86和ARM架构以及不同的优化等级下，构造相似和不相似basic block对。
+
+模型训练好后在验证集上得到0.986的AUC值，图形可见./AUC.png
+
+
 ### Insight & Conclusion
 
 利用NLP中Neural MachineTranslation (NMT)的思想将代码中的一条条指令看作单词，一个个基本块看作句子，将检测不同架构下两个基本块的语义相似性的任务转化为检测不同语言中两个句子语义的相似性。

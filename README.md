@@ -7,9 +7,12 @@
 ### Structure2vec + manually engineered features
 (CCS 17)Neural Network-based Graph Embedding for Cross-Platform Binary Code Similarity Detection
 
+### Word2vec(skip gram) + LSTM
+(NDSS 19)Neural machine translation inspired binary code similarity comparison beyond function pairs
+
 ### To-do list
-Innereye
 
 Asm2vec
 
+Odermatters
 

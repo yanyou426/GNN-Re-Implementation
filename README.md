@@ -10,8 +10,10 @@
 ### Word2vec(skip gram) + LSTM
 (NDSS 19)Neural machine translation inspired binary code similarity comparison beyond function pairs
 
-### To-do list
+### asm2vec
+(SP 19)Asm2Vec. Boosting Static Representation Robustness for Binary Clone Search against Code Obfuscation and Compiler Optimization
 
-Asm2vec
+### To-do list
+Experiments of Security22 on the models mentioned in this article
 
 

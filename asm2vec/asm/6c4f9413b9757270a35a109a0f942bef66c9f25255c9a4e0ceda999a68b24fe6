@@ -1,0 +1,50 @@
+ .name fcn.000097d0
+ .offset 00000000000097d0
+ .file kontrast
+ push rbp
+ push rbx
+ mov rbx, rdi
+ sub rsp, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ mov eax, dword [rdi + CONST]
+ lea rbp, [rsp + CONST]
+ mov dword [rsp + CONST], eax
+ mov rax, qword [rdi + CONST]
+ mov qword [rsp + CONST], rax
+ movzx eax, word [rdi + CONST]
+ mov rdi, rbp
+ mov word [rsp + CONST], ax
+ call CONST
+ mov eax, dword [rbx + CONST]
+ mov rdi, rbp
+ movsd qword [rsp + CONST], xmm0
+ mov dword [rsp + CONST], eax
+ mov rax, qword [rbx + CONST]
+ mov qword [rsp + CONST], rax
+ movzx eax, word [rbx + CONST]
+ mov word [rsp + CONST], ax
+ call CONST
+ movsd xmm1, qword [rsp + CONST]
+ movsd xmm2, qword [rip + CONST]
+ comisd xmm1, xmm0
+ cjmp LABEL27
+ addsd xmm0, xmm2
+ addsd xmm1, xmm2
+ divsd xmm0, xmm1
+LABEL42:
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL33
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ ret
+LABEL27:
+ addsd xmm1, xmm2
+ addsd xmm2, xmm0
+ divsd xmm1, xmm2
+ movapd xmm0, xmm1
+ jmp LABEL42
+LABEL33:
+ call CONST

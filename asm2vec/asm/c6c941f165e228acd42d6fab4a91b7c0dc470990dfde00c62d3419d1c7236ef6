@@ -1,0 +1,14 @@
+ .name fcn.00009230
+ .offset 0000000000009230
+ .file kontrast
+ sub rsp, CONST
+ add rdi, CONST
+ call CONST
+ mov edx, CONST
+ test eax, eax
+ cmovs eax, edx
+ mov edx, CONST
+ cmp eax, CONST
+ cmovg eax, edx
+ add rsp, CONST
+ ret

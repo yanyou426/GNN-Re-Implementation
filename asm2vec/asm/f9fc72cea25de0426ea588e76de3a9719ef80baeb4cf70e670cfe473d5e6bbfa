@@ -1,0 +1,17 @@
+ .name fcn.0001fe90
+ .offset 000000000001fe90
+ .file curl
+ push r12
+ mov r12, rdi
+ mov rdi, rsi
+ push rbp
+ mov rbp, rsi
+ sub rsp, CONST
+ call CONST
+ add rsp, CONST
+ mov rsi, rbp
+ mov rdi, r12
+ pop rbp
+ mov rdx, rax
+ pop r12
+ jmp CONST

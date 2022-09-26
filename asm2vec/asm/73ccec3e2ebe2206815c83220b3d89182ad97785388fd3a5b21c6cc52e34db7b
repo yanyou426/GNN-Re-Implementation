@@ -1,0 +1,35 @@
+ .name fcn.00024b20
+ .offset 0000000000024b20
+ .file cvtsudoers
+ test rdi, rdi
+ cjmp LABEL1
+ mov rax, qword [rip + CONST]
+ push rbp
+ mov rbp, rdi
+ test rax, rax
+ cjmp LABEL6
+ mov rdx, qword [rip + CONST]
+ lea rax, [rax + rdx*CONST]
+ cmp rdi, qword [rax]
+ cjmp LABEL10
+LABEL6:
+ mov eax, dword [rbp + CONST]
+ test eax, eax
+ cjmp LABEL13
+LABEL20:
+ mov rdi, rbp
+ pop rbp
+ jmp CONST
+LABEL10:
+ mov qword [rax], CONST
+ mov eax, dword [rbp + CONST]
+ test eax, eax
+ cjmp LABEL20
+LABEL13:
+ mov rdi, qword [rbp + CONST]
+ call CONST
+ mov rdi, rbp
+ pop rbp
+ jmp CONST
+LABEL1:
+ ret

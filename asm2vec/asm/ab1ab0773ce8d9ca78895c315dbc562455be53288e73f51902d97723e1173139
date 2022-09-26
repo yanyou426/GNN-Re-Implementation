@@ -1,0 +1,63 @@
+ .name fcn.00014580
+ .offset 0000000000014580
+ .file cvtsudoers
+ push r13
+ push r12
+ mov r12, rsi
+ lea rsi, [rip + CONST]
+ push rbp
+ mov ebp, edx
+ mov edx, CONST
+ push rbx
+ mov rbx, rdi
+ lea rdi, [rip + CONST]
+ sub rsp, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ lea rax, [rip + CONST]
+ mov r13d, dword [rax]
+ mov ecx, r13d
+ call CONST
+ mov rdi, qword [rbx + CONST]
+ test rdi, rdi
+ cjmp LABEL19
+ mov rsi, rsp
+ mov qword [rsp], r12
+ mov word [rsp + CONST], bp
+ call CONST
+ mov rsi, rax
+ test rax, rax
+ cjmp LABEL19
+ mov rdi, qword [rbx + CONST]
+ call CONST
+ mov ecx, r13d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ mov r8, rax
+ lea rdi, [rip + CONST]
+ mov r12, rax
+ call CONST
+LABEL55:
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL38
+ add rsp, CONST
+ mov rax, r12
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ ret
+LABEL19:
+ call CONST
+ xor r8d, r8d
+ mov ecx, r13d
+ mov edx, CONST
+ mov dword [rax], CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ xor r12d, r12d
+ call CONST
+ jmp LABEL55
+LABEL38:
+ call CONST

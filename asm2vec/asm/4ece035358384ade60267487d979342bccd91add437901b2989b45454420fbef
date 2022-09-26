@@ -1,0 +1,125 @@
+ .name fcn.000080d0
+ .offset 00000000000080d0
+ .file shred
+ push r15
+ push r14
+ mov r14, rsi
+ push r13
+ push r12
+ push rbp
+ mov rbp, rdi
+ push rbx
+ mov rbx, rdx
+ sub rsp, CONST
+ mov rcx, qword [rdi]
+ test rcx, rcx
+ mov qword [rsp], rcx
+ cjmp LABEL13
+ call CONST
+ xor r13d, r13d
+ mov rcx, qword [rsp]
+ mov r12, rax
+ jmp LABEL18
+LABEL33:
+ mov rax, qword [rbp]
+ mov rdi, qword [rbp + CONST]
+ test byte [rax], CONST
+ cmove edx, r13d
+ mov dword [r12], edx
+ call qword [rbp + CONST]
+ mov rcx, qword [rbp]
+LABEL18:
+ mov rdx, rbx
+ mov rdi, r14
+ mov esi, CONST
+ call CONST
+ mov edx, dword [r12]
+ add r14, rax
+ sub rbx, rax
+ cjmp LABEL33
+LABEL95:
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL13:
+ mov rcx, qword [rdi + CONST]
+ lea r12, [rdi + CONST]
+ lea rax, [rdi + CONST]
+ mov r13d, CONST
+ mov qword [rsp], rax
+ cmp rdx, rcx
+ cjmp LABEL48
+LABEL66:
+ mov rsi, r13
+ mov rdx, rcx
+ mov rdi, r14
+ mov qword [rsp + CONST], rcx
+ sub rsi, rcx
+ add rsi, qword [rsp]
+ call CONST
+ mov rcx, qword [rsp + CONST]
+ add r14, rcx
+ sub rbx, rcx
+ test r14b, CONST
+ cjmp LABEL60
+ mov rsi, qword [rsp]
+ mov rdi, r12
+ call CONST
+ mov ecx, CONST
+ cmp rbx, CONST
+ cjmp LABEL66
+ mov r13, rbx
+ jmp LABEL68
+LABEL60:
+ mov r13, rbx
+ mov r15, rbx
+ add rbx, r14
+ and r13d, CONST
+ jmp LABEL73
+LABEL82:
+ mov rsi, r14
+ mov rdi, r12
+ call CONST
+ sub r15, CONST
+ cjmp LABEL78
+LABEL73:
+ mov r14, rbx
+ sub r14, r15
+ cmp r15, r13
+ cjmp LABEL82
+ mov rsi, qword [rsp]
+ mov rdi, r12
+ call CONST
+ mov ecx, CONST
+LABEL68:
+ mov rsi, qword [rsp]
+ mov rdx, r13
+ mov rdi, r14
+ mov qword [rsp + CONST], rcx
+ call CONST
+ mov rcx, qword [rsp + CONST]
+ sub rcx, r13
+ mov qword [rbp + CONST], rcx
+ jmp LABEL95
+LABEL78:
+ mov qword [rbp + CONST], CONST
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL48:
+ mov r15, rax
+ mov r13, rdx
+ sub r15, rcx
+ lea rax, [r15 + CONST]
+ mov qword [rsp], rax
+ jmp LABEL68

@@ -1,0 +1,72 @@
+ .name fcn.000052b0
+ .offset 00000000000052b0
+ .file ksshaskpass
+ push r12
+ mov r12, rdi
+ push rbp
+ push rbx
+ mov rax, qword [rdi]
+ movsxd rdx, dword [rax + CONST]
+ lea rbx, [rax + rdx*CONST + CONST]
+ call CONST
+ mov rbp, rax
+ mov rax, qword [r12]
+ lea rdx, [rax + CONST]
+ movsxd rcx, dword [rax + CONST]
+ movsxd rax, dword [rax + CONST]
+ lea rsi, [rdx + rcx*CONST]
+ lea rax, [rdx + rax*CONST]
+ cmp rax, rsi
+ cjmp LABEL16
+ jmp LABEL17
+LABEL27:
+ add rax, CONST
+ add rbx, CONST
+ cmp rax, rsi
+ cjmp LABEL17
+LABEL16:
+ mov rcx, qword [rbx]
+ mov qword [rax], rcx
+ mov edx, dword [rcx]
+ add edx, CONST
+ cmp edx, CONST
+ cjmp LABEL27
+ lock add dword [rcx], CONST
+ add rax, CONST
+ add rbx, CONST
+ cmp rax, rsi
+ cjmp LABEL16
+LABEL17:
+ mov eax, dword [rbp]
+ test eax, eax
+ cjmp LABEL35
+ cmp eax, CONST
+ cjmp LABEL37
+ lock sub dword [rbp], CONST
+ cjmp LABEL35
+LABEL37:
+ pop rbx
+ pop rbp
+ pop r12
+ ret
+LABEL35:
+ movsxd rdx, dword [rbp + CONST]
+ lea rax, [rbp + CONST]
+ lea rbx, [rax + rdx*CONST]
+ movsxd rdx, dword [rbp + CONST]
+ lea r12, [rax + rdx*CONST]
+ cmp rbx, r12
+ cjmp LABEL50
+ nop dword [rax]
+LABEL56:
+ sub rbx, CONST
+ mov rdi, rbx
+ call CONST
+ cmp r12, rbx
+ cjmp LABEL56
+LABEL50:
+ pop rbx
+ mov rdi, rbp
+ pop rbp
+ pop r12
+ jmp CONST

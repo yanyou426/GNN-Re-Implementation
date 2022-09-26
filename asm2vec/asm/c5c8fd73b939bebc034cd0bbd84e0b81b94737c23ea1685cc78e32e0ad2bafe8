@@ -1,0 +1,27 @@
+ .name fcn.00014830
+ .offset 0000000000014830
+ .file cvtsudoers
+ push r13
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ push r12
+ sub rsp, CONST
+ lea rax, [rip + CONST]
+ mov r13d, dword [rax]
+ mov ecx, r13d
+ call CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov ecx, r13d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ mov r8, rax
+ lea rdi, [rip + CONST]
+ mov r12, rax
+ call CONST
+ add rsp, CONST
+ mov rax, r12
+ pop r12
+ pop r13
+ ret

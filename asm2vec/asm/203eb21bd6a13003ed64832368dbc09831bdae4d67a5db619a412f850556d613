@@ -1,0 +1,48 @@
+ .name fcn.000088f0
+ .offset 00000000000088f0
+ .file kontrast
+ push r12
+ push rbp
+ push rbx
+ test rdi, rdi
+ cjmp LABEL4
+ mov rbx, rdi
+ mov rbp, rsi
+ xor r12d, r12d
+ jmp LABEL8
+LABEL18:
+ mov rbx, rdx
+ test rbx, rbx
+ cjmp LABEL11
+LABEL8:
+ lea rdi, [rbx + CONST]
+ mov rsi, rbp
+ call CONST
+ mov rcx, qword [rbx + CONST]
+ mov rdx, qword [rbx + CONST]
+ test al, al
+ cjmp LABEL18
+ mov r12, rbx
+ mov rbx, rcx
+ test rbx, rbx
+ cjmp LABEL8
+LABEL11:
+ test r12, r12
+ cjmp LABEL4
+ lea rsi, [r12 + CONST]
+ mov rdi, rbp
+ call CONST
+ test al, al
+ cjmp LABEL4
+ mov rax, r12
+ pop rbx
+ pop rbp
+ pop r12
+ ret
+LABEL4:
+ xor r12d, r12d
+ pop rbx
+ pop rbp
+ mov rax, r12
+ pop r12
+ ret

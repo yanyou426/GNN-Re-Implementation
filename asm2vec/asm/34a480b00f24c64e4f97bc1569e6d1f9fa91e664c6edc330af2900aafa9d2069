@@ -1,0 +1,122 @@
+ .name fcn.0001bc30
+ .offset 000000000001bc30
+ .file cvtsudoers
+ push r15
+ push r14
+ push r13
+ push r12
+ mov r12, rsi
+ push rbp
+ mov rbp, rdi
+ push rbx
+ mov rbx, rdx
+ sub rsp, CONST
+ mov r14, qword [rdi + CONST]
+ test r14, r14
+ cjmp LABEL12
+LABEL77:
+ mov r15, qword [rbp + CONST]
+ test r15, r15
+ cjmp LABEL15
+LABEL74:
+ lea rax, [rip + CONST]
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ mov r13d, dword [rax + CONST]
+ mov ecx, r13d
+ call CONST
+ movzx eax, word [rbx + CONST]
+ sub ax, CONST
+ cmp ax, CONST
+ cjmp LABEL26
+ lea rdx, [rip + CONST]
+ movzx eax, ax
+ movsxd rax, dword [rdx + rax*CONST]
+ add rax, rdx
+ jmp rax
+LABEL94:
+ mov rdi, qword [rbx + CONST]
+ mov rsi, qword [r12]
+ mov rdx, r12
+ call CONST
+ test al, al
+ cjmp LABEL37
+ nop dword [rax]
+LABEL26:
+ mov r12d, CONST
+LABEL71:
+ mov r8d, r12d
+ mov ecx, r13d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ add rsp, CONST
+ mov eax, r12d
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+ lea rdx, [rip + CONST]
+ xor eax, eax
+ mov rcx, qword [r12]
+ mov rdi, qword [rbx + CONST]
+ mov edx, dword [rdx + CONST]
+ test edx, edx
+ cmove r15, rax
+ cmove r14, rax
+ mov rdx, r15
+ mov rsi, r14
+ call CONST
+ test al, al
+ cjmp LABEL26
+LABEL37:
+ xor r12d, r12d
+ cmp word [rbx + CONST], CONST
+ sete r12b
+ jmp LABEL71
+LABEL15:
+ lea rax, [rip + CONST]
+ mov r15, qword [rax + CONST]
+ jmp LABEL74
+LABEL12:
+ lea rax, [rip + CONST]
+ mov r14, qword [rax + CONST]
+ jmp LABEL77
+ mov rdi, qword [rbx + CONST]
+ mov rsi, qword [r12]
+ mov rdx, r12
+ call CONST
+ test al, al
+ cjmp LABEL26
+ xor r12d, r12d
+ cmp word [rbx + CONST], CONST
+ sete r12b
+ jmp LABEL71
+ mov rsi, qword [rbx + CONST]
+ mov edx, CONST
+ mov rdi, rbp
+ call CONST
+ mov r14, rax
+ test rax, rax
+ cjmp LABEL94
+ mov rsi, r12
+ lea rdx, [rax + CONST]
+ mov rdi, rbp
+ call CONST
+ mov r12d, eax
+ cmp eax, CONST
+ cjmp LABEL101
+ cmp word [rbx + CONST], CONST
+ cjmp LABEL101
+ test eax, eax
+ sete r12b
+ movzx r12d, r12b
+LABEL101:
+ mov rdi, r14
+ call CONST
+ jmp LABEL71

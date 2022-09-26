@@ -1,0 +1,14 @@
+ .name fcn.00008830
+ .offset 0000000000008830
+ .file kontrast
+ mov rax, qword [rsi]
+ mov rdx, qword [rsi + CONST]
+ mov qword [rdi], rax
+ mov qword [rdi + CONST], rdx
+ test rax, rax
+ cjmp LABEL5
+ lock add dword [rax], CONST
+LABEL5:
+ movzx eax, byte [rsi + CONST]
+ mov byte [rdi + CONST], al
+ ret

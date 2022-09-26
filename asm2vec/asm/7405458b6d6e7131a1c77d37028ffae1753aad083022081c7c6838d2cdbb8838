@@ -1,0 +1,77 @@
+ .name fcn.00013ad0
+ .offset 0000000000013ad0
+ .file curl
+ push r13
+ mov r13, rdi
+ lea rdi, [rip + CONST]
+ push r12
+ push rbp
+ call CONST
+ test rax, rax
+ cjmp LABEL7
+ mov rdi, rax
+ mov rbp, rax
+ call CONST
+ mov rdi, rbp
+ mov r12, rax
+ call CONST
+ test r12, r12
+ cjmp LABEL7
+LABEL51:
+ mov rax, r12
+ pop rbp
+ pop r12
+ pop r13
+ ret
+LABEL7:
+ test r13, r13
+ cjmp LABEL22
+ lea rdi, [rip + CONST]
+ call CONST
+ mov r12, rax
+ test rax, rax
+ cjmp LABEL22
+ mov rsi, rax
+ mov rdx, r13
+ lea rdi, [rip + CONST]
+ xor eax, eax
+ call CONST
+ mov rbp, rax
+ test rax, rax
+ cjmp LABEL35
+ mov rdi, rax
+ xor esi, esi
+ xor eax, eax
+ call CONST
+ mov rdi, rbp
+ mov r13d, eax
+ call CONST
+ test r13d, r13d
+ cjmp LABEL44
+LABEL35:
+ mov rdi, r12
+ call CONST
+LABEL22:
+ lea rdi, [rip + CONST]
+ call CONST
+ mov r12, rax
+ test rax, rax
+ cjmp LABEL51
+ call CONST
+ mov edi, eax
+ call CONST
+ test rax, rax
+ cjmp LABEL51
+ mov rdi, qword [rax + CONST]
+ test rdi, rdi
+ cjmp LABEL51
+ cmp byte [rdi], CONST
+ cjmp LABEL51
+ pop rbp
+ pop r12
+ pop r13
+ jmp CONST
+LABEL44:
+ mov edi, r13d
+ call CONST
+ jmp LABEL51

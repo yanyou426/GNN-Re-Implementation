@@ -1,0 +1,19 @@
+ .name fcn.0000c6b0
+ .offset 000000000000c6b0
+ .file weave
+ cmp dword [rip + CONST], edi
+ mov rax, qword [rip + CONST]
+ cjmp LABEL2
+ movsxd rdi, edi
+ mov rax, qword [rax + rdi*CONST]
+ ret
+LABEL2:
+ push rdx
+ mov rcx, qword [rax]
+ lea rdx, [rip + CONST]
+ mov esi, CONST
+ mov rdi, qword [rip + CONST]
+ xor eax, eax
+ call CONST
+ mov edi, CONST
+ call CONST

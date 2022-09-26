@@ -1,0 +1,22 @@
+ .name fcn.0001c6f0
+ .offset 000000000001c6f0
+ .file cvtsudoers
+ mov r8, rdx
+ mov rdx, qword [rdi + CONST]
+ test rdx, rdx
+ cjmp LABEL3
+ mov rcx, qword [rdi + CONST]
+ test rcx, rcx
+ cjmp LABEL6
+LABEL12:
+ jmp CONST
+LABEL3:
+ lea rax, [rip + CONST]
+ mov rcx, qword [rdi + CONST]
+ mov rdx, qword [rax + CONST]
+ test rcx, rcx
+ cjmp LABEL12
+LABEL6:
+ lea rax, [rip + CONST]
+ mov rcx, qword [rax + CONST]
+ jmp CONST

@@ -1,0 +1,32 @@
+ .name fcn.00024c90
+ .offset 0000000000024c90
+ .file cvtsudoers
+ push r12
+ push rbp
+ mov rbp, rdi
+ mov edi, CONST
+ push rbx
+ mov ebx, esi
+ call CONST
+ test rax, rax
+ cjmp LABEL8
+ movsxd rdi, ebx
+ mov r12, rax
+ mov qword [rax + CONST], rdi
+ add rdi, CONST
+ call CONST
+ mov qword [r12 + CONST], rax
+ test rax, rax
+ cjmp LABEL8
+ mov dword [r12 + CONST], CONST
+ mov rsi, rbp
+ mov rdi, r12
+ call CONST
+ mov rax, r12
+ pop rbx
+ pop rbp
+ pop r12
+ ret
+LABEL8:
+ lea rdi, [rip + CONST]
+ call CONST

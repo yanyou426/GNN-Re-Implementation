@@ -1,0 +1,125 @@
+ .name fcn.0000f660
+ .offset 000000000000f660
+ .file cvtsudoers
+ push r15
+ mov r15, rdi
+ lea rdi, [rip + CONST]
+ push r14
+ push r13
+ lea r13, [rip + CONST]
+ push r12
+ push rbp
+ mov rbp, rsi
+ lea rsi, [rip + CONST]
+ push rbx
+ mov rbx, rdx
+ mov edx, CONST
+ sub rsp, CONST
+ lea rax, [rip + CONST]
+ mov dword [rsp + CONST], ecx
+ mov eax, dword [rax + CONST]
+ mov ecx, eax
+ mov dword [rsp + CONST], eax
+ call CONST
+ mov r14, qword [rbx + CONST]
+ test r14, r14
+ cjmp LABEL22
+ nop dword [rax + rax]
+LABEL31:
+ mov rdx, qword [r14 + CONST]
+ mov rsi, r13
+ mov rdi, r15
+ xor eax, eax
+ call CONST
+ mov r14, qword [r14]
+ test r14, r14
+ cjmp LABEL31
+LABEL22:
+ mov r12, qword [rbx + CONST]
+ test r12, r12
+ cjmp LABEL34
+ cmp byte [rsp + CONST], CONST
+ lea r13, [rip + CONST]
+ sbb r14d, r14d
+ or r14d, CONST
+LABEL56:
+ xor r8d, r8d
+ cmp word [r12 + CONST], CONST
+ mov r9, r13
+ mov rsi, rbp
+ setne r8b
+ sub rsp, CONST
+ mov rdx, qword [r12 + CONST]
+ mov rdi, r15
+ movsx ecx, word [r12 + CONST]
+ push r14
+ call CONST
+ mov r12, qword [r12]
+ pop rax
+ pop rdx
+ test r12, r12
+ cjmp LABEL34
+ cmp qword [rbx + CONST], r12
+ cjmp LABEL56
+ mov rsi, r13
+ mov rdi, r15
+ xor eax, eax
+ call CONST
+ jmp LABEL56
+LABEL34:
+ mov r14, qword [rbx + CONST]
+ movzx r12d, byte [rsp + CONST]
+ lea r13, [rip + CONST]
+ mov rax, r14
+ test r14, r14
+ cjmp LABEL67
+ jmp LABEL68
+LABEL85:
+ lea rsi, [rip + CONST]
+ mov rdi, r15
+ xor eax, eax
+ call CONST
+LABEL90:
+ mov ecx, r12d
+ mov rdx, r14
+ mov rsi, rbp
+ mov rdi, r15
+ call CONST
+ test al, al
+ cjmp LABEL68
+ mov r14, qword [r14]
+ test r14, r14
+ cjmp LABEL68
+ mov rax, qword [rbx + CONST]
+LABEL67:
+ cmp r14, rax
+ cjmp LABEL85
+ mov rsi, r13
+ mov rdi, r15
+ xor eax, eax
+ call CONST
+ jmp LABEL90
+LABEL68:
+ lea rsi, [rip + CONST]
+ mov rdi, r15
+ xor eax, eax
+ call CONST
+ mov rdi, r15
+ call CONST
+ mov ecx, dword [rsp + CONST]
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ xor eax, CONST
+ lea rdi, [rip + CONST]
+ movzx r8d, al
+ mov r12d, r8d
+ call CONST
+ add rsp, CONST
+ mov eax, r12d
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret

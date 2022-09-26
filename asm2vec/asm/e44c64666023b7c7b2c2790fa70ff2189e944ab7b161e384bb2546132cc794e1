@@ -1,0 +1,38 @@
+ .name sym.__libc_csu_init
+ .offset 00000000000053a0
+ .file ksshaskpass
+ push r15
+ lea r15, [rip + CONST]
+ push r14
+ mov r14, rdx
+ push r13
+ mov r13, rsi
+ push r12
+ mov r12d, edi
+ push rbp
+ lea rbp, [rip + CONST]
+ push rbx
+ sub rbp, r15
+ sub rsp, CONST
+ call CONST
+ sar rbp, CONST
+ cjmp LABEL15
+ xor ebx, ebx
+ nop dword [rax]
+LABEL24:
+ mov rdx, r14
+ mov rsi, r13
+ mov edi, r12d
+ call qword [r15 + rbx*CONST]
+ add rbx, CONST
+ cmp rbp, rbx
+ cjmp LABEL24
+LABEL15:
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret

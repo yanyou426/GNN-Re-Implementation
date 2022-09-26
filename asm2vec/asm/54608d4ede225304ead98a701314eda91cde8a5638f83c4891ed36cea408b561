@@ -1,0 +1,24 @@
+ .name fcn.0000a030
+ .offset 000000000000a030
+ .file sha256sum
+ push rbp
+ mov rbp, rdi
+ test rdi, rdi
+ cjmp LABEL3
+ call CONST
+ test eax, eax
+ cjmp LABEL6
+LABEL3:
+ mov rdi, rbp
+ pop rbp
+ jmp CONST
+LABEL6:
+ test dword [rbp], CONST
+ cjmp LABEL3
+ mov rdi, rbp
+ mov edx, CONST
+ xor esi, esi
+ call CONST
+ mov rdi, rbp
+ pop rbp
+ jmp CONST

@@ -1,0 +1,65 @@
+ .name fcn.00001780
+ .offset 0000000000001780
+ .file weave
+ push r13
+ mov r13, rdi
+ push r12
+ lea r12, [rip + CONST]
+ push rbp
+ lea rbp, [rip + CONST]
+ push rbx
+ xor ebx, ebx
+ sub rsp, CONST
+ jmp LABEL9
+LABEL26:
+ call CONST
+ movsxd rcx, dword [rip + CONST]
+ movsxd rdx, eax
+ movzx edx, byte [r12 + rdx]
+ mov rax, rcx
+ add eax, CONST
+ cmp dl, CONST
+ mov byte [rbp + rcx], dl
+ mov dword [rip + CONST], eax
+ cmovne ebx, eax
+ cmp eax, CONST
+ cjmp LABEL21
+LABEL9:
+ mov rdi, r13
+ call CONST
+ mov rdi, r13
+ test eax, eax
+ cjmp LABEL26
+ call CONST
+ mov dword [rip + CONST], ebx
+ add rsp, CONST
+ mov eax, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ ret
+LABEL41:
+ mov rdi, r13
+ call CONST
+LABEL21:
+ mov rdi, r13
+ call CONST
+ test eax, eax
+ cjmp LABEL41
+ mov eax, dword [rip + CONST]
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ sub eax, CONST
+ cmp ebx, eax
+ mov dword [rip + CONST], eax
+ cmovg ebx, eax
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov dword [rip + CONST], CONST
+ call CONST
+ jmp LABEL9

@@ -1,0 +1,42 @@
+ .name fcn.00003130
+ .offset 0000000000003130
+ .file gapplication
+ push r12
+ push rbp
+ sub rsp, CONST
+ test rdi, rdi
+ cjmp LABEL4
+ mov rbp, rdi
+ call CONST
+ mov r12d, eax
+ test eax, eax
+ cjmp LABEL9
+ mov r12d, CONST
+LABEL26:
+ add rsp, CONST
+ mov eax, r12d
+ pop rbp
+ pop r12
+ ret
+LABEL4:
+ mov r12, rsi
+ mov edx, CONST
+ xor edi, edi
+ lea rsi, [rip + CONST]
+ call CONST
+ mov rsi, r12
+ xor r12d, r12d
+ mov rdi, rax
+ xor eax, eax
+ call CONST
+ jmp LABEL26
+LABEL9:
+ xor edi, edi
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ call CONST
+ mov rsi, rbp
+ mov rdi, rax
+ xor eax, eax
+ call CONST
+ jmp LABEL26

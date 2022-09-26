@@ -1,0 +1,40 @@
+ .name fcn.00004a10
+ .offset 0000000000004a10
+ .file shred
+ movzx eax, byte [rdi]
+ mov r8, rdi
+ cmp al, CONST
+ cjmp LABEL3
+ nop word [rax + rax]
+LABEL8:
+ movzx eax, byte [r8 + CONST]
+ add r8, CONST
+ cmp al, CONST
+ cjmp LABEL8
+LABEL3:
+ test al, al
+ cjmp LABEL10
+ mov rdx, r8
+ xor ecx, ecx
+ jmp LABEL13
+LABEL23:
+ test cl, cl
+ cjmp LABEL15
+ mov r8, rdx
+ xor ecx, ecx
+LABEL15:
+ movzx eax, byte [rdx + CONST]
+ add rdx, CONST
+ test al, al
+ cjmp LABEL10
+LABEL13:
+ cmp al, CONST
+ cjmp LABEL23
+ movzx eax, byte [rdx + CONST]
+ add rdx, CONST
+ mov ecx, CONST
+ test al, al
+ cjmp LABEL13
+LABEL10:
+ mov rax, r8
+ ret

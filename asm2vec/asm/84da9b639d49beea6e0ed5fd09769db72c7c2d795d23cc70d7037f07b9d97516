@@ -1,0 +1,95 @@
+ .name fcn.00007080
+ .offset 0000000000007080
+ .file sha256sum
+LABEL79:
+ push r15
+ push r14
+ mov r14, rsi
+ push r13
+ mov r13, rdi
+ mov edi, CONST
+ push r12
+ push rbp
+ push rbx
+ mov rbx, rdx
+ sub rsp, CONST
+ mov qword [rsp + CONST], rcx
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ call CONST
+ test rax, rax
+ cjmp LABEL17
+ lea r15, [rsp + CONST]
+ mov r12, rax
+ mov rdi, r15
+ call rbx
+ mov ebx, CONST
+LABEL62:
+ xor ebp, ebp
+ jmp LABEL24
+LABEL37:
+ mov rdx, rbx
+ lea rdi, [r12 + rbp]
+ mov rcx, r13
+ mov esi, CONST
+ sub rdx, rbp
+ call CONST
+ add rbp, rax
+ cmp rbp, CONST
+ cjmp LABEL33
+ test rax, rax
+ cjmp LABEL35
+LABEL24:
+ test byte [r13], CONST
+ cjmp LABEL37
+LABEL64:
+ test rbp, rbp
+ cjmp LABEL39
+LABEL73:
+ mov rsi, r14
+ mov rdi, r15
+ mov rax, qword [rsp + CONST]
+ call rax
+ mov rdi, r12
+ call CONST
+ xor eax, eax
+LABEL68:
+ mov rcx, qword [rsp + CONST]
+ sub rcx, qword fs:[CONST]
+ cjmp LABEL49
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL33:
+ mov rdx, r15
+ mov esi, CONST
+ mov rdi, r12
+ call CONST
+ jmp LABEL62
+LABEL35:
+ test byte [r13], CONST
+ cjmp LABEL64
+ mov rdi, r12
+ call CONST
+ mov eax, CONST
+ jmp LABEL68
+LABEL39:
+ mov rdx, r15
+ mov rsi, rbp
+ mov rdi, r12
+ call CONST
+ jmp LABEL73
+LABEL49:
+ call CONST
+LABEL17:
+ mov eax, CONST
+ jmp LABEL68
+ lea rcx, [rip + CONST]
+ lea rdx, [rip + CONST]
+ jmp LABEL79

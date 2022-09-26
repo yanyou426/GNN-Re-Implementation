@@ -1,0 +1,118 @@
+ .name fcn.000050c0
+ .offset 00000000000050c0
+ .file ksshaskpass
+ push r13
+ push r12
+ movsxd r12, edx
+ push rbp
+ push rbx
+ mov rbx, rdi
+ sub rsp, CONST
+ mov rax, qword [rdi]
+ mov dword [rsp + CONST], esi
+ lea rsi, [rsp + CONST]
+ movsxd rdx, dword [rax + CONST]
+ lea r13, [rax + rdx*CONST + CONST]
+ mov edx, r12d
+ call CONST
+ mov rdx, qword [rbx]
+ movsxd rdi, dword [rsp + CONST]
+ mov rbp, rax
+ movsxd rax, dword [rdx + CONST]
+ lea rcx, [rdx + CONST]
+ lea rsi, [rcx + rax*CONST]
+ add rax, rdi
+ lea r8, [rcx + rax*CONST]
+ cmp rsi, r8
+ cjmp LABEL23
+ lea rdi, [r13 + rdi*CONST]
+ mov rax, r13
+ jmp LABEL26
+LABEL36:
+ add rax, CONST
+ add rsi, CONST
+ cmp rdi, rax
+ cjmp LABEL30
+LABEL26:
+ mov rcx, qword [rax]
+ mov qword [rsi], rcx
+ mov edx, dword [rcx]
+ add edx, CONST
+ cmp edx, CONST
+ cjmp LABEL36
+ lock add dword [rcx], CONST
+ add rax, CONST
+ add rsi, CONST
+ cmp rdi, rax
+ cjmp LABEL26
+LABEL30:
+ mov rdx, qword [rbx]
+ movsxd rdi, dword [rsp + CONST]
+ movsxd rax, dword [rdx + CONST]
+ lea rcx, [rdx + CONST]
+ add rax, rdi
+LABEL23:
+ movsxd rdx, dword [rdx + CONST]
+ add rax, r12
+ lea rsi, [r13 + rdi*CONST]
+ lea rax, [rcx + rax*CONST]
+ lea rdi, [rcx + rdx*CONST]
+ cmp rax, rdi
+ cjmp LABEL53
+ jmp LABEL54
+LABEL64:
+ add rax, CONST
+ add rsi, CONST
+ cmp rax, rdi
+ cjmp LABEL54
+LABEL53:
+ mov rcx, qword [rsi]
+ mov qword [rax], rcx
+ mov edx, dword [rcx]
+ add edx, CONST
+ cmp edx, CONST
+ cjmp LABEL64
+ lock add dword [rcx], CONST
+ add rax, CONST
+ add rsi, CONST
+ cmp rax, rdi
+ cjmp LABEL53
+LABEL54:
+ mov eax, dword [rbp]
+ test eax, eax
+ cjmp LABEL72
+ cmp eax, CONST
+ cjmp LABEL74
+ lock sub dword [rbp], CONST
+ cjmp LABEL72
+LABEL74:
+ mov rdx, qword [rbx]
+ movsxd rax, dword [rsp + CONST]
+ movsxd rcx, dword [rdx + CONST]
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ add rax, rcx
+ pop r12
+ pop r13
+ lea rax, [rdx + rax*CONST + CONST]
+ ret
+LABEL72:
+ movsxd rdx, dword [rbp + CONST]
+ lea rax, [rbp + CONST]
+ lea r12, [rax + rdx*CONST]
+ movsxd rdx, dword [rbp + CONST]
+ lea r13, [rax + rdx*CONST]
+ cmp r12, r13
+ cjmp LABEL94
+ nop dword [rax]
+LABEL100:
+ sub r12, CONST
+ mov rdi, r12
+ call CONST
+ cmp r13, r12
+ cjmp LABEL100
+LABEL94:
+ mov rdi, rbp
+ call CONST
+ jmp LABEL74

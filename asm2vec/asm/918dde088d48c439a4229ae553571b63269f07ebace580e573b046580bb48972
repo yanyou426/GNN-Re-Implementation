@@ -1,0 +1,35 @@
+ .name fcn.0001b490
+ .offset 000000000001b490
+ .file curl
+ push r13
+ mov r13d, CONST
+ push r12
+ mov r12, rsi
+ push rbx
+ mov rbx, rdi
+ lea rdi, [rip + CONST]
+ call CONST
+ test eax, eax
+ cjmp LABEL9
+ mov rsi, r12
+ lea rdi, [rip + CONST]
+ mov r13d, CONST
+ call CONST
+ test eax, eax
+ cjmp LABEL9
+ mov rsi, r12
+ lea rdi, [rip + CONST]
+ mov r13d, CONST
+ call CONST
+ test eax, eax
+ cjmp LABEL9
+ mov rdi, qword [rbx + CONST]
+ mov rdx, r12
+ lea rsi, [rip + CONST]
+ call CONST
+LABEL9:
+ mov eax, r13d
+ pop rbx
+ pop r12
+ pop r13
+ ret

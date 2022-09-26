@@ -1,0 +1,3384 @@
+ .name fcn.00003f10
+ .offset 0000000000003f10
+ .file sha256sum
+ push r15
+ mov rcx, rdi
+ push r14
+ push r13
+ push r12
+ push rbp
+ push rbx
+ mov rbx, rdx
+ sub rsp, CONST
+ mov qword [rsp + CONST], rdi
+ mov qword [rsp + CONST], rdx
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ mov rax, rsi
+ and rax, CONST
+ add rax, rdi
+ mov qword [rsp + CONST], rax
+ mov rdi, rax
+ mov eax, dword [rdx]
+ mov dword [rsp + CONST], eax
+ mov eax, dword [rdx + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, dword [rdx + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, dword [rdx + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, dword [rdx + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, dword [rdx + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, dword [rdx + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, dword [rdx + CONST]
+ mov edx, esi
+ mov dword [rsp + CONST], eax
+ xor eax, eax
+ add edx, dword [rbx + CONST]
+ setb al
+ shr rsi, CONST
+ add esi, dword [rbx + CONST]
+ mov dword [rbx + CONST], edx
+ add eax, esi
+ mov dword [rbx + CONST], eax
+ lea rax, [rsp + CONST]
+ mov qword [rsp + CONST], rax
+ cmp rcx, rdi
+ cjmp LABEL46
+LABEL3364:
+ mov rcx, qword [rsp + CONST]
+ mov rsi, qword [rsp + CONST]
+ xor eax, eax
+ nop
+LABEL56:
+ mov edx, dword [rcx + rax]
+ bswap edx
+ mov dword [rsi + rax], edx
+ add rax, CONST
+ cmp rax, CONST
+ cjmp LABEL56
+ mov r13d, dword [rsp + CONST]
+ mov r15d, dword [rsp + CONST]
+ mov ebx, dword [rsp + CONST]
+ mov r11d, dword [rsp + CONST]
+ mov eax, r13d
+ mov ecx, r13d
+ mov r14d, dword [rsp + CONST]
+ mov r8d, dword [rsp + CONST]
+ ror ecx, CONST
+ ror eax, CONST
+ mov edx, r11d
+ mov r10d, dword [rsp + CONST]
+ xor eax, ecx
+ mov ecx, r13d
+ mov esi, r14d
+ mov edi, dword [rsp + CONST]
+ rol ecx, CONST
+ and esi, r8d
+ mov r12d, dword [rsp + CONST]
+ add qword [rsp + CONST], CONST
+ xor eax, ecx
+ lea ecx, [r15 + rbx + CONST]
+ mov ebx, dword [rsp + CONST]
+ add ecx, eax
+ xor edx, ebx
+ and edx, r13d
+ xor edx, ebx
+ lea eax, [rcx + rdx]
+ mov edx, r14d
+ mov ecx, r14d
+ ror edx, CONST
+ ror ecx, CONST
+ add edi, eax
+ xor ecx, edx
+ mov edx, r14d
+ mov ebp, edi
+ rol edx, CONST
+ ror ebp, CONST
+ xor ecx, edx
+ mov edx, r14d
+ or edx, r8d
+ and edx, r10d
+ or edx, esi
+ lea esi, [r12 + rbx + CONST]
+ add edx, ecx
+ mov ecx, r13d
+ xor ecx, r11d
+ add edx, eax
+ mov eax, ebp
+ and ecx, edi
+ mov ebp, edx
+ xor ecx, r11d
+ add esi, ecx
+ mov ecx, edi
+ ror ecx, CONST
+ xor eax, ecx
+ mov ecx, edi
+ rol ecx, CONST
+ xor ecx, eax
+ add ecx, esi
+ mov esi, edx
+ ror esi, CONST
+ rol ebp, CONST
+ lea ebx, [rcx + r10]
+ mov r10d, r14d
+ mov eax, esi
+ mov esi, edx
+ mov r9d, ebx
+ ror esi, CONST
+ ror r9d, CONST
+ xor esi, eax
+ mov eax, r14d
+ or eax, edx
+ xor esi, ebp
+ mov ebp, r8d
+ and eax, r8d
+ mov r8d, r14d
+ mov r14d, dword [rsp + CONST]
+ and r8d, edx
+ or eax, r8d
+ add eax, esi
+ lea esi, [r14 + r11 + CONST]
+ mov r11d, r9d
+ add eax, ecx
+ mov ecx, r13d
+ xor ecx, edi
+ mov r9d, eax
+ and ecx, ebx
+ rol r9d, CONST
+ xor ecx, r13d
+ add esi, ecx
+ mov ecx, ebx
+ ror ecx, CONST
+ xor r11d, ecx
+ mov ecx, ebx
+ rol ecx, CONST
+ xor ecx, r11d
+ add ecx, esi
+ mov esi, eax
+ ror esi, CONST
+ lea r8d, [rcx + rbp]
+ mov ebp, r10d
+ mov r11d, esi
+ mov esi, eax
+ ror esi, CONST
+ xor esi, r11d
+ xor esi, r9d
+ mov r9d, edx
+ or r9d, eax
+ mov r11d, r9d
+ mov r9d, edx
+ and r9d, eax
+ and r11d, r10d
+ or r11d, r9d
+ mov r9d, r8d
+ add r11d, esi
+ mov esi, dword [rsp + CONST]
+ add r11d, ecx
+ mov ecx, edi
+ xor ecx, ebx
+ lea esi, [rsi + r13 + CONST]
+ ror r9d, CONST
+ mov r13d, eax
+ and ecx, r8d
+ mov r10d, r9d
+ and r13d, r11d
+ xor ecx, edi
+ add esi, ecx
+ mov ecx, r8d
+ ror ecx, CONST
+ xor r10d, ecx
+ mov ecx, r8d
+ rol ecx, CONST
+ xor ecx, r10d
+ add ecx, esi
+ mov esi, r11d
+ ror esi, CONST
+ lea r9d, [rcx + rbp]
+ mov r10d, esi
+ mov esi, r11d
+ ror esi, CONST
+ xor esi, r10d
+ mov r10d, r11d
+ rol r10d, CONST
+ xor esi, r10d
+ mov r10d, eax
+ or r10d, r11d
+ and r10d, edx
+ or r10d, r13d
+ mov r13d, r11d
+ add r10d, esi
+ mov esi, dword [rsp + CONST]
+ add r10d, ecx
+ mov ecx, ebx
+ xor ecx, r8d
+ lea edi, [rsi + rdi + CONST]
+ mov esi, r9d
+ and ecx, r9d
+ ror esi, CONST
+ xor ecx, ebx
+ add edi, ecx
+ mov ecx, r9d
+ ror ecx, CONST
+ xor esi, ecx
+ mov ecx, r9d
+ rol ecx, CONST
+ xor ecx, esi
+ mov esi, r10d
+ add ecx, edi
+ ror esi, CONST
+ lea edi, [rdx + rcx]
+ mov edx, r10d
+ ror edx, CONST
+ and r13d, r10d
+ xor edx, esi
+ mov esi, r10d
+ rol esi, CONST
+ xor edx, esi
+ mov esi, r11d
+ or esi, r10d
+ and esi, eax
+ or esi, r13d
+ add esi, edx
+ mov edx, r8d
+ add esi, ecx
+ xor edx, r9d
+ mov ecx, dword [rsp + CONST]
+ and edx, edi
+ mov r13d, esi
+ xor edx, r8d
+ lea ecx, [rcx + rbx + CONST]
+ rol r13d, CONST
+ add ecx, edx
+ mov edx, edi
+ ror edx, CONST
+ mov ebx, edx
+ mov edx, edi
+ ror edx, CONST
+ xor edx, ebx
+ mov ebx, edi
+ rol ebx, CONST
+ xor edx, ebx
+ add edx, ecx
+ mov ecx, esi
+ ror ecx, CONST
+ lea ebx, [rax + rdx]
+ mov eax, ecx
+ mov ecx, esi
+ ror ecx, CONST
+ xor ecx, eax
+ xor ecx, r13d
+ mov r13d, r10d
+ or r13d, esi
+ mov eax, r13d
+ mov r13d, r10d
+ and r13d, esi
+ and eax, r11d
+ or eax, r13d
+ mov r13d, esi
+ add eax, ecx
+ mov ecx, dword [rsp + CONST]
+ add eax, edx
+ mov edx, r9d
+ xor edx, edi
+ lea r8d, [rcx + r8 + CONST]
+ mov ecx, ebx
+ and edx, ebx
+ ror ecx, CONST
+ and r13d, eax
+ xor edx, r9d
+ add r8d, edx
+ mov edx, ebx
+ ror edx, CONST
+ xor ecx, edx
+ mov edx, ebx
+ rol edx, CONST
+ xor edx, ecx
+ mov ecx, eax
+ add edx, r8d
+ mov r8d, eax
+ ror ecx, CONST
+ ror r8d, CONST
+ add r11d, edx
+ xor r8d, ecx
+ mov ecx, eax
+ rol ecx, CONST
+ xor r8d, ecx
+ mov ecx, esi
+ or ecx, eax
+ and ecx, r10d
+ or ecx, r13d
+ mov r13d, eax
+ add ecx, r8d
+ mov r8d, edi
+ add ecx, edx
+ xor r8d, ebx
+ mov edx, dword [rsp + CONST]
+ and r8d, r11d
+ xor r8d, edi
+ lea r9d, [rdx + r9 + CONST]
+ mov edx, r11d
+ add r9d, r8d
+ mov r8d, r11d
+ ror edx, CONST
+ ror r8d, CONST
+ xor edx, r8d
+ mov r8d, r11d
+ rol r8d, CONST
+ xor r8d, edx
+ mov edx, ecx
+ add r8d, r9d
+ mov r9d, ecx
+ add r10d, r8d
+ ror edx, CONST
+ and r13d, ecx
+ ror r9d, CONST
+ xor r9d, edx
+ mov edx, ecx
+ rol edx, CONST
+ xor r9d, edx
+ mov edx, eax
+ or edx, ecx
+ and edx, esi
+ or edx, r13d
+ mov r13d, ecx
+ add edx, r9d
+ mov r9d, dword [rsp + CONST]
+ add edx, r8d
+ mov r8d, ebx
+ xor r8d, r11d
+ lea edi, [r9 + rdi + CONST]
+ mov r9d, r10d
+ and r13d, edx
+ and r8d, r10d
+ ror r9d, CONST
+ xor r8d, ebx
+ add r8d, edi
+ mov edi, r9d
+ mov r9d, r10d
+ ror r9d, CONST
+ xor r9d, edi
+ mov edi, r10d
+ rol edi, CONST
+ xor edi, r9d
+ mov r9d, edx
+ add edi, r8d
+ mov r8d, edx
+ ror r9d, CONST
+ ror r8d, CONST
+ add esi, edi
+ xor r8d, r9d
+ mov r9d, edx
+ rol r9d, CONST
+ xor r8d, r9d
+ mov r9d, ecx
+ or r9d, edx
+ and r9d, eax
+ or r9d, r13d
+ mov r13d, edx
+ add r9d, r8d
+ mov r8d, r11d
+ add r9d, edi
+ xor r8d, r10d
+ mov edi, r8d
+ mov r8d, dword [rsp + CONST]
+ and r13d, r9d
+ and edi, esi
+ lea ebx, [r8 + rbx + CONST]
+ mov r8d, esi
+ xor edi, r11d
+ ror r8d, CONST
+ add ebx, edi
+ mov edi, r8d
+ mov r8d, esi
+ ror r8d, CONST
+ xor r8d, edi
+ mov edi, esi
+ rol edi, CONST
+ xor edi, r8d
+ mov r8d, r9d
+ add edi, ebx
+ mov ebx, r9d
+ ror r8d, CONST
+ ror ebx, CONST
+ add eax, edi
+ xor ebx, r8d
+ mov r8d, r9d
+ rol r8d, CONST
+ xor ebx, r8d
+ mov r8d, edx
+ or r8d, r9d
+ and r8d, ecx
+ or r8d, r13d
+ mov r13d, r9d
+ add r8d, ebx
+ mov ebx, r10d
+ xor ebx, esi
+ add r8d, edi
+ mov edi, ebx
+ mov ebx, dword [rsp + CONST]
+ and edi, eax
+ lea r11d, [rbx + r11 + CONST]
+ mov ebx, eax
+ xor edi, r10d
+ ror ebx, CONST
+ add r11d, edi
+ mov edi, ebx
+ mov ebx, eax
+ ror ebx, CONST
+ xor ebx, edi
+ mov edi, eax
+ rol edi, CONST
+ xor edi, ebx
+ mov ebx, r8d
+ add edi, r11d
+ mov r11d, r8d
+ ror ebx, CONST
+ and r13d, r8d
+ ror r11d, CONST
+ add ecx, edi
+ xor r11d, ebx
+ mov ebx, r8d
+ rol ebx, CONST
+ xor r11d, ebx
+ mov ebx, r9d
+ or ebx, r8d
+ and ebx, edx
+ or ebx, r13d
+ mov r13d, r8d
+ add ebx, r11d
+ mov r11d, dword [rsp + CONST]
+ add ebx, edi
+ mov edi, esi
+ xor edi, eax
+ lea r10d, [r11 + r10 + CONST]
+ mov r11d, ecx
+ and r13d, ebx
+ and edi, ecx
+ ror r11d, CONST
+ xor edi, esi
+ add r10d, edi
+ mov edi, ecx
+ ror edi, CONST
+ xor r11d, edi
+ mov edi, ecx
+ rol edi, CONST
+ xor edi, r11d
+ add edi, r10d
+ mov r10d, ebx
+ ror r10d, CONST
+ add edx, edi
+ mov r11d, r10d
+ mov r10d, ebx
+ ror r10d, CONST
+ xor r10d, r11d
+ mov r11d, ebx
+ rol r11d, CONST
+ xor r10d, r11d
+ mov r11d, r8d
+ or r11d, ebx
+ and r11d, r9d
+ or r11d, r13d
+ mov r13d, ebx
+ add r11d, r10d
+ mov r10d, eax
+ xor r10d, ecx
+ add r11d, edi
+ mov edi, r10d
+ mov r10d, dword [rsp + CONST]
+ and r13d, r11d
+ and edi, edx
+ lea r10d, [r10 + rsi + CONST]
+ mov esi, edx
+ xor edi, eax
+ ror esi, CONST
+ add r10d, edi
+ mov edi, esi
+ mov esi, edx
+ ror esi, CONST
+ xor esi, edi
+ mov edi, edx
+ rol edi, CONST
+ xor edi, esi
+ mov esi, r11d
+ add edi, r10d
+ mov r10d, r11d
+ ror esi, CONST
+ ror r10d, CONST
+ add r9d, edi
+ xor r10d, esi
+ mov esi, r11d
+ rol esi, CONST
+ xor r10d, esi
+ mov esi, ebx
+ or esi, r11d
+ and esi, r8d
+ or esi, r13d
+ mov r13d, dword [rsp + CONST]
+ add esi, r10d
+ mov r10d, ecx
+ add esi, edi
+ xor r10d, edx
+ lea eax, [r13 + rax + CONST]
+ mov edi, r9d
+ mov r13d, r9d
+ and r10d, r9d
+ ror edi, CONST
+ ror r13d, CONST
+ xor r10d, ecx
+ xor edi, r13d
+ mov r13d, r9d
+ add r10d, eax
+ rol r13d, CONST
+ mov eax, r13d
+ mov r13d, r11d
+ xor eax, edi
+ and r13d, esi
+ add eax, r10d
+ mov r10d, esi
+ ror r10d, CONST
+ add r8d, eax
+ mov edi, r10d
+ mov r10d, esi
+ ror r10d, CONST
+ xor r10d, edi
+ mov edi, esi
+ rol edi, CONST
+ xor r10d, edi
+ mov edi, r11d
+ or edi, esi
+ and edi, ebx
+ or edi, r13d
+ add edi, r10d
+ mov r10d, edx
+ xor r10d, r9d
+ add edi, eax
+ mov eax, r10d
+ mov r10d, dword [rsp + CONST]
+ and eax, r8d
+ lea ecx, [r10 + rcx + CONST]
+ mov r10d, r8d
+ xor eax, edx
+ ror r10d, CONST
+ add ecx, eax
+ mov eax, r10d
+ mov r10d, r8d
+ ror r10d, CONST
+ mov r13d, r10d
+ mov r10d, r8d
+ rol r10d, CONST
+ xor r13d, eax
+ mov eax, r10d
+ mov r10d, edi
+ xor eax, r13d
+ rol r10d, CONST
+ add eax, ecx
+ mov ecx, edi
+ ror ecx, CONST
+ add ebx, eax
+ mov r13d, ecx
+ mov ecx, edi
+ ror ecx, CONST
+ xor ecx, r13d
+ xor ecx, r10d
+ mov r10d, esi
+ or r10d, edi
+ mov r13d, r10d
+ mov r10d, esi
+ and r13d, r11d
+ and r10d, edi
+ or r13d, r10d
+ mov r10d, ebx
+ add r13d, ecx
+ mov ecx, r9d
+ rol r10d, CONST
+ xor ecx, r8d
+ add r13d, eax
+ mov eax, ecx
+ mov ecx, dword [rsp + CONST]
+ and eax, ebx
+ lea edx, [rcx + rdx + CONST]
+ mov ecx, ebx
+ xor eax, r9d
+ ror ecx, CONST
+ add edx, eax
+ mov eax, ecx
+ mov ecx, ebx
+ ror ecx, CONST
+ xor ecx, eax
+ mov eax, r10d
+ mov r10d, edi
+ xor eax, ecx
+ mov ecx, r13d
+ and r10d, r13d
+ add eax, edx
+ mov edx, r13d
+ ror ecx, CONST
+ ror edx, CONST
+ add r11d, eax
+ xor edx, ecx
+ mov ecx, r13d
+ rol ecx, CONST
+ xor edx, ecx
+ mov ecx, edi
+ or ecx, r13d
+ and ecx, esi
+ or ecx, r10d
+ add ecx, edx
+ mov edx, dword [rsp + CONST]
+ add ecx, eax
+ rol edx, CONST
+ mov r10d, edx
+ mov edx, dword [rsp + CONST]
+ rol edx, CONST
+ mov eax, edx
+ mov edx, dword [rsp + CONST]
+ xor eax, r10d
+ shr edx, CONST
+ mov r10d, edx
+ mov edx, dword [rsp + CONST]
+ xor r10d, eax
+ add edx, r15d
+ mov r15d, r12d
+ lea eax, [r10 + rdx]
+ rol r15d, CONST
+ mov edx, r12d
+ ror edx, CONST
+ mov r10d, r15d
+ mov r15d, r11d
+ xor r10d, edx
+ mov edx, r12d
+ rol r15d, CONST
+ shr edx, CONST
+ xor r10d, edx
+ mov edx, r8d
+ xor edx, ebx
+ add r10d, eax
+ mov eax, edx
+ mov edx, r11d
+ lea r9d, [r9 + r10 + CONST]
+ and eax, r11d
+ ror edx, CONST
+ xor eax, r8d
+ add r9d, eax
+ mov eax, edx
+ mov edx, r11d
+ ror edx, CONST
+ xor edx, eax
+ mov eax, r15d
+ mov r15d, r13d
+ xor eax, edx
+ mov edx, ecx
+ and r15d, ecx
+ add eax, r9d
+ mov r9d, ecx
+ ror edx, CONST
+ ror r9d, CONST
+ add esi, eax
+ xor r9d, edx
+ mov edx, ecx
+ rol edx, CONST
+ xor r9d, edx
+ mov edx, r13d
+ or edx, ecx
+ and edx, edi
+ or edx, r15d
+ mov r15d, dword [rsp + CONST]
+ add edx, r9d
+ mov r9d, dword [rsp + CONST]
+ rol r15d, CONST
+ add edx, eax
+ rol r9d, CONST
+ mov eax, r15d
+ mov r15d, r14d
+ xor eax, r9d
+ mov r9d, dword [rsp + CONST]
+ shr r9d, CONST
+ add r12d, dword [rsp + CONST]
+ ror r15d, CONST
+ xor r9d, eax
+ lea eax, [r9 + r12]
+ mov r9d, r14d
+ mov r12d, esi
+ rol r9d, CONST
+ ror r12d, CONST
+ xor r9d, r15d
+ mov r15d, r14d
+ shr r15d, CONST
+ xor r9d, r15d
+ mov r15d, ebx
+ xor r15d, r11d
+ add r9d, eax
+ mov eax, r15d
+ mov r15d, esi
+ lea r8d, [r8 + r9 + CONST]
+ ror r15d, CONST
+ and eax, esi
+ xor r12d, r15d
+ mov r15d, esi
+ xor eax, ebx
+ rol r15d, CONST
+ add r8d, eax
+ mov eax, r15d
+ mov r15d, ecx
+ xor eax, r12d
+ mov r12d, edx
+ and r15d, edx
+ add eax, r8d
+ mov r8d, edx
+ ror r12d, CONST
+ ror r8d, CONST
+ add edi, eax
+ xor r8d, r12d
+ mov r12d, edx
+ rol r12d, CONST
+ xor r8d, r12d
+ mov r12d, ecx
+ or r12d, edx
+ and r12d, r13d
+ or r12d, r15d
+ mov r15d, r10d
+ add r12d, r8d
+ mov r8d, r10d
+ rol r15d, CONST
+ add r12d, eax
+ rol r8d, CONST
+ add r14d, dword [rsp + CONST]
+ xor r8d, r15d
+ mov r15d, r10d
+ shr r15d, CONST
+ mov ebp, r15d
+ mov r15d, dword [rsp + CONST]
+ xor ebp, r8d
+ mov r8d, dword [rsp + CONST]
+ ror r15d, CONST
+ rol r8d, CONST
+ mov eax, r15d
+ mov r15d, r11d
+ xor eax, r8d
+ mov r8d, dword [rsp + CONST]
+ xor r15d, esi
+ shr r8d, CONST
+ xor r8d, eax
+ mov eax, r15d
+ mov r15d, edi
+ add r8d, r14d
+ and eax, edi
+ ror r15d, CONST
+ mov r14d, edx
+ add r8d, ebp
+ xor eax, r11d
+ and r14d, r12d
+ lea ebx, [rbx + r8 + CONST]
+ add ebx, eax
+ mov eax, r15d
+ mov r15d, edi
+ ror r15d, CONST
+ mov ebp, r15d
+ mov r15d, edi
+ rol r15d, CONST
+ xor ebp, eax
+ mov eax, r15d
+ mov r15d, r12d
+ ror r15d, CONST
+ xor eax, ebp
+ mov ebp, r15d
+ mov r15d, r12d
+ add eax, ebx
+ ror r15d, CONST
+ add r13d, eax
+ mov ebx, r15d
+ mov r15d, r12d
+ xor ebx, ebp
+ rol r15d, CONST
+ xor ebx, r15d
+ mov r15d, edx
+ or r15d, r12d
+ mov ebp, r15d
+ mov r15d, r9d
+ and ebp, ecx
+ or ebp, r14d
+ mov r14d, r9d
+ add ebp, ebx
+ rol r15d, CONST
+ add ebp, eax
+ mov eax, r15d
+ mov r15d, r9d
+ shr r14d, CONST
+ rol r15d, CONST
+ xor r15d, eax
+ xor r15d, r14d
+ mov r14d, dword [rsp + CONST]
+ ror r14d, CONST
+ mov eax, r14d
+ mov r14d, dword [rsp + CONST]
+ rol r14d, CONST
+ xor eax, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ mov ebx, r14d
+ mov r14d, dword [rsp + CONST]
+ add r14d, dword [rsp + CONST]
+ xor ebx, eax
+ mov eax, r14d
+ mov r14d, esi
+ add eax, ebx
+ xor r14d, edi
+ add r15d, eax
+ mov eax, r14d
+ mov r14d, r13d
+ and eax, r13d
+ ror r14d, CONST
+ lea r11d, [r11 + r15 + CONST]
+ xor eax, esi
+ add r11d, eax
+ mov eax, r14d
+ mov r14d, r13d
+ ror r14d, CONST
+ mov ebx, r14d
+ mov r14d, r13d
+ rol r14d, CONST
+ xor ebx, eax
+ mov eax, r14d
+ mov r14d, ebp
+ ror r14d, CONST
+ xor eax, ebx
+ mov ebx, r14d
+ mov r14d, ebp
+ add eax, r11d
+ ror r14d, CONST
+ add ecx, eax
+ mov r11d, r14d
+ mov r14d, ebp
+ xor r11d, ebx
+ rol r14d, CONST
+ xor r11d, r14d
+ mov r14d, r12d
+ or r14d, ebp
+ mov ebx, r14d
+ mov r14d, r12d
+ and ebx, edx
+ and r14d, ebp
+ or ebx, r14d
+ mov r14d, r8d
+ add ebx, r11d
+ rol r14d, CONST
+ add ebx, eax
+ mov eax, r14d
+ mov r14d, r8d
+ rol r14d, CONST
+ mov r11d, r14d
+ mov r14d, r8d
+ xor r11d, eax
+ shr r14d, CONST
+ xor r11d, r14d
+ mov r14d, dword [rsp + CONST]
+ ror r14d, CONST
+ mov eax, r14d
+ mov r14d, dword [rsp + CONST]
+ rol r14d, CONST
+ xor eax, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor r14d, eax
+ mov eax, dword [rsp + CONST]
+ add eax, dword [rsp + CONST]
+ add eax, r14d
+ lea r14d, [rax + r11]
+ mov r11d, edi
+ xor r11d, r13d
+ lea esi, [rsi + r14 + CONST]
+ mov dword [rsp + CONST], r14d
+ mov r14d, ecx
+ mov eax, r11d
+ mov r11d, ecx
+ rol r14d, CONST
+ and eax, ecx
+ ror r11d, CONST
+ xor eax, edi
+ add esi, eax
+ mov eax, r11d
+ mov r11d, ecx
+ ror r11d, CONST
+ xor r11d, eax
+ mov eax, r14d
+ mov r14d, ebp
+ xor eax, r11d
+ add eax, esi
+ mov esi, ebx
+ ror esi, CONST
+ add edx, eax
+ mov r11d, esi
+ mov esi, ebx
+ ror esi, CONST
+ xor esi, r11d
+ mov r11d, ebx
+ rol r11d, CONST
+ xor esi, r11d
+ mov r11d, ebp
+ and r14d, ebx
+ or r11d, ebx
+ and r11d, r12d
+ or r11d, r14d
+ mov r14d, r15d
+ add r11d, esi
+ mov esi, r15d
+ shr r14d, CONST
+ rol esi, CONST
+ add r11d, eax
+ mov eax, esi
+ mov esi, r15d
+ rol esi, CONST
+ xor esi, eax
+ xor esi, r14d
+ mov r14d, dword [rsp + CONST]
+ ror r14d, CONST
+ mov eax, r14d
+ mov r14d, dword [rsp + CONST]
+ rol r14d, CONST
+ xor eax, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor r14d, eax
+ mov eax, dword [rsp + CONST]
+ add eax, dword [rsp + CONST]
+ add eax, r14d
+ mov r14d, edx
+ add eax, esi
+ mov esi, r13d
+ ror r14d, CONST
+ xor esi, ecx
+ lea edi, [rdi + rax + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, r14d
+ and esi, edx
+ mov r14d, r11d
+ xor esi, r13d
+ add edi, esi
+ mov esi, edx
+ ror esi, CONST
+ xor eax, esi
+ mov esi, edx
+ rol esi, CONST
+ xor esi, eax
+ add esi, edi
+ mov edi, r11d
+ ror edi, CONST
+ add r12d, esi
+ mov eax, edi
+ mov edi, r11d
+ ror edi, CONST
+ rol r14d, CONST
+ xor edi, eax
+ xor edi, r14d
+ mov r14d, ebx
+ or r14d, r11d
+ mov eax, r14d
+ mov r14d, ebx
+ and r14d, r11d
+ and eax, ebp
+ or eax, r14d
+ mov r14d, dword [rsp + CONST]
+ add eax, edi
+ add eax, esi
+ mov edi, r14d
+ mov esi, r14d
+ rol esi, CONST
+ rol edi, CONST
+ xor edi, esi
+ mov esi, r14d
+ mov r14d, dword [rsp + CONST]
+ shr esi, CONST
+ xor edi, esi
+ mov esi, dword [rsp + CONST]
+ rol r14d, CONST
+ ror esi, CONST
+ xor esi, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor r14d, esi
+ mov esi, dword [rsp + CONST]
+ add esi, dword [rsp + CONST]
+ add esi, r14d
+ mov r14d, r11d
+ add edi, esi
+ mov esi, ecx
+ xor esi, edx
+ lea r13d, [r13 + rdi + CONST]
+ mov dword [rsp + CONST], edi
+ mov edi, r12d
+ and esi, r12d
+ ror edi, CONST
+ xor esi, ecx
+ add r13d, esi
+ mov esi, r12d
+ ror esi, CONST
+ xor edi, esi
+ mov esi, r12d
+ rol esi, CONST
+ xor esi, edi
+ add esi, r13d
+ mov r13d, eax
+ and r14d, eax
+ ror r13d, CONST
+ add ebp, esi
+ mov edi, r13d
+ mov r13d, eax
+ ror r13d, CONST
+ xor r13d, edi
+ mov edi, eax
+ rol edi, CONST
+ xor r13d, edi
+ mov edi, r11d
+ or edi, eax
+ and edi, ebx
+ or edi, r14d
+ mov r14d, dword [rsp + CONST]
+ add edi, r13d
+ add edi, esi
+ mov r13d, r14d
+ mov esi, r14d
+ rol esi, CONST
+ rol r13d, CONST
+ xor r13d, esi
+ mov esi, r14d
+ shr esi, CONST
+ xor r13d, esi
+ mov esi, dword [rsp + CONST]
+ ror esi, CONST
+ mov r14d, esi
+ mov esi, dword [rsp + CONST]
+ rol esi, CONST
+ xor esi, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor esi, r14d
+ add esi, dword [rsp + CONST]
+ mov r14d, eax
+ add esi, r10d
+ add esi, r13d
+ mov r13d, edx
+ xor r13d, r12d
+ lea ecx, [rcx + rsi + CONST]
+ mov dword [rsp + CONST], esi
+ mov esi, ebp
+ and r13d, ebp
+ ror esi, CONST
+ xor r13d, edx
+ add r13d, ecx
+ mov ecx, ebp
+ ror ecx, CONST
+ xor esi, ecx
+ mov ecx, ebp
+ and r14d, edi
+ rol ecx, CONST
+ xor ecx, esi
+ mov esi, edi
+ add ecx, r13d
+ mov r13d, edi
+ ror esi, CONST
+ ror r13d, CONST
+ add ebx, ecx
+ xor r13d, esi
+ mov esi, edi
+ rol esi, CONST
+ xor r13d, esi
+ mov esi, eax
+ or esi, edi
+ and esi, r11d
+ or esi, r14d
+ mov r14d, dword [rsp + CONST]
+ add esi, r13d
+ add esi, ecx
+ mov r13d, r14d
+ mov ecx, r14d
+ rol ecx, CONST
+ rol r13d, CONST
+ xor r13d, ecx
+ mov ecx, r14d
+ shr ecx, CONST
+ xor r13d, ecx
+ mov ecx, dword [rsp + CONST]
+ ror ecx, CONST
+ mov r14d, ecx
+ mov ecx, dword [rsp + CONST]
+ rol ecx, CONST
+ xor ecx, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor ecx, r14d
+ add ecx, dword [rsp + CONST]
+ mov r14d, edi
+ add ecx, r9d
+ add ecx, r13d
+ mov r13d, r12d
+ xor r13d, ebp
+ lea edx, [rdx + rcx + CONST]
+ mov dword [rsp + CONST], ecx
+ mov ecx, ebx
+ and r13d, ebx
+ xor r13d, r12d
+ add r13d, edx
+ mov edx, ebx
+ ror ecx, CONST
+ and r14d, esi
+ ror edx, CONST
+ xor ecx, edx
+ mov edx, ebx
+ rol edx, CONST
+ xor edx, ecx
+ mov ecx, esi
+ add edx, r13d
+ mov r13d, esi
+ ror ecx, CONST
+ ror r13d, CONST
+ add r11d, edx
+ xor r13d, ecx
+ mov ecx, esi
+ rol ecx, CONST
+ xor r13d, ecx
+ mov ecx, edi
+ or ecx, esi
+ and ecx, eax
+ or ecx, r14d
+ mov r14d, dword [rsp + CONST]
+ add ecx, r13d
+ add ecx, edx
+ mov r13d, r14d
+ mov edx, r14d
+ rol edx, CONST
+ rol r13d, CONST
+ xor r13d, edx
+ mov edx, r14d
+ shr edx, CONST
+ xor r13d, edx
+ mov edx, dword [rsp + CONST]
+ ror edx, CONST
+ mov r14d, edx
+ mov edx, dword [rsp + CONST]
+ rol edx, CONST
+ xor edx, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor edx, r14d
+ add edx, dword [rsp + CONST]
+ mov r14d, esi
+ add edx, r8d
+ add edx, r13d
+ mov r13d, ebp
+ xor r13d, ebx
+ mov dword [rsp + CONST], edx
+ lea r12d, [r12 + rdx + CONST]
+ mov edx, r11d
+ and r13d, r11d
+ ror edx, CONST
+ and r14d, ecx
+ xor r13d, ebp
+ add r12d, r13d
+ mov r13d, edx
+ mov edx, r11d
+ ror edx, CONST
+ xor edx, r13d
+ mov r13d, r11d
+ rol r13d, CONST
+ xor r13d, edx
+ mov edx, ecx
+ add r13d, r12d
+ ror edx, CONST
+ lea r12d, [rax + r13]
+ mov eax, ecx
+ ror eax, CONST
+ xor eax, edx
+ mov edx, ecx
+ rol edx, CONST
+ xor eax, edx
+ mov edx, esi
+ or edx, ecx
+ and edx, edi
+ or edx, r14d
+ mov r14d, dword [rsp + CONST]
+ add edx, eax
+ add edx, r13d
+ mov eax, r14d
+ mov r13d, r14d
+ rol eax, CONST
+ rol r13d, CONST
+ xor r13d, eax
+ mov eax, r14d
+ mov r14d, dword [rsp + CONST]
+ shr eax, CONST
+ xor r13d, eax
+ mov eax, dword [rsp + CONST]
+ ror r14d, CONST
+ rol eax, CONST
+ xor eax, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor eax, r14d
+ add eax, dword [rsp + CONST]
+ mov r14d, r12d
+ add eax, r15d
+ ror r14d, CONST
+ add eax, r13d
+ mov r13d, ebx
+ xor r13d, r11d
+ lea ebp, [rbp + rax + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, r14d
+ and r13d, r12d
+ mov r14d, edx
+ xor r13d, ebx
+ rol r14d, CONST
+ add ebp, r13d
+ mov r13d, r12d
+ ror r13d, CONST
+ xor eax, r13d
+ mov r13d, r12d
+ rol r13d, CONST
+ xor r13d, eax
+ add r13d, ebp
+ lea ebp, [rdi + r13]
+ mov edi, edx
+ ror edi, CONST
+ mov eax, edi
+ mov edi, edx
+ ror edi, CONST
+ xor edi, eax
+ xor edi, r14d
+ mov r14d, ecx
+ or r14d, edx
+ mov eax, r14d
+ mov r14d, ecx
+ and r14d, edx
+ and eax, esi
+ or eax, r14d
+ mov r14d, dword [rsp + CONST]
+ add eax, edi
+ add eax, r13d
+ mov edi, r14d
+ mov r13d, r14d
+ rol edi, CONST
+ rol r13d, CONST
+ xor r13d, edi
+ mov edi, r14d
+ shr edi, CONST
+ xor r13d, edi
+ mov edi, dword [rsp + CONST]
+ ror edi, CONST
+ mov r14d, edi
+ mov edi, dword [rsp + CONST]
+ rol edi, CONST
+ xor edi, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor edi, r14d
+ add edi, dword [rsp + CONST]
+ add edi, dword [rsp + CONST]
+ mov r14d, edx
+ add edi, r13d
+ mov r13d, r11d
+ and r14d, eax
+ xor r13d, r12d
+ lea ebx, [rbx + rdi + CONST]
+ mov dword [rsp + CONST], edi
+ mov edi, ebp
+ and r13d, ebp
+ ror edi, CONST
+ xor r13d, r11d
+ add ebx, r13d
+ mov r13d, ebp
+ ror r13d, CONST
+ xor edi, r13d
+ mov r13d, ebp
+ rol r13d, CONST
+ xor r13d, edi
+ add r13d, ebx
+ lea ebx, [rsi + r13]
+ mov esi, eax
+ ror esi, CONST
+ mov edi, esi
+ mov esi, eax
+ ror esi, CONST
+ xor esi, edi
+ mov edi, eax
+ rol edi, CONST
+ xor esi, edi
+ mov edi, edx
+ or edi, eax
+ and edi, ecx
+ or edi, r14d
+ mov r14d, dword [rsp + CONST]
+ add edi, esi
+ add edi, r13d
+ mov esi, r14d
+ mov r13d, r14d
+ rol esi, CONST
+ rol r13d, CONST
+ xor r13d, esi
+ mov esi, r14d
+ shr esi, CONST
+ xor r13d, esi
+ mov esi, dword [rsp + CONST]
+ ror esi, CONST
+ mov r14d, esi
+ mov esi, dword [rsp + CONST]
+ rol esi, CONST
+ xor esi, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor esi, r14d
+ add esi, dword [rsp + CONST]
+ add esi, dword [rsp + CONST]
+ mov r14d, eax
+ add esi, r13d
+ mov r13d, r12d
+ and r14d, edi
+ xor r13d, ebp
+ mov dword [rsp + CONST], esi
+ lea r11d, [r11 + rsi + CONST]
+ mov esi, ebx
+ and r13d, ebx
+ ror esi, CONST
+ xor r13d, r12d
+ add r11d, r13d
+ mov r13d, esi
+ mov esi, ebx
+ ror esi, CONST
+ xor esi, r13d
+ mov r13d, ebx
+ rol r13d, CONST
+ xor r13d, esi
+ add r13d, r11d
+ lea r11d, [rcx + r13]
+ mov ecx, edi
+ ror ecx, CONST
+ mov esi, ecx
+ mov ecx, edi
+ ror ecx, CONST
+ xor ecx, esi
+ mov esi, edi
+ rol esi, CONST
+ xor ecx, esi
+ mov esi, eax
+ or esi, edi
+ and esi, edx
+ or esi, r14d
+ mov r14d, dword [rsp + CONST]
+ add esi, ecx
+ add esi, r13d
+ mov ecx, r14d
+ mov r13d, r14d
+ rol ecx, CONST
+ rol r13d, CONST
+ xor r13d, ecx
+ mov ecx, r14d
+ shr ecx, CONST
+ xor r13d, ecx
+ mov ecx, dword [rsp + CONST]
+ ror ecx, CONST
+ mov r14d, ecx
+ mov ecx, dword [rsp + CONST]
+ rol ecx, CONST
+ xor ecx, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor ecx, r14d
+ add ecx, dword [rsp + CONST]
+ add ecx, dword [rsp + CONST]
+ mov r14d, edi
+ add ecx, r13d
+ mov r13d, ebp
+ and r14d, esi
+ xor r13d, ebx
+ mov dword [rsp + CONST], ecx
+ lea r12d, [r12 + rcx + CONST]
+ mov ecx, r11d
+ and r13d, r11d
+ ror ecx, CONST
+ xor r13d, ebp
+ add r12d, r13d
+ mov r13d, ecx
+ mov ecx, r11d
+ ror ecx, CONST
+ xor ecx, r13d
+ mov r13d, r11d
+ rol r13d, CONST
+ xor r13d, ecx
+ add r13d, r12d
+ lea r12d, [rdx + r13]
+ mov edx, esi
+ ror edx, CONST
+ mov ecx, edx
+ mov edx, esi
+ ror edx, CONST
+ xor edx, ecx
+ mov ecx, esi
+ rol ecx, CONST
+ xor edx, ecx
+ mov ecx, edi
+ or ecx, esi
+ and ecx, eax
+ or ecx, r14d
+ mov r14d, dword [rsp + CONST]
+ add ecx, edx
+ add ecx, r13d
+ mov edx, r14d
+ mov r13d, r14d
+ rol edx, CONST
+ rol r13d, CONST
+ xor r13d, edx
+ mov edx, r14d
+ shr edx, CONST
+ xor r13d, edx
+ mov edx, dword [rsp + CONST]
+ ror edx, CONST
+ mov r14d, edx
+ mov edx, dword [rsp + CONST]
+ rol edx, CONST
+ xor edx, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor edx, r14d
+ add edx, dword [rsp + CONST]
+ add edx, dword [rsp + CONST]
+ mov r14d, esi
+ add edx, r13d
+ mov r13d, ebx
+ and r14d, ecx
+ xor r13d, r11d
+ mov dword [rsp + CONST], edx
+ lea ebp, [rbp + rdx + CONST]
+ mov edx, r12d
+ and r13d, r12d
+ ror edx, CONST
+ xor r13d, ebx
+ add r13d, ebp
+ mov ebp, edx
+ mov edx, r12d
+ ror edx, CONST
+ xor edx, ebp
+ mov ebp, r12d
+ rol ebp, CONST
+ xor ebp, edx
+ mov edx, ecx
+ add ebp, r13d
+ ror edx, CONST
+ lea r13d, [rax + rbp]
+ mov eax, ecx
+ ror eax, CONST
+ xor eax, edx
+ mov edx, ecx
+ rol edx, CONST
+ xor eax, edx
+ mov edx, esi
+ or edx, ecx
+ and edx, edi
+ or edx, r14d
+ mov r14d, dword [rsp + CONST]
+ add edx, eax
+ add edx, ebp
+ mov eax, r14d
+ mov ebp, r14d
+ rol eax, CONST
+ rol ebp, CONST
+ xor ebp, eax
+ mov eax, r14d
+ shr eax, CONST
+ xor ebp, eax
+ mov eax, r10d
+ ror eax, CONST
+ mov r14d, eax
+ mov eax, r10d
+ rol eax, CONST
+ xor eax, r14d
+ mov r14d, r10d
+ shr r14d, CONST
+ xor eax, r14d
+ add eax, dword [rsp + CONST]
+ add eax, dword [rsp + CONST]
+ mov r14d, ecx
+ add eax, ebp
+ mov ebp, r11d
+ and r14d, edx
+ xor ebp, r12d
+ lea ebx, [rbx + rax + CONST]
+ mov dword [rsp + CONST], eax
+ mov eax, r13d
+ and ebp, r13d
+ ror eax, CONST
+ xor ebp, r11d
+ add ebp, ebx
+ mov ebx, r13d
+ ror ebx, CONST
+ xor eax, ebx
+ mov ebx, r13d
+ rol ebx, CONST
+ xor ebx, eax
+ mov eax, edx
+ add ebx, ebp
+ mov ebp, edx
+ ror eax, CONST
+ ror ebp, CONST
+ add edi, ebx
+ xor ebp, eax
+ mov eax, edx
+ rol eax, CONST
+ xor ebp, eax
+ mov eax, ecx
+ or eax, edx
+ and eax, esi
+ or eax, r14d
+ mov r14d, dword [rsp + CONST]
+ add eax, ebp
+ add eax, ebx
+ mov ebp, r14d
+ mov ebx, r14d
+ rol ebx, CONST
+ rol ebp, CONST
+ xor ebp, ebx
+ mov ebx, r14d
+ shr ebx, CONST
+ xor ebp, ebx
+ mov ebx, r9d
+ ror ebx, CONST
+ mov r14d, ebx
+ mov ebx, r9d
+ rol ebx, CONST
+ xor ebx, r14d
+ mov r14d, r9d
+ shr r14d, CONST
+ xor ebx, r14d
+ add ebx, r10d
+ mov r10d, dword [rsp + CONST]
+ add r10d, ebx
+ mov ebx, r12d
+ xor ebx, r13d
+ add r10d, ebp
+ mov ebp, edx
+ and ebx, edi
+ lea r11d, [r11 + r10 + CONST]
+ mov r14d, r10d
+ mov r10d, edi
+ xor ebx, r12d
+ ror r10d, CONST
+ mov dword [rsp + CONST], r14d
+ add ebx, r11d
+ mov r11d, edi
+ ror r11d, CONST
+ xor r10d, r11d
+ mov r11d, edi
+ rol r11d, CONST
+ xor r11d, r10d
+ mov r10d, eax
+ add r11d, ebx
+ mov ebx, eax
+ ror r10d, CONST
+ ror ebx, CONST
+ add esi, r11d
+ xor ebx, r10d
+ mov r10d, eax
+ rol r10d, CONST
+ xor ebx, r10d
+ mov r10d, edx
+ or r10d, eax
+ and r10d, ecx
+ and ebp, eax
+ or r10d, ebp
+ mov ebp, dword [rsp + CONST]
+ add r10d, ebx
+ add r10d, r11d
+ mov ebx, ebp
+ mov r11d, ebp
+ rol r11d, CONST
+ rol ebx, CONST
+ xor ebx, r11d
+ mov r11d, ebp
+ shr r11d, CONST
+ xor ebx, r11d
+ mov r11d, r8d
+ ror r11d, CONST
+ mov ebp, r11d
+ mov r11d, r8d
+ rol r11d, CONST
+ xor r11d, ebp
+ mov ebp, r8d
+ shr ebp, CONST
+ xor r11d, ebp
+ add r11d, r9d
+ mov r9d, dword [rsp + CONST]
+ add r9d, r11d
+ mov r11d, r13d
+ add r9d, ebx
+ xor r11d, edi
+ mov dword [rsp + CONST], r9d
+ and r11d, esi
+ lea ebx, [r12 + r9 + CONST]
+ mov r9d, esi
+ xor r11d, r13d
+ ror r9d, CONST
+ mov r12d, r10d
+ add ebx, r11d
+ mov r11d, r9d
+ mov r9d, esi
+ ror r12d, CONST
+ ror r9d, CONST
+ xor r9d, r11d
+ mov r11d, esi
+ rol r11d, CONST
+ xor r11d, r9d
+ mov r9d, r10d
+ add r11d, ebx
+ ror r9d, CONST
+ mov ebx, r12d
+ mov r12d, eax
+ xor ebx, r9d
+ mov r9d, r10d
+ add ecx, r11d
+ rol r9d, CONST
+ and r12d, r10d
+ xor ebx, r9d
+ mov r9d, eax
+ or r9d, r10d
+ and r9d, edx
+ or r9d, r12d
+ mov r12d, r15d
+ add r9d, ebx
+ mov ebx, r14d
+ ror r12d, CONST
+ add r9d, r11d
+ mov r11d, r14d
+ rol ebx, CONST
+ rol r11d, CONST
+ xor ebx, r11d
+ mov r11d, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r11d, CONST
+ xor ebx, r11d
+ mov r11d, r15d
+ rol r11d, CONST
+ xor r11d, r12d
+ mov r12d, r15d
+ shr r12d, CONST
+ xor r11d, r12d
+ mov r12d, r14d
+ add r11d, r8d
+ mov r8d, dword [rsp + CONST]
+ add r8d, r11d
+ mov r11d, edi
+ add r8d, ebx
+ xor r11d, esi
+ and r11d, ecx
+ lea ebx, [r13 + r8 + CONST]
+ mov dword [rsp + CONST], r8d
+ mov r8d, ecx
+ xor r11d, edi
+ ror r8d, CONST
+ mov r13d, ecx
+ add ebx, r11d
+ mov r11d, r8d
+ mov r8d, ecx
+ rol r13d, CONST
+ ror r8d, CONST
+ xor r8d, r11d
+ mov r11d, r13d
+ mov r13d, r10d
+ xor r11d, r8d
+ add r11d, ebx
+ lea ebx, [rdx + r11]
+ mov edx, r9d
+ ror edx, CONST
+ mov r8d, edx
+ mov edx, r9d
+ ror edx, CONST
+ and r13d, r9d
+ shr r12d, CONST
+ xor edx, r8d
+ mov r8d, r9d
+ rol r8d, CONST
+ xor edx, r8d
+ mov r8d, r10d
+ or r8d, r9d
+ and r8d, eax
+ or r8d, r13d
+ mov r13d, dword [rsp + CONST]
+ add r8d, edx
+ add r8d, r11d
+ mov edx, r13d
+ mov r11d, r13d
+ rol r11d, CONST
+ rol edx, CONST
+ xor edx, r11d
+ mov r11d, r13d
+ mov r13d, ebx
+ shr r11d, CONST
+ ror r13d, CONST
+ xor edx, r11d
+ mov r11d, r14d
+ ror r11d, CONST
+ mov ebp, r11d
+ mov r11d, r14d
+ rol r11d, CONST
+ xor r11d, ebp
+ mov ebp, r13d
+ mov r13d, r8d
+ xor r11d, r12d
+ add r11d, r15d
+ add r11d, dword [rsp + CONST]
+ mov r12d, dword [rsp + CONST]
+ lea r15d, [rdx + r11]
+ mov edx, esi
+ mov r11d, dword [rsp + CONST]
+ xor edx, ecx
+ lea edi, [rdi + r15 + CONST]
+ and edx, ebx
+ xor edx, esi
+ add edi, edx
+ mov edx, ebx
+ ror edx, CONST
+ xor ebp, edx
+ mov edx, ebx
+ rol edx, CONST
+ xor edx, ebp
+ add edx, edi
+ mov edi, r8d
+ add eax, edx
+ ror r13d, CONST
+ ror edi, CONST
+ xor edi, r13d
+ mov r13d, r8d
+ rol r13d, CONST
+ xor edi, r13d
+ mov r13d, r9d
+ or r13d, r8d
+ mov ebp, r13d
+ mov r13d, r9d
+ and r13d, r8d
+ and ebp, r10d
+ or ebp, r13d
+ mov r13d, dword [rsp + CONST]
+ add ebp, edi
+ mov edi, r11d
+ add ebp, edx
+ mov edx, r11d
+ rol edi, CONST
+ rol edx, CONST
+ xor edi, edx
+ mov edx, r11d
+ mov r11d, r12d
+ shr edx, CONST
+ ror r11d, CONST
+ xor edi, edx
+ mov edx, r12d
+ rol edx, CONST
+ xor edx, r11d
+ mov r11d, r12d
+ shr r11d, CONST
+ xor edx, r11d
+ add edx, r14d
+ add edx, dword [rsp + CONST]
+ mov r14d, eax
+ add edi, edx
+ mov edx, ecx
+ ror r14d, CONST
+ xor edx, ebx
+ lea esi, [rsi + rdi + CONST]
+ mov r11d, r14d
+ mov r14d, ebp
+ and edx, eax
+ mov dword [rsp + CONST], edi
+ mov edi, r13d
+ xor edx, ecx
+ add esi, edx
+ mov edx, eax
+ ror edx, CONST
+ xor r11d, edx
+ mov edx, eax
+ rol edx, CONST
+ rol r14d, CONST
+ xor edx, r11d
+ ror edi, CONST
+ add edx, esi
+ mov esi, ebp
+ ror esi, CONST
+ add r10d, edx
+ mov r11d, esi
+ mov esi, ebp
+ ror esi, CONST
+ xor esi, r11d
+ xor esi, r14d
+ mov r14d, r8d
+ or r14d, ebp
+ mov r11d, r14d
+ mov r14d, r8d
+ and r14d, ebp
+ and r11d, r9d
+ or r11d, r14d
+ mov r14d, r10d
+ add r11d, esi
+ mov esi, r15d
+ add r11d, edx
+ mov edx, r15d
+ rol esi, CONST
+ rol edx, CONST
+ xor edx, esi
+ mov esi, r15d
+ shr esi, CONST
+ xor edx, esi
+ mov esi, r13d
+ rol esi, CONST
+ xor esi, edi
+ mov edi, r13d
+ shr edi, CONST
+ xor esi, edi
+ mov edi, dword [rsp + CONST]
+ add esi, r12d
+ add esi, dword [rsp + CONST]
+ mov r12d, dword [rsp + CONST]
+ add esi, edx
+ mov edx, ebx
+ xor edx, eax
+ lea ecx, [rcx + rsi + CONST]
+ mov dword [rsp + CONST], esi
+ mov esi, ebp
+ and edx, r10d
+ xor edx, ebx
+ add ecx, edx
+ mov edx, r10d
+ ror edx, CONST
+ ror r14d, CONST
+ and esi, r11d
+ xor r14d, edx
+ mov edx, r10d
+ rol edx, CONST
+ xor edx, r14d
+ add edx, ecx
+ mov ecx, r11d
+ ror ecx, CONST
+ add r9d, edx
+ mov r14d, ecx
+ mov ecx, r11d
+ ror ecx, CONST
+ xor ecx, r14d
+ mov r14d, r11d
+ rol r14d, CONST
+ xor ecx, r14d
+ mov r14d, ebp
+ or r14d, r11d
+ and r14d, r8d
+ or r14d, esi
+ mov esi, edi
+ rol esi, CONST
+ add r14d, ecx
+ mov ecx, esi
+ mov esi, edi
+ add r14d, edx
+ rol esi, CONST
+ mov edx, esi
+ mov esi, edi
+ mov edi, r9d
+ xor edx, ecx
+ shr esi, CONST
+ mov ecx, r12d
+ xor edx, esi
+ mov esi, r12d
+ rol ecx, CONST
+ ror esi, CONST
+ xor ecx, esi
+ mov esi, r12d
+ shr esi, CONST
+ xor ecx, esi
+ lea esi, [rcx + r13]
+ add esi, dword [rsp + CONST]
+ lea ecx, [rdx + rsi]
+ mov edx, eax
+ mov esi, r11d
+ xor edx, r10d
+ mov dword [rsp + CONST], ecx
+ lea ecx, [rbx + rcx + CONST]
+ mov ebx, dword [rsp + CONST]
+ and edx, r9d
+ xor edx, eax
+ add ecx, edx
+ mov edx, r9d
+ ror edi, CONST
+ and esi, r14d
+ ror edx, CONST
+ xor edi, edx
+ mov edx, r9d
+ rol edx, CONST
+ xor edx, edi
+ add edx, ecx
+ mov ecx, r14d
+ ror ecx, CONST
+ add r8d, edx
+ mov edi, ecx
+ mov ecx, r14d
+ ror ecx, CONST
+ xor ecx, edi
+ mov edi, r14d
+ rol edi, CONST
+ xor ecx, edi
+ mov edi, r11d
+ or edi, r14d
+ and edi, ebp
+ or edi, esi
+ mov esi, dword [rsp + CONST]
+ add edi, ecx
+ mov ecx, esi
+ add edi, edx
+ mov edx, esi
+ rol ecx, CONST
+ rol edx, CONST
+ mov r13d, ecx
+ mov ecx, ebx
+ xor r13d, edx
+ mov edx, esi
+ ror ecx, CONST
+ shr edx, CONST
+ xor r13d, edx
+ mov edx, ebx
+ rol edx, CONST
+ xor edx, ecx
+ mov ecx, ebx
+ shr ecx, CONST
+ xor edx, ecx
+ mov ecx, r8d
+ add edx, r12d
+ add edx, dword [rsp + CONST]
+ lea esi, [r13 + rdx]
+ mov edx, r10d
+ xor edx, r9d
+ mov r12d, esi
+ lea eax, [rax + rsi + CONST]
+ mov esi, r8d
+ and edx, r8d
+ ror esi, CONST
+ xor edx, r10d
+ rol ecx, CONST
+ add edx, eax
+ mov eax, esi
+ mov esi, r8d
+ ror esi, CONST
+ xor esi, eax
+ mov eax, ecx
+ mov ecx, r14d
+ xor eax, esi
+ and ecx, edi
+ add eax, edx
+ mov edx, edi
+ ror edx, CONST
+ add ebp, eax
+ mov esi, edx
+ mov edx, edi
+ ror edx, CONST
+ xor edx, esi
+ mov esi, edi
+ rol esi, CONST
+ xor edx, esi
+ mov esi, r14d
+ or esi, edi
+ and esi, r11d
+ or esi, ecx
+ add esi, edx
+ add esi, eax
+ mov eax, dword [rsp + CONST]
+ mov ecx, eax
+ rol ecx, CONST
+ mov r13d, ecx
+ mov ecx, eax
+ shr eax, CONST
+ rol ecx, CONST
+ mov edx, ecx
+ xor edx, r13d
+ mov r13d, dword [rsp + CONST]
+ xor edx, eax
+ mov ecx, r13d
+ mov eax, r13d
+ ror ecx, CONST
+ rol eax, CONST
+ xor eax, ecx
+ mov ecx, r13d
+ shr ecx, CONST
+ xor eax, ecx
+ lea ecx, [rax + rbx]
+ add ecx, dword [rsp + CONST]
+ mov ebx, dword [rsp + CONST]
+ add ecx, edx
+ mov edx, r9d
+ xor edx, r8d
+ mov dword [rsp + CONST], ecx
+ mov eax, edx
+ lea edx, [r10 + rcx + CONST]
+ mov r10d, ebp
+ mov ecx, ebp
+ ror r10d, CONST
+ and eax, ebp
+ rol ecx, CONST
+ xor eax, r9d
+ add edx, eax
+ mov eax, r10d
+ mov r10d, ebp
+ ror r10d, CONST
+ xor r10d, eax
+ mov eax, ecx
+ mov ecx, edi
+ xor eax, r10d
+ mov r10d, esi
+ and ecx, esi
+ add eax, edx
+ mov edx, esi
+ ror r10d, CONST
+ ror edx, CONST
+ add r11d, eax
+ xor edx, r10d
+ mov r10d, esi
+ rol r10d, CONST
+ xor edx, r10d
+ mov r10d, edi
+ or r10d, esi
+ and r10d, r14d
+ or r10d, ecx
+ mov ecx, r12d
+ add r10d, edx
+ mov edx, r12d
+ mov dword [rsp + CONST], ecx
+ add r10d, eax
+ rol edx, CONST
+ mov eax, r12d
+ rol eax, CONST
+ mov r12d, edx
+ mov edx, ebx
+ xor r12d, eax
+ mov eax, ecx
+ ror edx, CONST
+ mov ecx, r8d
+ shr eax, CONST
+ xor r12d, eax
+ mov eax, ebx
+ rol eax, CONST
+ xor eax, edx
+ mov edx, ebx
+ shr edx, CONST
+ xor eax, edx
+ xor ecx, ebp
+ lea edx, [rax + r13]
+ add edx, dword [rsp + CONST]
+ mov eax, ecx
+ mov r13d, dword [rsp + CONST]
+ add edx, r12d
+ and eax, r11d
+ lea ecx, [r9 + rdx + CONST]
+ mov r9d, r11d
+ xor eax, r8d
+ mov dword [rsp + CONST], edx
+ ror r9d, CONST
+ add ecx, eax
+ mov eax, r9d
+ mov r9d, r11d
+ ror r9d, CONST
+ mov edx, r9d
+ mov r9d, r11d
+ rol r9d, CONST
+ xor edx, eax
+ mov eax, r9d
+ mov r9d, r10d
+ xor eax, edx
+ ror r9d, CONST
+ add eax, ecx
+ mov ecx, r10d
+ ror ecx, CONST
+ add r14d, eax
+ xor ecx, r9d
+ mov r9d, r10d
+ rol r9d, CONST
+ xor ecx, r9d
+ mov r9d, esi
+ or r9d, r10d
+ mov edx, r9d
+ mov r9d, esi
+ and r9d, r10d
+ and edx, edi
+ or edx, r9d
+ mov r9d, dword [rsp + CONST]
+ add edx, ecx
+ mov ecx, r9d
+ add edx, eax
+ mov eax, r9d
+ rol ecx, CONST
+ rol eax, CONST
+ mov r12d, ecx
+ mov ecx, r13d
+ xor r12d, eax
+ mov eax, r9d
+ ror ecx, CONST
+ shr eax, CONST
+ xor r12d, eax
+ mov eax, r13d
+ rol eax, CONST
+ xor eax, ecx
+ mov ecx, r13d
+ shr ecx, CONST
+ xor eax, ecx
+ add eax, dword [rsp + CONST]
+ mov ecx, ebp
+ add eax, r15d
+ xor ecx, r11d
+ lea r9d, [r12 + rax]
+ mov eax, ecx
+ mov r12d, dword [rsp + CONST]
+ mov dword [rsp + CONST], r9d
+ lea ecx, [r8 + r9 + CONST]
+ mov r8d, r14d
+ mov r9d, r14d
+ ror r8d, CONST
+ ror r9d, CONST
+ and eax, r14d
+ xor r9d, r8d
+ mov r8d, r14d
+ xor eax, ebp
+ rol r8d, CONST
+ add ecx, eax
+ mov eax, r8d
+ mov r8d, r10d
+ xor eax, r9d
+ and r8d, edx
+ add eax, ecx
+ mov ecx, edx
+ ror ecx, CONST
+ lea ebx, [rdi + rax]
+ mov r9d, ecx
+ mov ecx, edx
+ ror ecx, CONST
+ xor ecx, r9d
+ mov r9d, edx
+ rol r9d, CONST
+ xor ecx, r9d
+ mov r9d, r10d
+ or r9d, edx
+ and r9d, esi
+ or r9d, r8d
+ mov r8d, dword [rsp + CONST]
+ add r9d, ecx
+ mov ecx, r12d
+ mov edi, r8d
+ add r9d, eax
+ ror ecx, CONST
+ rol edi, CONST
+ mov eax, edi
+ mov edi, r8d
+ rol r8d, CONST
+ xor r8d, eax
+ shr edi, CONST
+ mov eax, r12d
+ xor r8d, edi
+ rol eax, CONST
+ xor eax, ecx
+ mov ecx, r12d
+ shr ecx, CONST
+ xor eax, ecx
+ mov ecx, r11d
+ add eax, r13d
+ xor ecx, r14d
+ add eax, dword [rsp + CONST]
+ add r8d, eax
+ and ecx, ebx
+ xor ecx, r11d
+ lea eax, [rbp + r8 + CONST]
+ mov r13d, r8d
+ mov r8d, ebx
+ add eax, ecx
+ mov ecx, ebx
+ rol r8d, CONST
+ mov ebp, dword [rsp + CONST]
+ ror ecx, CONST
+ mov edi, ecx
+ mov ecx, ebx
+ ror ecx, CONST
+ xor ecx, edi
+ xor ecx, r8d
+ mov r8d, r9d
+ add ecx, eax
+ ror r8d, CONST
+ lea eax, [rsi + rcx]
+ mov esi, r9d
+ mov edi, r8d
+ mov r8d, edx
+ ror esi, CONST
+ and r8d, r9d
+ xor edi, esi
+ mov esi, r9d
+ rol esi, CONST
+ xor edi, esi
+ mov esi, edx
+ or esi, r9d
+ and esi, r10d
+ or esi, r8d
+ mov r8d, dword [rsp + CONST]
+ add esi, edi
+ add esi, ecx
+ mov edi, r8d
+ mov ecx, r8d
+ shr r8d, CONST
+ rol ecx, CONST
+ rol edi, CONST
+ xor edi, ecx
+ mov ecx, ebp
+ xor edi, r8d
+ mov r8d, ebp
+ rol ecx, CONST
+ ror r8d, CONST
+ xor ecx, r8d
+ mov r8d, ebp
+ shr r8d, CONST
+ xor ecx, r8d
+ mov r8d, r14d
+ xor r8d, ebx
+ add ecx, r12d
+ add ecx, dword [rsp + CONST]
+ mov r12d, eax
+ add ecx, edi
+ mov edi, r8d
+ rol r12d, CONST
+ mov dword [rsp + CONST], r13d
+ mov dword [rsp + CONST], ecx
+ and edi, eax
+ lea r8d, [r11 + rcx + CONST]
+ mov ecx, eax
+ xor edi, r14d
+ ror ecx, CONST
+ add r8d, edi
+ mov edi, ecx
+ mov ecx, eax
+ ror ecx, CONST
+ xor ecx, edi
+ mov edi, r12d
+ mov r12d, r9d
+ xor edi, ecx
+ mov ecx, esi
+ and r12d, esi
+ add edi, r8d
+ mov r8d, esi
+ ror ecx, CONST
+ ror r8d, CONST
+ add r10d, edi
+ xor r8d, ecx
+ mov ecx, esi
+ rol ecx, CONST
+ xor r8d, ecx
+ mov ecx, r9d
+ or ecx, esi
+ and ecx, edx
+ or ecx, r12d
+ mov r12d, dword [rsp + CONST]
+ add ecx, r8d
+ mov r8d, r13d
+ add ecx, edi
+ mov edi, r13d
+ mov r11d, r12d
+ rol edi, CONST
+ rol r8d, CONST
+ xor r8d, edi
+ mov edi, r13d
+ ror r11d, CONST
+ mov r13d, ebx
+ shr edi, CONST
+ xor r13d, eax
+ xor r8d, edi
+ mov edi, r12d
+ rol edi, CONST
+ xor edi, r11d
+ mov r11d, r12d
+ shr r11d, CONST
+ xor edi, r11d
+ add edi, ebp
+ add edi, dword [rsp + CONST]
+ mov ebp, dword [rsp + CONST]
+ add r8d, edi
+ mov edi, r13d
+ mov dword [rsp + CONST], r8d
+ and edi, r10d
+ lea r8d, [r14 + r8 + CONST]
+ mov r14d, r10d
+ xor edi, ebx
+ ror r14d, CONST
+ mov r11d, ebp
+ add r8d, edi
+ mov edi, r14d
+ mov r14d, r10d
+ ror r14d, CONST
+ mov r13d, r14d
+ mov r14d, r10d
+ rol r14d, CONST
+ xor r13d, edi
+ mov edi, r14d
+ mov r14d, ecx
+ ror r14d, CONST
+ xor edi, r13d
+ mov r13d, r14d
+ mov r14d, ecx
+ add edi, r8d
+ ror r14d, CONST
+ add edx, edi
+ mov r8d, r14d
+ mov r14d, ecx
+ xor r8d, r13d
+ rol r14d, CONST
+ xor r8d, r14d
+ mov r14d, esi
+ or r14d, ecx
+ mov r13d, r14d
+ mov r14d, esi
+ and r14d, ecx
+ and r13d, r9d
+ or r13d, r14d
+ mov r14d, dword [rsp + CONST]
+ add r13d, r8d
+ ror r11d, CONST
+ mov r8d, r14d
+ add r13d, edi
+ rol r8d, CONST
+ mov edi, r8d
+ mov r8d, r14d
+ shr r14d, CONST
+ rol r8d, CONST
+ xor r8d, edi
+ mov edi, ebp
+ rol edi, CONST
+ xor r8d, r14d
+ mov r14d, eax
+ xor edi, r11d
+ mov r11d, ebp
+ xor r14d, r10d
+ shr r11d, CONST
+ xor edi, r11d
+ add edi, r12d
+ add edi, dword [rsp + CONST]
+ lea r12d, [r8 + rdi]
+ mov r8d, r14d
+ mov r14d, edx
+ and r8d, edx
+ ror r14d, CONST
+ mov dword [rsp + CONST], r12d
+ lea edi, [rbx + r12 + CONST]
+ xor r8d, eax
+ mov r12d, ecx
+ mov ebx, dword [rsp + CONST]
+ add edi, r8d
+ mov r8d, r14d
+ mov r14d, edx
+ and r12d, r13d
+ ror r14d, CONST
+ mov r11d, ebx
+ xor r14d, r8d
+ mov r8d, edx
+ rol r8d, CONST
+ xor r8d, r14d
+ mov r14d, r13d
+ add r8d, edi
+ ror r14d, CONST
+ lea edi, [r9 + r8]
+ mov r9d, r13d
+ ror r9d, CONST
+ xor r9d, r14d
+ mov r14d, r13d
+ rol r14d, CONST
+ xor r9d, r14d
+ mov r14d, ecx
+ or r14d, r13d
+ and r14d, esi
+ or r14d, r12d
+ mov r12d, dword [rsp + CONST]
+ ror r11d, CONST
+ add r14d, r9d
+ add r14d, r8d
+ mov r9d, r12d
+ mov r8d, r12d
+ rol r8d, CONST
+ rol r9d, CONST
+ xor r9d, r8d
+ mov r8d, r12d
+ mov r12d, r13d
+ shr r8d, CONST
+ xor r9d, r8d
+ mov r8d, ebx
+ rol r8d, CONST
+ xor r8d, r11d
+ mov r11d, ebx
+ shr r11d, CONST
+ xor r8d, r11d
+ add r8d, ebp
+ add r8d, dword [rsp + CONST]
+ add r9d, r8d
+ mov r8d, r10d
+ xor r8d, edx
+ mov dword [rsp + CONST], r9d
+ lea r9d, [rax + r9 + CONST]
+ mov eax, edi
+ and r8d, edi
+ ror eax, CONST
+ xor r8d, r10d
+ add r9d, r8d
+ mov r8d, edi
+ ror r8d, CONST
+ xor eax, r8d
+ mov r8d, edi
+ rol r8d, CONST
+ xor r8d, eax
+ mov eax, r14d
+ add r8d, r9d
+ mov r9d, r14d
+ ror eax, CONST
+ ror r9d, CONST
+ add esi, r8d
+ xor r9d, eax
+ mov eax, r14d
+ rol eax, CONST
+ xor r9d, eax
+ mov eax, r13d
+ or eax, r14d
+ and r12d, r14d
+ and eax, ecx
+ or eax, r12d
+ mov r12d, edx
+ add eax, r9d
+ mov r9d, dword [rsp + CONST]
+ xor r12d, edi
+ add eax, r8d
+ mov ebp, r9d
+ rol ebp, CONST
+ mov r8d, ebp
+ mov ebp, r9d
+ rol r9d, CONST
+ xor r9d, r8d
+ mov r8d, ebp
+ mov ebp, dword [rsp + CONST]
+ shr r8d, CONST
+ xor r9d, r8d
+ mov r11d, ebp
+ mov r8d, ebp
+ ror r11d, CONST
+ rol r8d, CONST
+ xor r8d, r11d
+ mov r11d, ebp
+ shr r11d, CONST
+ xor r8d, r11d
+ mov r11d, eax
+ add r8d, ebx
+ add r8d, dword [rsp + CONST]
+ lea ebx, [r9 + r8]
+ mov r8d, r12d
+ mov r12d, esi
+ lea r9d, [r10 + rbx + CONST]
+ mov r10d, esi
+ ror r12d, CONST
+ and r8d, esi
+ ror r10d, CONST
+ xor r8d, edx
+ mov dword [rsp + CONST], ebx
+ xor r10d, r12d
+ mov r12d, esi
+ add r9d, r8d
+ mov dword [rsp + CONST], ebx
+ rol r12d, CONST
+ mov r8d, r12d
+ mov r12d, eax
+ xor r8d, r10d
+ ror r12d, CONST
+ mov r10d, eax
+ add r8d, r9d
+ ror r10d, CONST
+ mov r9d, r12d
+ mov r12d, r14d
+ xor r9d, r10d
+ mov r10d, eax
+ add ecx, r8d
+ rol r10d, CONST
+ and r12d, eax
+ xor r9d, r10d
+ mov r10d, r14d
+ or r10d, eax
+ and r10d, r13d
+ or r10d, r12d
+ add r10d, r9d
+ mov r9d, dword [rsp + CONST]
+ add r10d, r8d
+ mov ebx, r9d
+ mov r12d, r9d
+ shr r9d, CONST
+ rol ebx, CONST
+ rol r12d, CONST
+ xor r12d, ebx
+ mov ebx, dword [rsp + CONST]
+ xor r12d, r9d
+ mov r8d, ebx
+ mov r9d, ebx
+ ror r9d, CONST
+ rol r8d, CONST
+ xor r8d, r9d
+ mov r9d, ebx
+ mov ebx, dword [rsp + CONST]
+ shr r9d, CONST
+ xor r8d, r9d
+ lea r9d, [r8 + rbp]
+ mov r8d, edi
+ add r9d, dword [rsp + CONST]
+ mov ebp, ebx
+ xor r8d, esi
+ add r12d, r9d
+ mov r9d, ecx
+ and r8d, ecx
+ lea edx, [rdx + r12 + CONST]
+ ror r9d, CONST
+ mov dword [rsp + CONST], r12d
+ xor r8d, edi
+ add r8d, edx
+ mov edx, ecx
+ ror edx, CONST
+ xor r9d, edx
+ mov edx, ecx
+ rol edx, CONST
+ xor edx, r9d
+ mov r9d, r10d
+ add edx, r8d
+ mov r8d, r10d
+ ror r9d, CONST
+ add r13d, edx
+ ror r8d, CONST
+ and r11d, r10d
+ xor r8d, r9d
+ mov r9d, r10d
+ rol ebp, CONST
+ rol r9d, CONST
+ xor r8d, r9d
+ mov r9d, eax
+ or r9d, r10d
+ and r9d, r14d
+ or r9d, r11d
+ mov r11d, dword [rsp + CONST]
+ add r9d, r8d
+ add r9d, edx
+ mov edx, ebx
+ rol edx, CONST
+ xor ebp, edx
+ mov edx, ebx
+ mov ebx, dword [rsp + CONST]
+ shr edx, CONST
+ xor ebp, edx
+ mov edx, r15d
+ ror edx, CONST
+ mov r8d, edx
+ mov edx, r15d
+ rol edx, CONST
+ xor edx, r8d
+ mov r8d, r15d
+ shr r8d, CONST
+ xor edx, r8d
+ lea r8d, [rdx + rbx]
+ mov edx, esi
+ add r8d, dword [rsp + CONST]
+ mov ebx, r9d
+ xor edx, ecx
+ add ebp, r8d
+ mov r8d, r13d
+ and edx, r13d
+ lea edi, [rdi + rbp + CONST]
+ ror r8d, CONST
+ mov dword [rsp + CONST], ebp
+ xor edx, esi
+ add edi, edx
+ mov edx, r13d
+ ror edx, CONST
+ xor r8d, edx
+ mov edx, r13d
+ rol edx, CONST
+ xor edx, r8d
+ mov r8d, r9d
+ add edx, edi
+ add r14d, edx
+ ror ebx, CONST
+ ror r8d, CONST
+ mov edi, ebx
+ mov ebx, r10d
+ xor edi, r8d
+ mov r8d, r9d
+ and ebx, r9d
+ rol r8d, CONST
+ xor edi, r8d
+ mov r8d, r10d
+ or r8d, r9d
+ and r8d, eax
+ or r8d, ebx
+ mov ebx, r12d
+ add r8d, edi
+ rol ebx, CONST
+ mov edi, r11d
+ add r8d, edx
+ mov edx, r12d
+ ror edi, CONST
+ rol edx, CONST
+ xor ebx, edx
+ mov edx, r12d
+ shr edx, CONST
+ xor ebx, edx
+ mov edx, r11d
+ rol edx, CONST
+ xor edx, edi
+ mov edi, r11d
+ shr edi, CONST
+ xor edx, edi
+ add edx, r15d
+ mov r15d, ecx
+ add edx, dword [rsp + CONST]
+ xor r15d, r13d
+ add ebx, edx
+ mov edx, r15d
+ mov r15d, r14d
+ lea esi, [rsi + rbx + CONST]
+ mov dword [rsp + CONST], ebx
+ and edx, r14d
+ ror r15d, CONST
+ xor edx, ecx
+ add esi, edx
+ mov edx, r15d
+ mov r15d, r14d
+ ror r15d, CONST
+ mov edi, r15d
+ mov r15d, r14d
+ xor edi, edx
+ rol r15d, CONST
+ mov edx, r15d
+ mov r15d, r8d
+ xor edx, edi
+ rol r15d, CONST
+ add edx, esi
+ mov esi, r8d
+ ror esi, CONST
+ add eax, edx
+ mov edi, esi
+ mov esi, r8d
+ ror esi, CONST
+ xor esi, edi
+ xor esi, r15d
+ mov r15d, r9d
+ or r15d, r8d
+ mov edi, r15d
+ mov r15d, r9d
+ and r15d, r8d
+ and edi, r10d
+ or edi, r15d
+ mov r15d, dword [rsp + CONST]
+ add edi, esi
+ mov esi, ebp
+ rol esi, CONST
+ add edi, edx
+ mov edx, esi
+ mov esi, ebp
+ rol esi, CONST
+ mov r11d, esi
+ mov esi, ebp
+ xor r11d, edx
+ shr esi, CONST
+ mov edx, r15d
+ xor r11d, esi
+ mov esi, r15d
+ rol edx, CONST
+ ror esi, CONST
+ xor edx, esi
+ mov esi, r15d
+ mov r15d, eax
+ shr esi, CONST
+ xor edx, esi
+ mov esi, r13d
+ add edx, dword [rsp + CONST]
+ add edx, dword [rsp + CONST]
+ xor esi, r14d
+ add r11d, edx
+ mov edx, esi
+ lea ecx, [rcx + r11 + CONST]
+ mov esi, eax
+ mov dword [rsp + CONST], r11d
+ and edx, eax
+ xor edx, r13d
+ add ecx, edx
+ ror esi, CONST
+ mov edx, esi
+ mov esi, eax
+ rol r15d, CONST
+ ror esi, CONST
+ xor esi, edx
+ mov edx, r15d
+ mov r15d, r8d
+ xor edx, esi
+ mov esi, edi
+ and r15d, edi
+ add edx, ecx
+ mov ecx, edi
+ ror esi, CONST
+ ror ecx, CONST
+ add r10d, edx
+ xor ecx, esi
+ mov esi, edi
+ rol esi, CONST
+ xor ecx, esi
+ mov esi, r8d
+ or esi, edi
+ and esi, r9d
+ or esi, r15d
+ mov r15d, ebx
+ add esi, ecx
+ mov ecx, ebx
+ shr r15d, CONST
+ rol ecx, CONST
+ add esi, edx
+ mov edx, ecx
+ mov ecx, ebx
+ rol ecx, CONST
+ xor ecx, edx
+ mov edx, dword [rsp + CONST]
+ xor ecx, r15d
+ mov r15d, edx
+ rol edx, CONST
+ ror r15d, CONST
+ xor edx, r15d
+ mov r15d, dword [rsp + CONST]
+ shr r15d, CONST
+ xor edx, r15d
+ mov r15d, r14d
+ add edx, dword [rsp + CONST]
+ add edx, dword [rsp + CONST]
+ xor r15d, eax
+ add ecx, edx
+ mov edx, r15d
+ mov dword [rsp + CONST], ecx
+ mov r15d, esi
+ lea r13d, [r13 + rcx + CONST]
+ and edx, r10d
+ mov dword [rsp + CONST], ecx
+ mov ecx, r10d
+ ror r15d, CONST
+ xor edx, r14d
+ ror ecx, CONST
+ add r13d, edx
+ mov edx, ecx
+ mov ecx, r10d
+ ror ecx, CONST
+ xor ecx, edx
+ mov edx, r10d
+ rol edx, CONST
+ xor edx, ecx
+ mov ecx, esi
+ add edx, r13d
+ ror ecx, CONST
+ mov r13d, r15d
+ mov r15d, edi
+ xor r13d, ecx
+ mov ecx, esi
+ and r15d, esi
+ add r9d, edx
+ rol ecx, CONST
+ xor r13d, ecx
+ mov ecx, edi
+ or ecx, esi
+ and ecx, r8d
+ or ecx, r15d
+ mov r15d, r11d
+ add ecx, r13d
+ rol r15d, CONST
+ add ecx, edx
+ mov edx, r11d
+ mov r13d, r15d
+ rol edx, CONST
+ xor r13d, edx
+ mov edx, r11d
+ shr edx, CONST
+ xor r13d, edx
+ mov edx, dword [rsp + CONST]
+ mov r15d, edx
+ rol edx, CONST
+ ror r15d, CONST
+ xor edx, r15d
+ mov r15d, dword [rsp + CONST]
+ shr r15d, CONST
+ xor edx, r15d
+ mov r15d, eax
+ add edx, dword [rsp + CONST]
+ add edx, dword [rsp + CONST]
+ xor r15d, r10d
+ add edx, r13d
+ mov r13d, r15d
+ mov dword [rsp + CONST], edx
+ mov r15d, r9d
+ lea r14d, [r14 + rdx + CONST]
+ and r13d, r9d
+ mov dword [rsp + CONST], edx
+ mov edx, r9d
+ rol r15d, CONST
+ xor r13d, eax
+ ror edx, CONST
+ add r14d, r13d
+ mov r13d, edx
+ mov edx, r9d
+ ror edx, CONST
+ xor edx, r13d
+ mov r13d, r15d
+ mov r15d, esi
+ xor r13d, edx
+ mov edx, ecx
+ and r15d, ecx
+ add r13d, r14d
+ mov r14d, ecx
+ ror edx, CONST
+ ror r14d, CONST
+ add r8d, r13d
+ xor r14d, edx
+ mov edx, ecx
+ rol edx, CONST
+ xor r14d, edx
+ mov edx, esi
+ or edx, ecx
+ and edx, edi
+ or edx, r15d
+ mov r15d, dword [rsp + CONST]
+ add edx, r14d
+ mov r14d, r15d
+ add edx, r13d
+ rol r14d, CONST
+ mov r13d, r14d
+ mov r14d, r15d
+ shr r15d, CONST
+ rol r14d, CONST
+ xor r14d, r13d
+ mov r13d, dword [rsp + CONST]
+ xor r14d, r15d
+ mov r15d, r13d
+ rol r13d, CONST
+ ror r15d, CONST
+ xor r13d, r15d
+ mov r15d, dword [rsp + CONST]
+ shr r15d, CONST
+ xor r13d, r15d
+ add r13d, dword [rsp + CONST]
+ add r13d, dword [rsp + CONST]
+ lea r15d, [r14 + r13]
+ mov r14d, r10d
+ xor r14d, r9d
+ mov dword [rsp + CONST], r15d
+ mov r13d, r14d
+ lea r14d, [rax + r15 + CONST]
+ mov eax, r8d
+ mov dword [rsp + CONST], r15d
+ and r13d, r8d
+ ror eax, CONST
+ mov r15d, ecx
+ xor r13d, r10d
+ and r15d, edx
+ add r14d, r13d
+ mov r13d, eax
+ mov eax, r8d
+ ror eax, CONST
+ xor eax, r13d
+ mov r13d, r8d
+ rol r13d, CONST
+ xor r13d, eax
+ mov eax, edx
+ add r13d, r14d
+ mov r14d, edx
+ ror eax, CONST
+ ror r14d, CONST
+ add edi, r13d
+ xor r14d, eax
+ mov eax, edx
+ rol eax, CONST
+ xor r14d, eax
+ mov eax, ecx
+ or eax, edx
+ and eax, esi
+ or eax, r15d
+ mov r15d, dword [rsp + CONST]
+ add eax, r14d
+ mov r14d, r15d
+ add eax, r13d
+ rol r14d, CONST
+ mov r13d, r14d
+ mov r14d, r15d
+ shr r15d, CONST
+ rol r14d, CONST
+ xor r14d, r13d
+ mov r13d, dword [rsp + CONST]
+ xor r14d, r15d
+ mov r15d, r13d
+ ror r15d, CONST
+ rol r13d, CONST
+ xor r13d, r15d
+ mov r15d, dword [rsp + CONST]
+ shr r15d, CONST
+ xor r13d, r15d
+ add r13d, dword [rsp + CONST]
+ add r13d, r12d
+ mov r12d, r9d
+ xor r12d, r8d
+ lea r15d, [r14 + r13]
+ mov r14d, edx
+ and r12d, edi
+ lea r13d, [r10 + r15 + CONST]
+ mov r10d, edi
+ and r14d, eax
+ xor r12d, r9d
+ ror r10d, CONST
+ mov dword [rsp + CONST], r15d
+ add r13d, r12d
+ mov r12d, edi
+ ror r12d, CONST
+ xor r10d, r12d
+ mov r12d, edi
+ rol r12d, CONST
+ xor r12d, r10d
+ mov r10d, eax
+ add r12d, r13d
+ mov r13d, eax
+ ror r10d, CONST
+ ror r13d, CONST
+ add esi, r12d
+ xor r13d, r10d
+ mov r10d, eax
+ rol r10d, CONST
+ xor r13d, r10d
+ mov r10d, edx
+ or r10d, eax
+ and r10d, ecx
+ or r10d, r14d
+ mov r14d, dword [rsp + CONST]
+ add r10d, r13d
+ add r10d, r12d
+ mov r13d, r14d
+ mov r12d, r14d
+ rol r12d, CONST
+ rol r13d, CONST
+ xor r13d, r12d
+ mov r12d, r14d
+ shr r12d, CONST
+ xor r13d, r12d
+ mov r12d, dword [rsp + CONST]
+ mov r14d, r12d
+ rol r12d, CONST
+ ror r14d, CONST
+ xor r12d, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor r12d, r14d
+ add r12d, dword [rsp + CONST]
+ mov r14d, eax
+ add ebp, r12d
+ mov r12d, r8d
+ and r14d, r10d
+ add ebp, r13d
+ xor r12d, edi
+ and r12d, esi
+ lea r13d, [r9 + rbp + CONST]
+ mov r9d, esi
+ mov dword [rsp + CONST], ebp
+ xor r12d, r8d
+ ror r9d, CONST
+ add r13d, r12d
+ mov r12d, r9d
+ mov r9d, esi
+ ror r9d, CONST
+ xor r9d, r12d
+ mov r12d, esi
+ rol r12d, CONST
+ xor r12d, r9d
+ mov r9d, r10d
+ add r12d, r13d
+ mov r13d, r10d
+ ror r9d, CONST
+ ror r13d, CONST
+ add ecx, r12d
+ xor r13d, r9d
+ mov r9d, r10d
+ rol r9d, CONST
+ xor r13d, r9d
+ mov r9d, eax
+ or r9d, r10d
+ and r9d, edx
+ or r9d, r14d
+ add r9d, r13d
+ mov r13d, r15d
+ add r9d, r12d
+ mov r12d, r15d
+ rol r12d, CONST
+ rol r13d, CONST
+ xor r13d, r12d
+ mov r12d, r15d
+ shr r12d, CONST
+ xor r13d, r12d
+ mov r12d, dword [rsp + CONST]
+ mov r14d, r12d
+ rol r12d, CONST
+ ror r14d, CONST
+ xor r12d, r14d
+ mov r14d, dword [rsp + CONST]
+ shr r14d, CONST
+ xor r12d, r14d
+ add r12d, dword [rsp + CONST]
+ mov r14d, r10d
+ add ebx, r12d
+ mov r12d, edi
+ and r14d, r9d
+ xor r12d, esi
+ add ebx, r13d
+ and r12d, ecx
+ lea r8d, [r8 + rbx + CONST]
+ mov dword [rsp + CONST], ebx
+ xor r12d, edi
+ add r8d, r12d
+ mov r12d, ecx
+ ror r12d, CONST
+ mov r13d, r12d
+ mov r12d, ecx
+ ror r12d, CONST
+ xor r12d, r13d
+ mov r13d, ecx
+ rol r13d, CONST
+ xor r12d, r13d
+ add r12d, r8d
+ mov r8d, r9d
+ ror r8d, CONST
+ add edx, r12d
+ mov r13d, r8d
+ mov r8d, r9d
+ ror r8d, CONST
+ xor r8d, r13d
+ mov r13d, r9d
+ rol r13d, CONST
+ xor r8d, r13d
+ mov r13d, r10d
+ or r13d, r9d
+ and r13d, eax
+ or r13d, r14d
+ add r13d, r8d
+ mov r8d, ebp
+ rol r8d, CONST
+ add r12d, r13d
+ mov r13d, r8d
+ mov r8d, ebp
+ shr ebp, CONST
+ rol r8d, CONST
+ xor r8d, r13d
+ xor ebp, r8d
+ mov r8d, dword [rsp + CONST]
+ mov r14d, r8d
+ ror r14d, CONST
+ mov r13d, r14d
+ mov r14d, r8d
+ rol r8d, CONST
+ xor r8d, r13d
+ mov r13d, r14d
+ shr r13d, CONST
+ xor r8d, r13d
+ add r8d, dword [rsp + CONST]
+ mov r13d, edx
+ add r11d, r8d
+ mov r8d, esi
+ rol r13d, CONST
+ xor r8d, ecx
+ add r11d, ebp
+ and r8d, edx
+ lea edi, [rdi + r11 + CONST]
+ mov dword [rsp + CONST], r11d
+ xor r8d, esi
+ add edi, r8d
+ mov r8d, edx
+ ror r8d, CONST
+ mov ebp, r8d
+ mov r8d, edx
+ ror r8d, CONST
+ xor r8d, ebp
+ xor r8d, r13d
+ mov r13d, r12d
+ add r8d, edi
+ mov edi, r12d
+ rol r13d, CONST
+ ror edi, CONST
+ add eax, r8d
+ mov ebp, edi
+ mov edi, r12d
+ ror edi, CONST
+ xor edi, ebp
+ xor edi, r13d
+ mov r13d, r9d
+ or r13d, r12d
+ mov ebp, r13d
+ mov r13d, r9d
+ and ebp, r10d
+ and r13d, r12d
+ or ebp, r13d
+ mov r13d, dword [rsp + CONST]
+ add ebp, edi
+ mov edi, ebx
+ rol edi, CONST
+ add r8d, ebp
+ mov ebp, edi
+ mov edi, ebx
+ shr ebx, CONST
+ rol edi, CONST
+ xor edi, ebp
+ mov ebp, r13d
+ xor ebx, edi
+ mov edi, r13d
+ rol ebp, CONST
+ ror edi, CONST
+ xor ebp, edi
+ mov edi, r13d
+ shr edi, CONST
+ xor edi, ebp
+ add edi, r14d
+ add edi, dword [rsp + CONST]
+ mov r14d, eax
+ add edi, ebx
+ mov ebx, ecx
+ rol r14d, CONST
+ xor ebx, edx
+ lea esi, [rsi + rdi + CONST]
+ mov dword [rsp + CONST], edi
+ and ebx, eax
+ xor ebx, ecx
+ add esi, ebx
+ mov ebx, eax
+ ror ebx, CONST
+ mov ebp, ebx
+ mov ebx, eax
+ ror ebx, CONST
+ xor ebx, ebp
+ xor ebx, r14d
+ mov r14d, r8d
+ add ebx, esi
+ mov esi, r8d
+ ror esi, CONST
+ add r10d, ebx
+ mov ebp, esi
+ mov esi, r8d
+ mov r13d, r10d
+ ror esi, CONST
+ xor esi, ebp
+ rol r14d, CONST
+ xor esi, r14d
+ mov r14d, r12d
+ rol r13d, CONST
+ or r14d, r8d
+ mov ebp, r14d
+ mov r14d, r12d
+ and r14d, r8d
+ and ebp, r9d
+ or ebp, r14d
+ mov r14d, dword [rsp + CONST]
+ add ebp, esi
+ mov esi, r11d
+ rol esi, CONST
+ add ebx, ebp
+ mov ebp, esi
+ mov esi, r11d
+ shr r11d, CONST
+ rol esi, CONST
+ xor esi, ebp
+ mov ebp, r14d
+ xor r11d, esi
+ mov esi, r14d
+ rol ebp, CONST
+ ror esi, CONST
+ xor ebp, esi
+ mov esi, r14d
+ shr esi, CONST
+ xor esi, ebp
+ add esi, dword [rsp + CONST]
+ add esi, dword [rsp + CONST]
+ add esi, r11d
+ mov r11d, edx
+ xor r11d, eax
+ lea ecx, [rcx + rsi + CONST]
+ mov dword [rsp + CONST], esi
+ and r11d, r10d
+ xor r11d, edx
+ add ecx, r11d
+ mov r11d, r10d
+ ror r11d, CONST
+ mov ebp, r11d
+ mov r11d, r10d
+ ror r11d, CONST
+ xor r11d, ebp
+ xor r11d, r13d
+ mov r13d, ebx
+ add r11d, ecx
+ mov ecx, ebx
+ add r9d, r11d
+ ror ecx, CONST
+ mov ebp, ecx
+ mov ecx, ebx
+ rol r13d, CONST
+ ror ecx, CONST
+ xor ecx, ebp
+ xor ecx, r13d
+ mov r13d, r8d
+ or r13d, ebx
+ mov ebp, r13d
+ mov r13d, r8d
+ and ebp, r12d
+ and r13d, ebx
+ or ebp, r13d
+ mov r13d, dword [rsp + CONST]
+ add ebp, ecx
+ mov ecx, edi
+ rol ecx, CONST
+ add r11d, ebp
+ mov ebp, ecx
+ mov ecx, edi
+ shr edi, CONST
+ rol ecx, CONST
+ xor ecx, ebp
+ mov ebp, r13d
+ xor edi, ecx
+ mov ecx, r13d
+ ror ebp, CONST
+ rol ecx, CONST
+ xor ecx, ebp
+ mov ebp, r13d
+ shr ebp, CONST
+ xor ecx, ebp
+ add ecx, r14d
+ add ecx, dword [rsp + CONST]
+ mov r14d, r9d
+ add edi, ecx
+ mov ecx, eax
+ rol r14d, CONST
+ xor ecx, r10d
+ lea edx, [rdx + rdi + CONST]
+ mov dword [rsp + CONST], edi
+ and ecx, r9d
+ xor ecx, eax
+ add edx, ecx
+ mov ecx, r9d
+ ror ecx, CONST
+ mov edi, ecx
+ mov ecx, r9d
+ ror ecx, CONST
+ xor ecx, edi
+ xor ecx, r14d
+ mov r14d, r11d
+ add ecx, edx
+ mov edx, r11d
+ rol r14d, CONST
+ ror edx, CONST
+ add r12d, ecx
+ mov edi, edx
+ mov edx, r11d
+ ror edx, CONST
+ xor edx, edi
+ xor edx, r14d
+ mov r14d, ebx
+ or r14d, r11d
+ mov edi, r14d
+ mov r14d, ebx
+ and r14d, r11d
+ and edi, r8d
+ or edi, r14d
+ mov r14d, dword [rsp + CONST]
+ add edi, edx
+ mov edx, esi
+ rol edx, CONST
+ add ecx, edi
+ mov edi, edx
+ mov edx, esi
+ shr esi, CONST
+ rol edx, CONST
+ xor edx, edi
+ mov edi, r14d
+ xor esi, edx
+ mov edx, r14d
+ rol edi, CONST
+ ror edx, CONST
+ xor edi, edx
+ mov edx, r14d
+ shr edx, CONST
+ xor edx, edi
+ add edx, r13d
+ add edx, r15d
+ mov r15d, r12d
+ add esi, edx
+ mov edx, r10d
+ xor edx, r9d
+ lea eax, [rax + rsi + CONST]
+ mov dword [rsp + CONST], esi
+ mov esi, r12d
+ and edx, r12d
+ ror esi, CONST
+ xor edx, r10d
+ add edx, eax
+ ror r15d, CONST
+ add dword [rsp + CONST], r11d
+ mov edi, dword [rsp + CONST]
+ mov eax, r15d
+ mov r15d, r11d
+ add dword [rsp + CONST], ecx
+ mov ebp, dword [rsp + CONST]
+ xor eax, esi
+ mov esi, r12d
+ and r15d, ecx
+ add dword [rsp + CONST], ebx
+ rol esi, CONST
+ xor eax, esi
+ mov esi, ecx
+ add eax, edx
+ mov edx, ecx
+ ror esi, CONST
+ ror edx, CONST
+ add r8d, eax
+ xor edx, esi
+ mov esi, ecx
+ rol esi, CONST
+ xor edx, esi
+ mov esi, r11d
+ or esi, ecx
+ and esi, ebx
+ or esi, r15d
+ add esi, edx
+ add esi, dword [rsp + CONST]
+ add esi, eax
+ mov dword [rsp + CONST], esi
+ mov edx, esi
+ mov rsi, qword [rsp + CONST]
+ mov dword [rsi], edx
+ mov dword [rsi + CONST], ebp
+ mov dword [rsi + CONST], edi
+ mov edi, dword [rsp + CONST]
+ add dword [rsp + CONST], r9d
+ mov eax, dword [rsp + CONST]
+ add dword [rsp + CONST], r8d
+ mov r13d, dword [rsp + CONST]
+ add dword [rsp + CONST], r12d
+ mov r11d, dword [rsp + CONST]
+ add dword [rsp + CONST], r10d
+ mov dword [rsi + CONST], eax
+ mov eax, dword [rsp + CONST]
+ mov dword [rsi + CONST], edi
+ mov dword [rsi + CONST], eax
+ mov rax, qword [rsp + CONST]
+ mov dword [rsi + CONST], r13d
+ mov dword [rsi + CONST], r11d
+ cmp qword [rsp + CONST], rax
+ cjmp LABEL3364
+LABEL46:
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL3367
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL3367:
+ call CONST

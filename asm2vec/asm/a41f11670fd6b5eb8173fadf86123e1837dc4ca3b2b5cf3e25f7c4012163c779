@@ -1,0 +1,79 @@
+ .name fcn.00002900
+ .offset 0000000000002900
+ .file setcifsacl
+ push r12
+ mov rcx, rdi
+ mov r12, rdi
+ mov rdi, qword [rip + CONST]
+ lea rdx, [rip + CONST]
+ mov esi, CONST
+ xor eax, eax
+ call CONST
+ mov rcx, r12
+ mov esi, CONST
+ xor eax, eax
+ mov rdi, qword [rip + CONST]
+ lea rdx, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rcx, qword [rip + CONST]
+ pop r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ jmp CONST

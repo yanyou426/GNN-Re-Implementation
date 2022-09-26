@@ -1,0 +1,28 @@
+ .name fcn.00003280
+ .offset 0000000000003280
+ .file sfconv
+ movabs rdx, CONST
+ mov rax, qword [rdi]
+ cmp rax, rdx
+ cjmp LABEL3
+ cmp rax, rsi
+ cjmp LABEL5
+ add rsi, rsi
+ cmp rax, rsi
+ cjmp LABEL5
+ cmp rsi, rdx
+ cjmp LABEL10
+ mov qword [rdi], rdx
+ movabs rdi, CONST
+ jmp CONST
+LABEL10:
+ mov qword [rdi], rsi
+ mov rax, rsi
+LABEL5:
+ lea rdi, [rax + rax + CONST]
+ jmp CONST
+LABEL3:
+ push rax
+ lea rdi, [rip + CONST]
+ call CONST
+ nop dword [rax]

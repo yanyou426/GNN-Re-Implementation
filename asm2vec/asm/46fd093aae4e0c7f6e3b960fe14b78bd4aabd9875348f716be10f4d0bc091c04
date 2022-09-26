@@ -1,0 +1,15 @@
+ .name fcn.0000e150
+ .offset 000000000000e150
+ .file cvtsudoers
+ sub rsp, CONST
+ mov r9, rcx
+ xor eax, eax
+ movsx ecx, word [rdx + CONST]
+ cmp word [rdx + CONST], CONST
+ mov rdx, qword [rdx + CONST]
+ push r8
+ setne al
+ mov r8d, eax
+ call CONST
+ add rsp, CONST
+ ret

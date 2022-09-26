@@ -1,0 +1,59 @@
+ .name fcn.00005150
+ .offset 0000000000005150
+ .file weave
+ mov eax, dword [rip + CONST]
+ mov r9d, edi
+ push rbp
+ lea rbp, [rip + CONST]
+ movzx r8d, r9w
+ push rbx
+ mov r10d, dword [rip + CONST]
+ mov edi, esi
+ mov word [rbp + r8*CONST], ax
+ lea rsi, [rip + CONST]
+ add eax, CONST
+ mov byte [rsi + r8], dl
+ lea r8, [rip + CONST]
+ mov dword [rip + CONST], eax
+ cdqe
+ mov word [r8 + rax*CONST], r10w
+ cmp dil, CONST
+ cjmp LABEL17
+ movzx edx, r9w
+ movzx r8d, dil
+ mov r10d, dword [rip + CONST]
+ add edx, r8d
+ cmp edx, r10d
+ cjmp LABEL23
+ mov ebx, r10d
+ movzx r9d, r9w
+ xor eax, eax
+ sub ebx, edx
+ movsxd rdx, edx
+ lea r11, [rbp + rdx*CONST]
+ add rdx, rsi
+ lea rbp, [rbp + r9*CONST]
+ add rsi, r9
+ nop word [rax + rax]
+LABEL41:
+ movzx edi, byte [rdx + rax]
+ mov byte [rsi + rax + CONST], dil
+ movzx edi, word [r11 + rax*CONST]
+ mov word [rbp + rax*CONST + CONST], di
+ mov rdi, rax
+ add rax, CONST
+ cmp rdi, rbx
+ cjmp LABEL41
+LABEL23:
+ sub r10d, r8d
+ add r10d, CONST
+ mov dword [rip + CONST], r10d
+LABEL17:
+ mov eax, dword [rip + CONST]
+ add ecx, dword [rip + CONST]
+ pop rbx
+ pop rbp
+ cmp ecx, eax
+ cmovl ecx, eax
+ mov dword [rip + CONST], ecx
+ ret

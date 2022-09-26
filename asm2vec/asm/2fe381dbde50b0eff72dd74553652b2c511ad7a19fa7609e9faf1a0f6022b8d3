@@ -1,0 +1,24 @@
+ .name fcn.0001adb0
+ .offset 000000000001adb0
+ .file curl
+ push rbx
+ mov esi, CONST
+ mov rbx, rdi
+ mov edi, CONST
+ call CONST
+ mov rdx, qword [rbx + CONST]
+ test rax, rax
+ cjmp LABEL7
+ test rdx, rdx
+ cjmp LABEL9
+ mov qword [rdx], rax
+LABEL17:
+ mov edx, dword [rbx + CONST]
+ mov qword [rbx + CONST], rax
+ mov dword [rax + CONST], edx
+LABEL7:
+ pop rbx
+ ret
+LABEL9:
+ mov qword [rbx + CONST], rax
+ jmp LABEL17

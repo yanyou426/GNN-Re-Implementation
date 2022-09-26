@@ -1,0 +1,73 @@
+ .name fcn.000025b0
+ .offset 00000000000025b0
+ .file nauty-gentourng
+ mov r9, qword [rdi]
+ mov rdx, r9
+ bts rdx, CONST
+ test esi, esi
+ cjmp LABEL4
+ lea ecx, [rsi + CONST]
+ movabs rsi, CONST
+ shr rsi, cl
+ not rsi
+ cmp rsi, rdx
+ cjmp LABEL10
+LABEL58:
+ mov rax, r9
+ btr rax, CONST
+ test rax, rax
+ cjmp LABEL14
+ movabs rcx, CONST
+ lea r8, [rip + CONST]
+ jmp LABEL17
+LABEL28:
+ mov rax, rcx
+ not rax
+ and rax, rdx
+ cjmp LABEL14
+LABEL17:
+ bsr rax, rax
+ xor rax, CONST
+ cdqe
+ or rdx, qword [rdi + rax*CONST]
+ or rcx, qword [r8 + rax*CONST]
+ cmp rdx, rsi
+ cjmp LABEL28
+LABEL10:
+ mov rdx, rsi
+ xor rdx, r9
+ test r9, r9
+ cjmp LABEL32
+ mov rax, rdx
+ lea r8, [rip + CONST]
+ movabs rcx, CONST
+ btr rax, CONST
+ test rax, rax
+ cjmp LABEL38
+ jmp LABEL32
+LABEL52:
+ mov rax, rcx
+ not rax
+ and rax, rdx
+ cjmp LABEL32
+LABEL38:
+ bsr rax, rax
+ xor rax, CONST
+ cdqe
+ mov r10, qword [rdi + rax*CONST]
+ or rcx, qword [r8 + rax*CONST]
+ xor r10, rsi
+ or rdx, r10
+ cmp rdx, rsi
+ cjmp LABEL52
+LABEL32:
+ xor eax, eax
+ cmp rsi, rdx
+ sete al
+ ret
+LABEL4:
+ xor esi, esi
+ jmp LABEL58
+LABEL14:
+ xor eax, eax
+ ret

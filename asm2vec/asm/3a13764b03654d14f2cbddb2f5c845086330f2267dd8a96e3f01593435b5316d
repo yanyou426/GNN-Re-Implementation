@@ -1,0 +1,27 @@
+ .name fcn.000088a0
+ .offset 00000000000088a0
+ .file kontrast
+ push rbp
+ push rbx
+ mov rbx, rdi
+ sub rsp, CONST
+ mov dword [rdi + CONST], esi
+ cmp esi, CONST
+ cjmp LABEL6
+ lea rax, [rdi + CONST]
+ mov dword [rdi], CONST
+ mov qword [rdi + CONST], rax
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ ret
+LABEL6:
+ movsxd rdi, esi
+ mov ebp, esi
+ call CONST
+ mov dword [rbx], ebp
+ mov qword [rbx + CONST], rax
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ ret

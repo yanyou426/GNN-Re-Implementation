@@ -1,0 +1,61 @@
+ .name fcn.00013200
+ .offset 0000000000013200
+ .file curl
+ push r14
+ xor eax, eax
+ mov r14, rdi
+ lea rdi, [rip + CONST]
+ push r13
+ mov r13, rdx
+ push r12
+ mov r12, rsi
+ xor esi, esi
+ push rbp
+ sub rsp, CONST
+ call CONST
+ cmp eax, CONST
+ mov ebp, eax
+ mov eax, CONST
+ cmove ebp, eax
+ mov edi, ebp
+ call CONST
+ mov rsi, qword [rip + CONST]
+ mov rdi, r14
+ call CONST
+ mov rdx, r13
+ mov rsi, r12
+ mov edi, ebp
+ call CONST
+ test rax, rax
+ cjmp LABEL26
+ mov byte [r12 + rax + CONST], CONST
+LABEL45:
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ lea rdx, [rip + CONST]
+ mov esi, CONST
+ mov edi, ebp
+ call CONST
+ test ebp, ebp
+ cjmp LABEL36
+ add rsp, CONST
+ mov rax, r12
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ ret
+LABEL26:
+ mov byte [r12], CONST
+ jmp LABEL45
+LABEL36:
+ mov edi, ebp
+ call CONST
+ add rsp, CONST
+ mov rax, r12
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ ret

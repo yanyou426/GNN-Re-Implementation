@@ -1,0 +1,51 @@
+ .name fcn.00005220
+ .offset 0000000000005220
+ .file weave
+ movzx r9d, di
+ cmp sil, CONST
+ cjmp LABEL2
+ movzx esi, sil
+ push rbp
+ movzx r8d, dl
+ lea ebp, [rsi + r9]
+ push rbx
+ cmp ebp, r9d
+ cjmp LABEL9
+ mov eax, r9d
+ movsxd rdx, dword [rip + CONST]
+ movzx edi, di
+ not eax
+ lea r11d, [rax + rbp]
+ lea rax, [rip + CONST]
+ mov rbx, rdx
+ lea r10, [rax + rdi*CONST]
+ lea rax, [rip + CONST]
+ lea rdi, [rax + rdx*CONST]
+ xor eax, eax
+ nop dword [rax + rax]
+LABEL28:
+ movzx edx, word [r10 + rax*CONST]
+ sub dx, CONST
+ mov word [rdi + rax*CONST], dx
+ mov rdx, rax
+ add rax, CONST
+ cmp rdx, r11
+ cjmp LABEL28
+ sub ebx, r9d
+ add ebx, ebp
+ mov dword [rip + CONST], ebx
+LABEL9:
+ pop rbx
+ mov edx, r8d
+ mov edi, r9d
+ pop rbp
+ jmp CONST
+LABEL2:
+ lea rax, [rip + CONST]
+ add ecx, dword [rip + CONST]
+ mov byte [rax + r9], dl
+ mov eax, dword [rip + CONST]
+ cmp ecx, eax
+ cmovge eax, ecx
+ mov dword [rip + CONST], eax
+ ret

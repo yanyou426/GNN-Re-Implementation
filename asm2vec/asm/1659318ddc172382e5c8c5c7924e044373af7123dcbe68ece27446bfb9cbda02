@@ -1,0 +1,27 @@
+ .name fcn.00002ab0
+ .offset 0000000000002ab0
+ .file setcifsacl
+ push rbx
+ mov eax, dword [rdi + CONST]
+ mov rbx, rsi
+ imul esi, edx, CONST
+ mov edi, CONST
+ add rax, CONST
+ mov qword [rcx], rax
+ add esi, CONST
+ call CONST
+ mov qword [rbx], rax
+ test rax, rax
+ cjmp LABEL11
+ xor eax, eax
+ pop rbx
+ ret
+LABEL11:
+ lea rdx, [rip + CONST]
+ lea rsi, [rip + CONST]
+ mov edi, CONST
+ call CONST
+ call CONST
+ pop rbx
+ mov eax, dword [rax]
+ ret

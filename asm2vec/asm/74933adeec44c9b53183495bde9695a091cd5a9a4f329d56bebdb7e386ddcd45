@@ -1,0 +1,39 @@
+ .name fcn.0000c5f0
+ .offset 000000000000c5f0
+ .file weave
+ push rbp
+ mov rbp, rdi
+ push rbx
+ sub rsp, CONST
+ call CONST
+ test eax, eax
+ cjmp LABEL6
+LABEL28:
+ add rsp, CONST
+ mov eax, CONST
+ pop rbx
+ pop rbp
+ ret
+LABEL6:
+ mov rdi, rbp
+ call CONST
+ mov ebx, eax
+ cmp eax, CONST
+ cjmp LABEL16
+LABEL31:
+ xor eax, eax
+ cmp ebx, CONST
+ sete al
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ ret
+LABEL16:
+ mov rsi, rbp
+ mov edi, eax
+ call CONST
+ cmp ebx, CONST
+ cjmp LABEL28
+ cmp ebx, CONST
+ cjmp LABEL28
+ jmp LABEL31

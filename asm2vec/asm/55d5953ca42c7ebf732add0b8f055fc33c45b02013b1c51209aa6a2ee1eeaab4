@@ -1,0 +1,35 @@
+ .name fcn.00004490
+ .offset 0000000000004490
+ .file weave
+ mov edi, dword [rip + CONST]
+ test edi, edi
+ cjmp LABEL2
+ mov ecx, dword [rip + CONST]
+ test ecx, ecx
+ cjmp LABEL5
+ lea rax, [rip + CONST]
+ movsxd rdx, ecx
+ lea rcx, [rax + CONST]
+ add rcx, rdx
+ jmp LABEL10
+LABEL16:
+ add rax, CONST
+ cmp rax, rcx
+ cjmp LABEL5
+LABEL10:
+ movzx edx, byte [rax]
+ cmp dl, CONST
+ cjmp LABEL16
+ cmp dl, CONST
+ cjmp LABEL16
+ ret
+LABEL5:
+ xor edx, edx
+ xor esi, esi
+ xor edi, edi
+ jmp CONST
+LABEL2:
+ movzx edi, dil
+ xor edx, edx
+ xor esi, esi
+ jmp CONST

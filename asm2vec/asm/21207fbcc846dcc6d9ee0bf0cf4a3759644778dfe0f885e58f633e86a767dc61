@@ -1,0 +1,29 @@
+ .name fcn.0000c900
+ .offset 000000000000c900
+ .file weave
+ push r12
+ lea rax, [rip + CONST]
+ mov r12, rsi
+ push rbx
+ mov rbx, rdi
+ sub rsp, CONST
+ mov rdi, qword [rdi]
+ test rsi, rsi
+ cmove r12, rax
+ test rdi, rdi
+ cjmp LABEL10
+ nop dword [rax + rax]
+LABEL16:
+ call CONST
+ mov rdi, qword [rbx + CONST]
+ add rbx, CONST
+ test rdi, rdi
+ cjmp LABEL16
+LABEL10:
+ mov edi, CONST
+ mov rdx, r12
+ lea rsi, [rip + CONST]
+ xor eax, eax
+ call CONST
+ xor edi, edi
+ call CONST

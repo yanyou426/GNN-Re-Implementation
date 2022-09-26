@@ -1,0 +1,137 @@
+ .name fcn.0001ba20
+ .offset 000000000001ba20
+ .file cvtsudoers
+ push r15
+ push r14
+ push r13
+ mov r13, rdi
+ lea rdi, [rip + CONST]
+ push r12
+ mov r12, rdx
+ mov edx, CONST
+ push rbp
+ mov rbp, rcx
+ push rbx
+ mov rbx, rsi
+ lea rsi, [rip + CONST]
+ sub rsp, CONST
+ lea rax, [rip + CONST]
+ mov r14d, dword [rax + CONST]
+ mov ecx, r14d
+ call CONST
+ lea rax, [rip + CONST]
+ mov eax, dword [rax + CONST]
+ test eax, eax
+ cjmp LABEL21
+ cmp byte [r13], CONST
+ lea r9, [r13 + CONST]
+ cjmp LABEL24
+ mov ecx, r14d
+ lea r8, [rip + CONST]
+ xor eax, eax
+ mov edx, CONST
+ or ecx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ xor r8d, r8d
+ mov ecx, r14d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ xor r10d, r10d
+LABEL111:
+ add rsp, CONST
+ mov eax, r10d
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL24:
+ mov qword [rsp + CONST], r9
+ call CONST
+ mov r9, qword [rsp + CONST]
+ mov rdx, rbp
+ mov rsi, rbx
+ mov rcx, rax
+ mov r13, rax
+ mov rdi, r9
+ call CONST
+ mov r9, qword [rsp + CONST]
+ test eax, eax
+ mov r15d, eax
+ cjmp LABEL61
+ cmp rbx, r12
+ cjmp LABEL63
+ mov rdi, r9
+ mov rcx, r13
+ mov rdx, rbp
+ mov rsi, r12
+ mov qword [rsp + CONST], r9
+ call CONST
+ mov r9, qword [rsp + CONST]
+ test eax, eax
+ cjmp LABEL61
+LABEL63:
+ xor r10d, r10d
+ lea rdx, [rip + CONST]
+ jmp LABEL75
+LABEL61:
+ mov r15d, CONST
+ mov r10d, CONST
+ lea rdx, [rip + CONST]
+LABEL75:
+ lea rax, [rip + CONST]
+ test r13, r13
+ mov byte [rsp + CONST], r10b
+ mov ecx, r14d
+ cmove r13, rax
+ test rbp, rbp
+ lea r8, [rip + CONST]
+ cmove rbp, rax
+ test r12, r12
+ cmove r12, rax
+ test rbx, rbx
+ cmove rbx, rax
+ sub rsp, CONST
+ or ecx, CONST
+ push rdx
+ lea rsi, [rip + CONST]
+ mov edx, CONST
+ xor eax, eax
+ push r13
+ lea rdi, [rip + CONST]
+ push rbp
+ push r12
+ push rbx
+ call CONST
+ add rsp, CONST
+ mov r8d, r15d
+ mov ecx, r14d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ movzx r10d, byte [rsp + CONST]
+ jmp LABEL111
+LABEL21:
+ mov ecx, r14d
+ lea r8, [rip + CONST]
+ xor eax, eax
+ mov edx, CONST
+ or ecx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ xor r8d, r8d
+ mov ecx, r14d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ xor r10d, r10d
+ jmp LABEL111

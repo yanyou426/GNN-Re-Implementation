@@ -1,0 +1,45 @@
+ .name fcn.00002b00
+ .offset 0000000000002b00
+ .file setcifsacl
+ push r12
+ mov r12, rdi
+ push rbp
+ sub rsp, CONST
+ mov rbp, qword [rip + CONST]
+ test rbp, rbp
+ cjmp LABEL6
+LABEL25:
+ call CONST
+ lea rsi, [rip + CONST]
+ mov rdi, rbp
+ call CONST
+ test rax, rax
+ cjmp LABEL12
+ add rsp, CONST
+ mov rdi, r12
+ lea rsi, [rip + CONST]
+ pop rbp
+ pop r12
+ jmp rax
+LABEL6:
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov qword [rip + CONST], rax
+ mov rbp, rax
+ test rax, rax
+ cjmp LABEL25
+ call CONST
+ mov qword [rip + CONST], rax
+ mov eax, CONST
+ jmp LABEL29
+LABEL12:
+ call CONST
+ lea rax, [rip + CONST]
+ mov qword [rip + CONST], rax
+ mov eax, CONST
+LABEL29:
+ add rsp, CONST
+ pop rbp
+ pop r12
+ ret

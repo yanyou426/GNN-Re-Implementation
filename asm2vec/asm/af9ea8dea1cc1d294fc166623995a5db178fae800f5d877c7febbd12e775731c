@@ -1,0 +1,46 @@
+ .name fcn.0000a0f0
+ .offset 000000000000a0f0
+ .file sha256sum
+ push r13
+ mov r13, rsi
+ push r12
+ push rbp
+ mov rbp, rdx
+ push rbx
+ mov rbx, rdi
+ sub rsp, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ test rdi, rdi
+ lea rax, [rsp + CONST]
+ cmove rbx, rax
+ mov rdi, rbx
+ call CONST
+ mov r12, rax
+ cmp rax, CONST
+ cjmp LABEL18
+ test rbp, rbp
+ cjmp LABEL20
+LABEL18:
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL23
+ add rsp, CONST
+ mov rax, r12
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ ret
+LABEL20:
+ xor edi, edi
+ call CONST
+ test al, al
+ cjmp LABEL18
+ movzx eax, byte [r13]
+ mov r12d, CONST
+ mov dword [rbx], eax
+ jmp LABEL18
+LABEL23:
+ call CONST

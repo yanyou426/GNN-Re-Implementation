@@ -1,0 +1,14 @@
+ .name fcn.0001ec80
+ .offset 000000000001ec80
+ .file curl
+ sub rsi, rcx
+ sub rdi, rdx
+ movabs rdx, CONST
+ mov rax, rsi
+ imul rdi, rdi, CONST
+ sar rsi, CONST
+ imul rdx
+ sar rdx, CONST
+ sub rdx, rsi
+ lea rax, [rdi + rdx]
+ ret

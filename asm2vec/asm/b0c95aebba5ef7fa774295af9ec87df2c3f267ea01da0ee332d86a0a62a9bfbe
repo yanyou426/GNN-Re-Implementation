@@ -1,0 +1,18 @@
+ .name fcn.0000cd80
+ .offset 000000000000cd80
+ .file curl
+ sub rsp, CONST
+ mov rdi, qword [rip + CONST]
+ lea rsi, [rip + CONST]
+ call CONST
+ test rax, rax
+ cjmp LABEL5
+ mov qword [rip + CONST], rax
+ xor eax, eax
+ add rsp, CONST
+ ret
+LABEL5:
+ call CONST
+ mov eax, CONST
+ add rsp, CONST
+ ret

@@ -1,0 +1,28 @@
+ .name fcn.0001a8e0
+ .offset 000000000001a8e0
+ .file curl
+ test rsi, rsi
+ cjmp LABEL1
+ push rbp
+ mov rsi, rdi
+ mov rbp, rdi
+ mov edx, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ test eax, eax
+ cjmp LABEL9
+ mov eax, CONST
+ pop rbp
+ ret
+LABEL9:
+ mov rsi, rbp
+ mov edx, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ pop rbp
+ test eax, eax
+ setne al
+ ret
+LABEL1:
+ mov eax, CONST
+ ret

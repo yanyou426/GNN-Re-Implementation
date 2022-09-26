@@ -1,0 +1,27 @@
+ .name fcn.00016c60
+ .offset 0000000000016c60
+ .file cvtsudoers
+ push rbx
+ mov rbx, rsi
+ cmp dil, CONST
+ cjmp LABEL3
+ movzx eax, dil
+ cmp eax, CONST
+ cjmp LABEL6
+ mov rdx, rsi
+ mov ecx, CONST
+ xor esi, esi
+ xor edi, edi
+ call CONST
+LABEL6:
+ pxor xmm0, xmm0
+ movups xmmword [rbx], xmm0
+ pop rbx
+ ret
+LABEL3:
+ mov rdi, qword [rsi]
+ call CONST
+ pxor xmm0, xmm0
+ movups xmmword [rbx], xmm0
+ pop rbx
+ ret

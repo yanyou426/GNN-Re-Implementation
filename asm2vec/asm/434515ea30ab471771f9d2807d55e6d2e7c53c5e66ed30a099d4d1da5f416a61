@@ -1,0 +1,43 @@
+ .name fcn.0001b320
+ .offset 000000000001b320
+ .file curl
+ push rbp
+ mov rbp, rdi
+ mov edi, CONST
+ push rbx
+ sub rsp, CONST
+ call CONST
+ test rbp, rbp
+ cjmp LABEL7
+ mov rbx, qword [rax + CONST]
+ mov rdi, qword [rbx]
+ test rdi, rdi
+ cjmp LABEL11
+ jmp LABEL12
+LABEL20:
+ mov rdi, qword [rbx + CONST]
+ add rbx, CONST
+ test rdi, rdi
+ cjmp LABEL12
+LABEL11:
+ mov rsi, rbp
+ call CONST
+ test eax, eax
+ cjmp LABEL20
+ add rsp, CONST
+ xor eax, eax
+ pop rbx
+ pop rbp
+ ret
+LABEL12:
+ add rsp, CONST
+ mov eax, CONST
+ pop rbx
+ pop rbp
+ ret
+LABEL7:
+ add rsp, CONST
+ mov eax, CONST
+ pop rbx
+ pop rbp
+ ret

@@ -1,0 +1,102 @@
+ .name fcn.0001f300
+ .offset 000000000001f300
+ .file curl
+ push r13
+ push r12
+ mov r12, rdi
+ mov rdi, rsi
+ push rbp
+ push rbx
+ mov rbx, rsi
+ sub rsp, CONST
+ call CONST
+ lea rbp, [rbx + rax]
+ cmp rbx, rbp
+ cjmp LABEL11
+ lea r13, [rip + CONST]
+ nop dword [rax + rax]
+LABEL36:
+ movzx eax, byte [rbx]
+ cmp al, CONST
+ cjmp LABEL16
+ cmp al, CONST
+ cjmp LABEL18
+ lea edx, [rax + CONST]
+ cmp dl, CONST
+ cjmp LABEL18
+ movzx edx, dl
+ movsxd rdx, dword [r13 + rdx*CONST]
+ add rdx, r13
+ jmp rdx
+LABEL18:
+ movsx edx, al
+ cmp al, CONST
+ cjmp LABEL28
+ lea rsi, [rip + CONST]
+ mov rdi, r12
+ xor eax, eax
+ call CONST
+ nop dword [rax]
+LABEL48:
+ add rbx, CONST
+ cmp rbp, rbx
+ cjmp LABEL36
+LABEL11:
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ ret
+ mov rcx, r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL48
+ mov rcx, r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL48
+ mov rcx, r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL48
+ mov rcx, r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL48
+ mov rcx, r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL48
+ mov rcx, r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL48
+LABEL16:
+ cmp al, CONST
+ cjmp LABEL80
+ mov rcx, r12
+ mov edx, CONST
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL48
+LABEL80:
+ movsx edx, al
+LABEL28:
+ mov rsi, r12
+ mov edi, edx
+ call CONST
+ jmp LABEL48

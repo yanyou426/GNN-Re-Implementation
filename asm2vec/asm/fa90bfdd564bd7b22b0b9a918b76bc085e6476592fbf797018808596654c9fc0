@@ -1,0 +1,33 @@
+ .name fcn.00008e80
+ .offset 0000000000008e80
+ .file sha256sum
+ sub rsp, CONST
+ movdqa xmm0, xmmword [rip + CONST]
+ movdqa xmm1, xmmword [rip + CONST]
+ mov rsi, rdi
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ mov rax, qword [rip + CONST]
+ mov rcx, rsp
+ xor edi, edi
+ movups xmmword [rsp], xmm0
+ mov edx, dword [rsp + CONST]
+ movdqa xmm2, xmmword [rip + CONST]
+ mov qword [rsp + CONST], rax
+ mov eax, edx
+ movups xmmword [rsp + CONST], xmm1
+ not eax
+ movups xmmword [rsp + CONST], xmm2
+ and eax, CONST
+ xor eax, edx
+ mov rdx, CONST
+ mov dword [rsp + CONST], eax
+ call CONST
+ mov rcx, qword [rsp + CONST]
+ sub rcx, qword fs:[CONST]
+ cjmp LABEL25
+ add rsp, CONST
+ ret
+LABEL25:
+ call CONST

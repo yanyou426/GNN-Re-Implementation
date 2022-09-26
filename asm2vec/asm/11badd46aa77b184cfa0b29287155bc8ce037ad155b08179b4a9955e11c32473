@@ -1,0 +1,17 @@
+ .name fcn.00007b30
+ .offset 0000000000007b30
+ .file shred
+ push rbx
+ call CONST
+ mov rbx, rax
+ xor eax, eax
+ test rbx, rbx
+ cjmp LABEL5
+ mov edi, CONST
+ call CONST
+ mov qword [rax], rbx
+ mov qword [rax + CONST], CONST
+ mov qword [rax + CONST], CONST
+LABEL5:
+ pop rbx
+ ret

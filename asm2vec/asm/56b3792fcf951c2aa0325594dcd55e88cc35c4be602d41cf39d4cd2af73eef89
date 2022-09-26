@@ -1,0 +1,15 @@
+ .name fcn.00009d10
+ .offset 0000000000009d10
+ .file sha256sum
+ sub rsp, CONST
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ xor edi, edi
+ call CONST
+ mov edi, dword [rip + CONST]
+ lea rdx, [rip + CONST]
+ xor esi, esi
+ mov rcx, rax
+ xor eax, eax
+ call CONST
+ call CONST

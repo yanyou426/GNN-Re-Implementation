@@ -1,0 +1,78 @@
+ .name fcn.00001e20
+ .offset 0000000000001e20
+ .file weave
+ mov r8d, dword [rip + CONST]
+ test r8d, r8d
+ cjmp LABEL2
+ movsxd rcx, edi
+ lea rdx, [rip + CONST]
+ movzx eax, word [rip + CONST]
+ cmp word [rdx + rcx*CONST], CONST
+ cjmp LABEL7
+LABEL50:
+ test ax, ax
+ cjmp LABEL2
+LABEL49:
+ add ax, word [rip + CONST]
+ lea rdi, [rip + CONST]
+ xor esi, esi
+ mov edx, eax
+ movzx eax, word [rdi + rcx*CONST]
+ mov word [rip + CONST], si
+ mov r8d, eax
+ test eax, eax
+ cjmp LABEL18
+ lea r10, [rip + CONST]
+ cdqe
+ movzx esi, word [r10 + rax*CONST]
+ cmp dx, si
+ cjmp LABEL2
+ movzx r9d, dx
+ lea r11d, [r9 + CONST]
+ cmp esi, r11d
+ cjmp LABEL2
+ add esi, CONST
+ cmp r9d, esi
+ cjmp LABEL30
+LABEL18:
+ mov eax, dword [rip + CONST]
+ cmp eax, CONST
+ cjmp LABEL33
+ add eax, CONST
+ lea rsi, [rip + CONST]
+ movsxd r9, eax
+ mov dword [rip + CONST], eax
+ mov word [rsi + r9*CONST], dx
+ mov word [rsi + r9*CONST + CONST], r8w
+ mov word [rdi + rcx*CONST], ax
+LABEL2:
+ ret
+LABEL7:
+ lea rsi, [rip + CONST]
+ add edi, CONST
+ movzx edx, word [rsi + rcx*CONST]
+ movsxd rdi, edi
+ movzx esi, word [rsi + rdi*CONST]
+ add edx, CONST
+ cmp edx, esi
+ cjmp LABEL49
+ jmp LABEL50
+LABEL30:
+ mov word [r10 + rax*CONST], dx
+ ret
+LABEL33:
+ push rax
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ mov rdi, qword [rip + CONST]
+ xor eax, eax
+ lea r9, [rip + CONST]
+ lea r8, [rip + CONST]
+ lea rcx, [rip + CONST]
+ mov esi, CONST
+ lea rdx, [rip + CONST]
+ call CONST
+ call CONST
+ mov byte [rip + CONST], CONST
+ call CONST

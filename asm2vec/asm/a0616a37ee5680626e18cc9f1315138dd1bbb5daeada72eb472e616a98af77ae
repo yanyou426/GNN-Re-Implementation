@@ -1,0 +1,33 @@
+ .name fcn.0001f280
+ .offset 000000000001f280
+ .file cvtsudoers
+ lea rax, [rip + CONST]
+ push r14
+ push r13
+ mov r13, rdi
+ lea rdi, [rip + CONST]
+ push r12
+ mov r12, rsi
+ lea rsi, [rip + CONST]
+ push rbp
+ mov rbp, rdx
+ mov edx, CONST
+ push rbx
+ mov r14d, dword [rax + CONST]
+ mov rbx, rcx
+ mov ecx, r14d
+ call CONST
+ mov qword [rip + CONST], r13
+ mov ecx, r14d
+ mov edx, CONST
+ mov qword [rip + CONST], r12
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ mov qword [rip + CONST], rbp
+ mov qword [rip + CONST], rbx
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ jmp CONST

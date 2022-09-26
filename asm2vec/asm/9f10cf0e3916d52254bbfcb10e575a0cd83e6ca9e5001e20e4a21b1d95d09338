@@ -1,0 +1,76 @@
+ .name fcn.00003620
+ .offset 0000000000003620
+ .file weave
+ mov eax, dword [rip + CONST]
+ push r12
+ lea r12, [rip + CONST]
+ push rbp
+ movabs rbp, CONST
+ push rbx
+ mov ebx, edi
+ nop dword [rax]
+LABEL24:
+ cmp dword [rip + CONST], eax
+ cjmp LABEL9
+LABEL41:
+ movsxd rdx, eax
+ lea ecx, [rax + CONST]
+ movzx edx, byte [r12 + rdx]
+ mov dword [rip + CONST], ecx
+ cmp dl, CONST
+ cjmp LABEL15
+ cmp dl, CONST
+ cjmp LABEL17
+ cmp dl, CONST
+ cjmp LABEL19
+ cmp dl, CONST
+ cjmp LABEL21
+ mov eax, ecx
+ cmp dl, CONST
+ cjmp LABEL24
+ sub bl, CONST
+ cjmp LABEL24
+LABEL45:
+ pop rbx
+ xor eax, eax
+ pop rbp
+ pop r12
+ ret
+LABEL17:
+ movsxd rcx, ecx
+ movzx edx, byte [r12 + rcx]
+ cmp dl, CONST
+ cjmp LABEL35
+ bt rbp, rdx
+ cjmp LABEL37
+LABEL35:
+ add eax, CONST
+ cmp dword [rip + CONST], eax
+ mov dword [rip + CONST], eax
+ cjmp LABEL41
+LABEL9:
+ call CONST
+ mov eax, dword [rip + CONST]
+ test eax, eax
+ cjmp LABEL45
+ mov eax, dword [rip + CONST]
+ jmp LABEL41
+LABEL19:
+ movsxd rdx, ecx
+ cmp byte [r12 + rdx], CONST
+ cjmp LABEL35
+ mov eax, ecx
+ jmp LABEL24
+LABEL21:
+ add ebx, CONST
+ mov eax, ecx
+ jmp LABEL24
+LABEL15:
+ mov eax, ebx
+ pop rbx
+ pop rbp
+ pop r12
+ ret
+LABEL37:
+ mov dword [rip + CONST], eax
+ jmp LABEL45

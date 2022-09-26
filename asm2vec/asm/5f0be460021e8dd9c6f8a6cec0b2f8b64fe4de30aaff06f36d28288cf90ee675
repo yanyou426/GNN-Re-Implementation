@@ -1,0 +1,24 @@
+ .name fcn.00005900
+ .offset 0000000000005900
+ .file shred
+ mov byte [rsi + CONST], CONST
+ lea r8, [rsi + CONST]
+ movabs rsi, CONST
+ nop word [rax + rax]
+LABEL17:
+ mov rax, rdi
+ sub r8, CONST
+ mul rsi
+ mov rax, rdi
+ shr rdx, CONST
+ lea rcx, [rdx + rdx*CONST]
+ add rcx, rcx
+ sub rax, rcx
+ add eax, CONST
+ mov byte [r8], al
+ mov rax, rdi
+ mov rdi, rdx
+ cmp rax, CONST
+ cjmp LABEL17
+ mov rax, r8
+ ret

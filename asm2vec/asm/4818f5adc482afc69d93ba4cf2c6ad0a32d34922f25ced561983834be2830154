@@ -1,0 +1,40 @@
+ .name fcn.00004060
+ .offset 0000000000004060
+ .file weave
+ push rbp
+ lea rbp, [rip + CONST]
+ push rbx
+ sub rsp, CONST
+ movzx eax, byte [rip + CONST]
+ jmp LABEL5
+LABEL15:
+ call CONST
+ lea edx, [rax + CONST]
+ mov byte [rip + CONST], al
+ cmp dl, CONST
+ cjmp LABEL10
+LABEL5:
+ cmp al, CONST
+ cjmp LABEL10
+ add eax, CONST
+ cmp al, CONST
+ cjmp LABEL15
+ movzx edi, al
+ call CONST
+ movsxd rbx, eax
+ mov edi, ebx
+ call CONST
+ movzx eax, word [rbp + rbx*CONST]
+ cmp ax, CONST
+ cjmp LABEL23
+ cmp ax, CONST
+ cjmp LABEL15
+LABEL23:
+ mov eax, CONST
+ mov word [rip + CONST], ax
+ jmp LABEL15
+LABEL10:
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ ret

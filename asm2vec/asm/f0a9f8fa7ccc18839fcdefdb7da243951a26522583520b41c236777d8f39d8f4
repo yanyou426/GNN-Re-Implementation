@@ -1,0 +1,20 @@
+ .name fcn.000148a0
+ .offset 00000000000148a0
+ .file cvtsudoers
+ lea rax, [rip + CONST]
+ push rbp
+ mov edx, CONST
+ mov rbp, rdi
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ mov ecx, dword [rax]
+ call CONST
+ test rbp, rbp
+ cjmp LABEL9
+ mov rdi, rbp
+ lea rsi, [rip + CONST]
+ pop rbp
+ jmp CONST
+LABEL9:
+ pop rbp
+ ret

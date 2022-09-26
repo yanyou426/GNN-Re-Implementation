@@ -1,0 +1,42 @@
+ .name fcn.0000ab20
+ .offset 000000000000ab20
+ .file curl
+ push r12
+ push rbx
+ mov rbx, rdi
+ xor edi, edi
+ sub rsp, CONST
+ call CONST
+ mov r12, rax
+ test rax, rax
+ cjmp LABEL8
+ test rbx, rbx
+ cjmp LABEL10
+ mov rax, qword [rbx + CONST]
+ mov qword [rax + CONST], r12
+ mov qword [rbx + CONST], r12
+ mov r12, rbx
+LABEL8:
+ add rsp, CONST
+ mov rax, r12
+ pop rbx
+ pop r12
+ ret
+LABEL10:
+ mov edi, CONST
+ call CONST
+ test rax, rax
+ cjmp LABEL23
+ mov qword [rax], r12
+ mov qword [rax + CONST], r12
+ mov r12, rax
+ add rsp, CONST
+ mov rax, r12
+ pop rbx
+ pop r12
+ ret
+LABEL23:
+ mov rdi, r12
+ xor r12d, r12d
+ call CONST
+ jmp LABEL8

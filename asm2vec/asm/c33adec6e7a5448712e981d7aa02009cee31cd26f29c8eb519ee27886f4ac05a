@@ -1,0 +1,30 @@
+ .name fcn.00004e70
+ .offset 0000000000004e70
+ .file ksshaskpass
+ movzx eax, byte [rip + CONST]
+ test al, al
+ cjmp LABEL2
+ lea rax, [rip + CONST]
+ ret
+LABEL2:
+ sub rsp, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ test eax, eax
+ cjmp LABEL9
+ lea rax, [rip + CONST]
+ add rsp, CONST
+ ret
+LABEL9:
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rdi, qword [rip + CONST]
+ lea rdx, [rip + CONST]
+ lea rsi, [rip + CONST]
+ call CONST
+ lea rax, [rip + CONST]
+ add rsp, CONST
+ ret

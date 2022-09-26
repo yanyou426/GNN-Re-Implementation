@@ -1,0 +1,56 @@
+ .name fcn.000086a0
+ .offset 00000000000086a0
+ .file kontrast
+ push r13
+ push r12
+ mov r12, rdi
+ push rbp
+ push rbx
+ mov rbx, rsi
+ sub rsp, CONST
+ mov rax, qword [rsi]
+ mov rdx, qword [rax]
+ mov rax, qword [rax + CONST]
+ mov rax, qword [rax]
+ mov rdx, qword [rdx]
+ mov esi, dword [rax + CONST]
+ mov rax, qword [rbx + CONST]
+ add esi, dword [rdx + CONST]
+ xor edx, edx
+ mov rax, qword [rax]
+ add esi, dword [rax + CONST]
+ call CONST
+ mov r13, qword [rbx]
+ mov rdi, qword [r12]
+ mov rax, qword [r13]
+ add rdi, qword [rdi + CONST]
+ mov rsi, qword [rax]
+ movsxd rbp, dword [rsi + CONST]
+ add rsi, qword [rsi + CONST]
+ add rbp, rbp
+ mov rdx, rbp
+ call CONST
+ mov rdi, rax
+ mov rax, qword [r13 + CONST]
+ add rdi, rbp
+ mov rsi, qword [rax]
+ movsxd rbp, dword [rsi + CONST]
+ add rsi, qword [rsi + CONST]
+ add rbp, rbp
+ mov rdx, rbp
+ call CONST
+ mov rdi, rax
+ mov rax, qword [rbx + CONST]
+ add rdi, rbp
+ mov rsi, qword [rax]
+ movsxd rdx, dword [rsi + CONST]
+ add rsi, qword [rsi + CONST]
+ add rdx, rdx
+ call CONST
+ add rsp, CONST
+ mov rax, r12
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ ret

@@ -1,0 +1,62 @@
+ .name fcn.00001870
+ .offset 0000000000001870
+ .file weave
+ sub rsp, CONST
+ movzx eax, byte [rip + CONST]
+ mov rsi, qword [rip + CONST]
+ cmp al, CONST
+ cjmp LABEL4
+ cjmp LABEL5
+ test al, al
+ cjmp LABEL7
+ mov edi, CONST
+ call CONST
+ mov esi, CONST
+ mov rcx, qword [rip + CONST]
+ mov edx, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rsi, qword [rip + CONST]
+ nop word [rax + rax]
+LABEL24:
+ mov edi, CONST
+ call CONST
+ cmp byte [rip + CONST], CONST
+ cjmp LABEL20
+ mov edi, CONST
+ call CONST
+LABEL5:
+ cmp al, CONST
+ cjmp LABEL24
+ mov edi, CONST
+ call CONST
+ mov esi, CONST
+ mov rcx, qword [rip + CONST]
+ mov edx, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rsi, qword [rip + CONST]
+ jmp LABEL24
+LABEL20:
+ xor edi, edi
+ call CONST
+LABEL7:
+ mov edi, CONST
+ call CONST
+ mov esi, CONST
+ mov rcx, qword [rip + CONST]
+ mov edx, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rsi, qword [rip + CONST]
+ jmp LABEL24
+LABEL4:
+ mov edi, CONST
+ call CONST
+ mov esi, CONST
+ mov rcx, qword [rip + CONST]
+ mov edx, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rsi, qword [rip + CONST]
+ jmp LABEL24

@@ -1,0 +1,23 @@
+ .name fcn.00013190
+ .offset 0000000000013190
+ .file curl
+ push rbp
+ lea rsi, [rip + CONST]
+ mov ebp, edi
+ call CONST
+ mov rax, qword [rip + CONST]
+ mov edi, ebp
+ xor esi, esi
+ movdqa xmm0, xmmword [rip + CONST]
+ lea rdx, [rip + CONST]
+ movdqa xmm1, xmmword [rip + CONST]
+ movdqa xmm2, xmmword [rip + CONST]
+ pop rbp
+ mov qword [rip + CONST], rax
+ movaps xmmword [rip + CONST], xmm0
+ mov eax, dword [rip + CONST]
+ and dword [rip + CONST], CONST
+ mov dword [rip + CONST], eax
+ movaps xmmword [rip + CONST], xmm1
+ movaps xmmword [rip + CONST], xmm2
+ jmp CONST

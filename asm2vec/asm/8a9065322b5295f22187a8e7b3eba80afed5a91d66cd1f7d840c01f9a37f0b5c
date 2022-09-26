@@ -1,0 +1,58 @@
+ .name fcn.00009870
+ .offset 0000000000009870
+ .file sha256sum
+ push r12
+ mov r10, rsi
+ mov r11, rdx
+ mov r12, rcx
+ mov edx, CONST
+ sub rsp, CONST
+ mov qword [rsp + CONST], r8
+ lea rsi, [rsp + CONST]
+ lea rcx, [rsp + CONST]
+ mov qword [rsp + CONST], r9
+ lea r8, [rsp + CONST]
+ xor r9d, r9d
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ lea rax, [rsp + CONST]
+ mov dword [rsp + CONST], CONST
+ mov qword [rsp + CONST], rax
+ mov qword [rsp + CONST], rsi
+ jmp LABEL19
+LABEL31:
+ mov eax, edx
+ add edx, CONST
+ add rax, rsi
+ mov rax, qword [rax]
+ mov qword [r8 + r9*CONST], rax
+ test rax, rax
+ cjmp LABEL26
+LABEL37:
+ add r9, CONST
+ cmp r9, CONST
+ cjmp LABEL26
+LABEL19:
+ cmp edx, CONST
+ cjmp LABEL31
+ mov rax, rcx
+ add rcx, CONST
+ mov rax, qword [rax]
+ mov qword [r8 + r9*CONST], rax
+ test rax, rax
+ cjmp LABEL37
+ nop word cs:[rax + rax]
+LABEL26:
+ mov rcx, r12
+ mov rdx, r11
+ mov rsi, r10
+ call CONST
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL45
+ add rsp, CONST
+ pop r12
+ ret
+LABEL45:
+ call CONST

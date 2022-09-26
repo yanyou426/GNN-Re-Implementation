@@ -1,0 +1,88 @@
+ .name fcn.00015050
+ .offset 0000000000015050
+ .file cvtsudoers
+ lea rax, [rip + CONST]
+ push r12
+ mov edx, CONST
+ push rbp
+ mov rbp, rdi
+ lea rdi, [rip + CONST]
+ push rbx
+ mov r12d, dword [rax + CONST]
+ mov ebx, esi
+ lea rsi, [rip + CONST]
+ mov ecx, r12d
+ call CONST
+ movzx eax, word [rbp + CONST]
+ sub ax, CONST
+ cmp ax, CONST
+ cjmp LABEL15
+ lea rdx, [rip + CONST]
+ movzx eax, ax
+ movsxd rax, dword [rdx + rax*CONST]
+ add rax, rdx
+ jmp rax
+ and ebx, CONST
+ cjmp LABEL22
+LABEL15:
+ xor r8d, r8d
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ xor eax, eax
+LABEL43:
+ pop rbx
+ pop rbp
+ pop r12
+ ret
+ and ebx, CONST
+ cjmp LABEL15
+ mov r8d, CONST
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ mov eax, CONST
+ jmp LABEL43
+ and ebx, CONST
+ cjmp LABEL15
+ mov r8d, CONST
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ mov eax, CONST
+ jmp LABEL43
+ and ebx, CONST
+ cjmp LABEL15
+ mov r8d, CONST
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ mov eax, CONST
+ jmp LABEL43
+ and ebx, CONST
+ cjmp LABEL15
+ mov r8d, CONST
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ mov eax, CONST
+ jmp LABEL43
+LABEL22:
+ mov r8d, CONST
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ mov eax, CONST
+ jmp LABEL43

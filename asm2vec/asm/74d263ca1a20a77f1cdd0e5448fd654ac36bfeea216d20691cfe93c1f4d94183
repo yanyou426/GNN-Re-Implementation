@@ -1,0 +1,34 @@
+ .name fcn.0000c650
+ .offset 000000000000c650
+ .file weave
+ push rbp
+ mov rbp, rdi
+ jmp LABEL2
+LABEL10:
+ cmp eax, CONST
+ cjmp LABEL4
+ cmp eax, CONST
+ cjmp LABEL6
+LABEL2:
+ mov rdi, rbp
+ call CONST
+ cmp eax, CONST
+ cjmp LABEL10
+LABEL14:
+ pop rbp
+ ret
+LABEL6:
+ cmp eax, CONST
+ cjmp LABEL14
+ nop dword [rax]
+LABEL4:
+ mov rdi, rbp
+ call CONST
+ cmp eax, CONST
+ cjmp LABEL14
+ cmp eax, CONST
+ cjmp LABEL14
+ mov rsi, rbp
+ mov edi, eax
+ pop rbp
+ jmp CONST

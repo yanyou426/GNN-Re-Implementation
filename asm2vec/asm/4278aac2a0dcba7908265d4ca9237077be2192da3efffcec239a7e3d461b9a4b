@@ -1,0 +1,62 @@
+ .name fcn.00004960
+ .offset 0000000000004960
+ .file shred
+ push r12
+ xor r12d, r12d
+ push rbp
+ mov rbp, rdi
+ push rbx
+ cmp byte [rdi], CONST
+ sete r12b
+ call CONST
+ sub rax, rbp
+ mov rbx, rax
+ jmp LABEL10
+LABEL16:
+ cmp byte [rbp + rbx + CONST], CONST
+ lea rax, [rbx + CONST]
+ cjmp LABEL13
+ mov rbx, rax
+LABEL10:
+ cmp r12, rbx
+ cjmp LABEL16
+ mov rax, rbx
+ xor rax, CONST
+ mov r12d, eax
+ lea rdi, [rbx + rax + CONST]
+ and r12d, CONST
+ call CONST
+ test rax, rax
+ cjmp LABEL24
+ mov rdx, rbx
+ mov rsi, rbp
+ mov rdi, rax
+ call CONST
+ mov r8, rax
+ test r12b, r12b
+ cjmp LABEL31
+ mov byte [rax], CONST
+ mov ebx, CONST
+LABEL31:
+ mov byte [r8 + rbx], CONST
+LABEL52:
+ pop rbx
+ mov rax, r8
+ pop rbp
+ pop r12
+ ret
+LABEL13:
+ lea rdi, [rbx + CONST]
+ call CONST
+ mov r8, rax
+ test rax, rax
+ cjmp LABEL24
+ mov rdi, r8
+ mov rdx, rbx
+ mov rsi, rbp
+ call CONST
+ mov r8, rax
+ jmp LABEL31
+LABEL24:
+ xor r8d, r8d
+ jmp LABEL52

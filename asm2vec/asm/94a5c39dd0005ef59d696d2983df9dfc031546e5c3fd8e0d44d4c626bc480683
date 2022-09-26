@@ -1,0 +1,68 @@
+ .name fcn.0001bea0
+ .offset 000000000001bea0
+ .file curl
+ test rsi, rsi
+ cjmp LABEL1
+ cmp rsi, CONST
+ cjmp LABEL3
+ movabs rdx, CONST
+ mov rax, rsi
+ imul rdx
+ mov rax, rsi
+ sar rax, CONST
+ mov rcx, rdx
+ sar rcx, CONST
+ sub rcx, rax
+ cmp rsi, CONST
+ cjmp LABEL13
+ imul rax, rcx, CONST
+ movabs rdx, CONST
+ add rsi, rax
+ mov rax, rsi
+ sar rsi, CONST
+ imul rdx
+ xor eax, eax
+ sar rdx, CONST
+ sub rdx, rsi
+ mov esi, CONST
+ mov r8, rdx
+ lea rdx, [rip + CONST]
+ jmp CONST
+LABEL13:
+ lea rdx, [rip + CONST]
+ mov esi, CONST
+ xor eax, eax
+ jmp CONST
+LABEL3:
+ movabs rdx, CONST
+ mov rax, rsi
+ imul rdx
+ mov rax, rsi
+ sar rax, CONST
+ mov rcx, rdx
+ movabs rdx, CONST
+ sar rcx, CONST
+ sub rcx, rax
+ imul rax, rcx, CONST
+ add rsi, rax
+ mov rax, rsi
+ imul rdx
+ mov rax, rsi
+ sar rax, CONST
+ lea r8, [rdx + rsi]
+ sar r8, CONST
+ sub r8, rax
+ mov rdx, r8
+ mov rax, r8
+ shl rdx, CONST
+ sub rax, rdx
+ lea rdx, [rip + CONST]
+ lea r9, [rsi + rax*CONST]
+ mov esi, CONST
+ xor eax, eax
+ jmp CONST
+LABEL1:
+ movabs rax, CONST
+ mov byte [rdi + CONST], CONST
+ mov qword [rdi], rax
+ ret

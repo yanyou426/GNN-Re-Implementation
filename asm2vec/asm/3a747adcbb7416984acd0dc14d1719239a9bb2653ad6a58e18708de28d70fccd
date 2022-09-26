@@ -1,0 +1,98 @@
+ .name fcn.000032d0
+ .offset 00000000000032d0
+ .file weave
+ lea eax, [rdi + CONST]
+ push r12
+ cmp al, CONST
+ cjmp LABEL3
+ lea rdx, [rip + CONST]
+ movzx eax, al
+ movsxd rax, dword [rdx + rax*CONST]
+ add rax, rdx
+ jmp rax
+LABEL3:
+ mov eax, dword [rip + CONST]
+ xor r12d, r12d
+ test eax, eax
+ cjmp LABEL12
+LABEL17:
+ mov eax, r12d
+ pop r12
+ ret
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov edx, dword [rip + CONST]
+ xor r12d, r12d
+ test edx, edx
+ cjmp LABEL17
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ call CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+ mov r12d, edi
+ jmp LABEL17
+ mov r12d, CONST
+ jmp LABEL17
+LABEL12:
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ mov edx, CONST
+ mov rcx, qword [rip + CONST]
+ mov esi, CONST
+ lea rdi, [rip + CONST]
+ call CONST
+ call CONST
+ jmp LABEL17

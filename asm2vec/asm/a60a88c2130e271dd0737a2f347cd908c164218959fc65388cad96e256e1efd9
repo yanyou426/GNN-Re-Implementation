@@ -1,0 +1,84 @@
+ .name entry.init1
+ .offset 00000000000028e0
+ .file sfconv
+ push rbp
+ lea rdi, [rip + CONST]
+ call CONST
+ mov rdi, qword [rip + CONST]
+ lea rdx, [rip + CONST]
+ lea rsi, [rip + CONST]
+ call CONST
+ lea rax, [rip + CONST]
+ lea rdx, [rip + CONST]
+ mov dword [rip + CONST], CONST
+ lea rsi, [rax + CONST]
+ lea rdi, [rip + CONST]
+ mov qword [rip + CONST], CONST
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], CONST
+ call CONST
+ lea rax, [rip + CONST]
+ lea rdx, [rip + CONST]
+ mov dword [rip + CONST], CONST
+ lea rsi, [rax + CONST]
+ lea rdi, [rip + CONST]
+ mov qword [rip + CONST], CONST
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], CONST
+ call CONST
+ mov rbp, qword [rip + CONST]
+ lea rax, [rip + CONST]
+ lea rdx, [rip + CONST]
+ lea rsi, [rax + CONST]
+ mov qword [rip + CONST], rax
+ mov rdi, rbp
+ mov byte [rip + CONST], CONST
+ mov qword [rip + CONST], CONST
+ call CONST
+ lea rax, [rip + CONST]
+ mov rdi, rbp
+ lea rdx, [rip + CONST]
+ lea rsi, [rax + CONST]
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], CONST
+ mov byte [rip + CONST], CONST
+ call CONST
+ lea rax, [rip + CONST]
+ mov rdi, rbp
+ lea rdx, [rip + CONST]
+ lea rsi, [rax + CONST]
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], CONST
+ mov byte [rip + CONST], CONST
+ call CONST
+ lea rax, [rip + CONST]
+ xor edx, edx
+ lea rdi, [rip + CONST]
+ mov word [rip + CONST], dx
+ lea rsi, [rax + CONST]
+ lea rdx, [rip + CONST]
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], CONST
+ call CONST
+ lea rax, [rip + CONST]
+ xor ecx, ecx
+ lea rdx, [rip + CONST]
+ lea rsi, [rax + CONST]
+ lea rdi, [rip + CONST]
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], CONST
+ mov word [rip + CONST], cx
+ call CONST
+ lea rax, [rip + CONST]
+ lea rdx, [rip + CONST]
+ pop rbp
+ lea rsi, [rax + CONST]
+ lea rdi, [rip + CONST]
+ mov dword [rip + CONST], CONST
+ mov qword [rip + CONST], CONST
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], rax
+ mov qword [rip + CONST], CONST
+ jmp CONST

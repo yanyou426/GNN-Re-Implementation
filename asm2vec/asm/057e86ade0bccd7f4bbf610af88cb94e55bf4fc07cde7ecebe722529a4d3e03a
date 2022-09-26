@@ -1,0 +1,18 @@
+ .name fcn.0000cc50
+ .offset 000000000000cc50
+ .file curl
+ push rbx
+ mov rbx, rdi
+ mov rdi, qword [rdi]
+ call CONST
+ test rax, rax
+ cjmp LABEL5
+ mov qword [rbx], rax
+ xor eax, eax
+ pop rbx
+ ret
+LABEL5:
+ call CONST
+ mov eax, CONST
+ pop rbx
+ ret

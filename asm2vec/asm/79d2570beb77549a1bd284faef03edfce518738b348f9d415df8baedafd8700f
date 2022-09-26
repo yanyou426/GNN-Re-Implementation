@@ -1,0 +1,33 @@
+ .name fcn.0000a1e0
+ .offset 000000000000a1e0
+ .file sha256sum
+ sub rsp, CONST
+ mov edx, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ mov rsi, rsp
+ call CONST
+ mov r8d, eax
+ xor eax, eax
+ test r8d, r8d
+ cjmp LABEL10
+ cmp word [rsp], CONST
+ cjmp LABEL10
+ cmp dword [rsp], CONST
+ cjmp LABEL14
+LABEL23:
+ mov eax, CONST
+LABEL10:
+ mov rcx, qword [rsp + CONST]
+ sub rcx, qword fs:[CONST]
+ cjmp LABEL18
+ add rsp, CONST
+ ret
+LABEL14:
+ xor eax, eax
+ cmp word [rsp + CONST], CONST
+ cjmp LABEL23
+ jmp LABEL10
+LABEL18:
+ call CONST

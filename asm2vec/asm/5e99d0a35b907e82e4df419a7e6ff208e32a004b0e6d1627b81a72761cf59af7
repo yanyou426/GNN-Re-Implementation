@@ -1,0 +1,24 @@
+ .name fcn.0001a940
+ .offset 000000000001a940
+ .file curl
+ movzx eax, byte [rdi]
+ cmp eax, CONST
+ cjmp LABEL2
+ cmp byte [rdi + CONST], CONST
+ mov r8d, CONST
+ cjmp LABEL2
+ mov eax, r8d
+ ret
+LABEL2:
+ sub eax, CONST
+ cjmp LABEL9
+ test eax, eax
+ sete r8b
+LABEL17:
+ mov eax, r8d
+ ret
+LABEL9:
+ movzx eax, byte [rdi + CONST]
+ test eax, eax
+ sete r8b
+ jmp LABEL17

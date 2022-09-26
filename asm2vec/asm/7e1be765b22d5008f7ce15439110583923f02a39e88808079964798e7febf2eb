@@ -1,0 +1,65 @@
+ .name fcn.0000c4b0
+ .offset 000000000000c4b0
+ .file weave
+ push r14
+ push r13
+ mov r13, rdx
+ push r12
+ push rbp
+ push rbx
+ mov rbx, rsi
+ call CONST
+ mov rdi, rax
+ mov rbp, rax
+ call CONST
+ mov rdi, rbx
+ mov r14, rax
+ mov r12d, eax
+ call CONST
+ cmp r14d, eax
+ cjmp LABEL16
+ mov rsi, rax
+ test eax, eax
+ cjmp LABEL19
+ mov edi, eax
+ lea r9d, [rax + CONST]
+ lea r8d, [r14 + CONST]
+ xor eax, eax
+ jmp LABEL24
+LABEL34:
+ add eax, CONST
+ cmp edi, eax
+ cjmp LABEL19
+LABEL24:
+ mov ecx, r9d
+ mov edx, r8d
+ sub edx, eax
+ sub ecx, eax
+ movzx edx, byte [rbp + rdx]
+ cmp byte [rbx + rcx], dl
+ cjmp LABEL34
+ cmp esi, eax
+ cjmp LABEL19
+LABEL16:
+ mov rdi, r13
+ call CONST
+ lea rdi, [r12 + rax + CONST]
+ call CONST
+ mov rdx, r12
+ mov rsi, rbp
+ mov rdi, rax
+ call CONST
+ mov rsi, r13
+ mov byte [rax + r12], CONST
+ mov rdi, rax
+ call CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ ret
+LABEL19:
+ mov r12d, r14d
+ sub r12d, esi
+ jmp LABEL16

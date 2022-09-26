@@ -1,0 +1,108 @@
+ .name fcn.0001bfd0
+ .offset 000000000001bfd0
+ .file curl
+ push r12
+ mov rcx, rdi
+ mov r12, rsi
+ cmp rdi, CONST
+ cjmp LABEL4
+ cmp rdi, CONST
+ cjmp LABEL6
+ cmp rdi, CONST
+ cjmp LABEL8
+ movabs rax, CONST
+ cmp rdi, rax
+ cjmp LABEL11
+ movabs rax, CONST
+ cmp rdi, rax
+ cjmp LABEL14
+ movabs rax, CONST
+ cmp rdi, rax
+ cjmp LABEL17
+ movabs rax, CONST
+ cmp rdi, rax
+ cjmp LABEL20
+ sar rcx, CONST
+ lea rdx, [rip + CONST]
+ mov rdi, r12
+ xor eax, eax
+ mov esi, CONST
+ call CONST
+ jmp LABEL27
+LABEL6:
+ sar rcx, CONST
+ lea rdx, [rip + CONST]
+ mov rdi, r12
+ xor eax, eax
+ mov esi, CONST
+ call CONST
+LABEL27:
+ mov rax, r12
+ pop r12
+ ret
+LABEL4:
+ mov rdi, r12
+ lea rdx, [rip + CONST]
+ mov esi, CONST
+ xor eax, eax
+ call CONST
+ mov rax, r12
+ pop r12
+ ret
+LABEL14:
+ mov rdx, rdi
+ sar rcx, CONST
+ mov esi, CONST
+ mov rdi, r12
+ movabs r8, CONST
+ and edx, CONST
+ shr rdx, CONST
+ mov rax, rdx
+ mul r8
+ xor eax, eax
+ shr rdx, CONST
+ mov r8, rdx
+ lea rdx, [rip + CONST]
+ call CONST
+ jmp LABEL27
+LABEL8:
+ mov r8, rdi
+ sar rcx, CONST
+ mov rdi, r12
+ mov esi, CONST
+ and r8d, CONST
+ movabs rdx, CONST
+ mov rax, r8
+ imul rdx
+ xor eax, eax
+ add r8, rdx
+ lea rdx, [rip + CONST]
+ sar r8, CONST
+ call CONST
+ mov rax, r12
+ pop r12
+ ret
+LABEL11:
+ sar rcx, CONST
+ lea rdx, [rip + CONST]
+ mov rdi, r12
+ xor eax, eax
+ mov esi, CONST
+ call CONST
+ jmp LABEL27
+LABEL20:
+ sar rcx, CONST
+ lea rdx, [rip + CONST]
+ mov rdi, r12
+ xor eax, eax
+ mov esi, CONST
+ call CONST
+ jmp LABEL27
+LABEL17:
+ sar rcx, CONST
+ lea rdx, [rip + CONST]
+ mov rdi, r12
+ xor eax, eax
+ mov esi, CONST
+ call CONST
+ jmp LABEL27

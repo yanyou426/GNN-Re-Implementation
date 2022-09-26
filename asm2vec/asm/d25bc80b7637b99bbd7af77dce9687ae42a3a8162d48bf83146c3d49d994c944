@@ -1,0 +1,26 @@
+ .name fcn.000069c0
+ .offset 00000000000069c0
+ .file sfconv
+ push rbx
+ mov rbx, rdi
+ mov rdi, qword [rdi + CONST]
+ lea rax, [rbx + CONST]
+ cmp rdi, rax
+ cjmp LABEL5
+ call CONST
+LABEL5:
+ mov rdi, qword [rbx + CONST]
+ lea rax, [rbx + CONST]
+ cmp rdi, rax
+ cjmp LABEL10
+ call CONST
+LABEL10:
+ mov rdi, qword [rbx + CONST]
+ add rbx, CONST
+ cmp rdi, rbx
+ cjmp LABEL15
+ pop rbx
+ jmp CONST
+LABEL15:
+ pop rbx
+ ret

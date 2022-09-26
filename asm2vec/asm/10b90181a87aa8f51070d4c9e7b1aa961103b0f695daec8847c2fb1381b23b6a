@@ -1,0 +1,136 @@
+ .name fcn.0000d330
+ .offset 000000000000d330
+ .file curl
+ mov r9, rdi
+ push rbx
+ mov r8, rsi
+ mov edi, edx
+ mov r11, qword [r9]
+ mov esi, edx
+ movzx r10d, byte [r11]
+ cmp r10b, CONST
+ cjmp LABEL8
+LABEL37:
+ cmp r10b, CONST
+ setne dl
+ test r10b, r10b
+ setne al
+ test dl, al
+ mov rdx, r11
+ cjmp LABEL15
+ cmp r10b, sil
+ cjmp LABEL17
+ jmp LABEL15
+LABEL28:
+ cmp dil, al
+ cjmp LABEL15
+LABEL17:
+ movzx eax, byte [rdx + CONST]
+ add rdx, CONST
+ test al, al
+ setne sil
+ cmp al, CONST
+ setne cl
+ test sil, cl
+ cjmp LABEL28
+LABEL15:
+ mov qword [r8], rdx
+ mov rax, r11
+ pop rbx
+ mov qword [r9], rdx
+ ret
+LABEL8:
+ movzx eax, byte [r11 + CONST]
+ lea rbx, [r11 + CONST]
+ test al, al
+ cjmp LABEL37
+ mov rcx, rbx
+ xor edx, edx
+ jmp LABEL40
+LABEL48:
+ cmp al, CONST
+ cjmp LABEL42
+ movzx eax, byte [rcx + CONST]
+LABEL53:
+ add rcx, CONST
+LABEL58:
+ test al, al
+ cjmp LABEL37
+LABEL40:
+ cmp al, CONST
+ cjmp LABEL48
+ movzx eax, byte [rcx + CONST]
+ cmp al, CONST
+ cjmp LABEL51
+ cmp al, CONST
+ cjmp LABEL53
+LABEL51:
+ test rdx, rdx
+ movzx eax, byte [rcx + CONST]
+ cmove rdx, rcx
+ add rcx, CONST
+ jmp LABEL58
+LABEL42:
+ mov qword [r8], rcx
+ test rdx, rdx
+ cjmp LABEL61
+ mov rax, rdx
+ jmp LABEL63
+LABEL72:
+ add rax, CONST
+ mov rdx, r10
+ mov byte [rax + CONST], cl
+ cmp qword [r8], rdx
+ cjmp LABEL68
+LABEL63:
+ movzx ecx, byte [rdx]
+ lea r10, [rdx + CONST]
+ cmp cl, CONST
+ cjmp LABEL72
+ movzx r11d, byte [rdx + CONST]
+ cmp r11b, CONST
+ cjmp LABEL75
+ cmp r11b, CONST
+ cjmp LABEL72
+LABEL75:
+ mov ecx, r11d
+ add rax, CONST
+ add rdx, CONST
+ mov byte [rax + CONST], cl
+ cmp qword [r8], rdx
+ cjmp LABEL63
+ nop word [rax + rax]
+LABEL68:
+ mov qword [r8], rax
+LABEL112:
+ movzx eax, byte [rdx]
+ cmp al, CONST
+ setne r8b
+ test al, al
+ setne cl
+ test r8b, cl
+ cjmp LABEL92
+ cmp al, sil
+ cjmp LABEL94
+ jmp LABEL92
+LABEL105:
+ cmp al, dil
+ cjmp LABEL92
+LABEL94:
+ movzx eax, byte [rdx + CONST]
+ add rdx, CONST
+ test al, al
+ setne sil
+ cmp al, CONST
+ setne cl
+ test sil, cl
+ cjmp LABEL105
+LABEL92:
+ mov r11, rbx
+ mov qword [r9], rdx
+ pop rbx
+ mov rax, r11
+ ret
+LABEL61:
+ mov rdx, rcx
+ jmp LABEL112

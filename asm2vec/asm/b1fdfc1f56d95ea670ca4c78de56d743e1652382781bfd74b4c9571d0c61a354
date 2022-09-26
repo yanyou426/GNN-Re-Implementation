@@ -1,0 +1,14 @@
+ .name entry0
+ .offset 0000000000001220
+ .file weave
+ xor ebp, ebp
+ mov r9, rdx
+ pop rsi
+ mov rdx, rsp
+ and rsp, CONST
+ push rax
+ push rsp
+ lea r8, [rip + CONST]
+ lea rcx, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call qword [rip + CONST]

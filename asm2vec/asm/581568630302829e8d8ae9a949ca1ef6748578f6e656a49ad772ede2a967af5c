@@ -1,0 +1,61 @@
+ .name fcn.0001b140
+ .offset 000000000001b140
+ .file cvtsudoers
+ push r15
+ push r14
+ push r13
+ mov r13, rdi
+ lea rdi, [rip + CONST]
+ push r12
+ mov r12, rsi
+ lea rsi, [rip + CONST]
+ push rbp
+ mov rbp, rdx
+ mov edx, CONST
+ push rbx
+ mov rbx, rcx
+ sub rsp, CONST
+ lea rax, [rip + CONST]
+ mov r14d, dword [rax + CONST]
+ mov ecx, r14d
+ call CONST
+ mov rax, qword [r12 + CONST]
+ mov rax, qword [rax + CONST]
+ mov r15, qword [rax]
+ test r15, r15
+ cjmp LABEL22
+ jmp LABEL23
+LABEL35:
+ mov rax, qword [r15 + CONST]
+ mov rax, qword [rax + CONST]
+ mov r15, qword [rax]
+ test r15, r15
+ cjmp LABEL23
+LABEL22:
+ mov rcx, rbx
+ mov rdx, rbp
+ mov rsi, r15
+ mov rdi, r13
+ call CONST
+ cmp eax, CONST
+ cjmp LABEL35
+LABEL53:
+ mov r8d, eax
+ mov ecx, r14d
+ mov edx, CONST
+ mov dword [rsp + CONST], eax
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ mov eax, dword [rsp + CONST]
+ add rsp, CONST
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL23:
+ mov eax, CONST
+ jmp LABEL53

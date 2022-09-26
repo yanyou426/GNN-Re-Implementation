@@ -1,0 +1,42 @@
+ .name fcn.000233e0
+ .offset 00000000000233e0
+ .file cvtsudoers
+ lea rax, [rip + CONST]
+ push r12
+ mov edx, CONST
+ push rbp
+ mov rbp, rdi
+ lea rdi, [rip + CONST]
+ push rbx
+ mov r12d, dword [rax + CONST]
+ mov rbx, rsi
+ lea rsi, [rip + CONST]
+ add rbp, CONST
+ mov ecx, r12d
+ call CONST
+ mov rax, qword [rbx]
+ mov rdx, qword [rax + CONST]
+ mov qword [rbx], rdx
+ cmp rdx, rbp
+ cjmp LABEL17
+ mov qword [rdx + CONST], rbx
+LABEL17:
+ mov rdx, qword [rbx + CONST]
+ mov qword [rax + CONST], rdx
+ cmp qword [rdx], rbx
+ cjmp LABEL22
+ mov qword [rdx + CONST], rax
+LABEL35:
+ mov qword [rax + CONST], rbx
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ mov qword [rbx + CONST], rax
+ lea rdi, [rip + CONST]
+ pop rbx
+ pop rbp
+ pop r12
+ jmp CONST
+LABEL22:
+ mov qword [rdx], rax
+ jmp LABEL35

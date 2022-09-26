@@ -1,0 +1,111 @@
+ .name fcn.00005da0
+ .offset 0000000000005da0
+ .file weave
+ mov edx, dword [rip + CONST]
+ lea rcx, [rip + CONST]
+ lea edi, [rdx + CONST]
+ movsxd rsi, edi
+ movzx eax, byte [rcx + rsi]
+ cmp al, CONST
+ cjmp LABEL6
+ cmp al, CONST
+ cjmp LABEL8
+ cmp al, CONST
+ cjmp LABEL10
+LABEL19:
+ mov dword [rip + CONST], edi
+ ret
+LABEL6:
+ lea eax, [rdx + CONST]
+ cdqe
+ movzx ecx, byte [rcx + rax]
+ cmp cl, CONST
+ cjmp LABEL17
+ cmp cl, CONST
+ cjmp LABEL19
+ lea r8, [rip + CONST]
+ movsxd r9, edx
+ movsxd r10, dword [rip + CONST]
+ lea rdi, [rip + CONST]
+ movzx r9d, word [r8 + r9*CONST]
+ mov r11d, CONST
+ movzx esi, word [r8 + rsi*CONST]
+ mov rcx, r10
+ movzx eax, word [r8 + rax*CONST]
+ sub r9w, CONST
+ sub si, CONST
+ mov word [rdi + r10*CONST], r9w
+ lea r9d, [r10 + CONST]
+ sub ax, CONST
+ movsxd r9, r9d
+ mov word [rdi + r9*CONST], r11w
+ lea r9d, [r10 + CONST]
+ mov r10d, CONST
+ mov r11d, CONST
+ movsxd r9, r9d
+ mov word [rdi + r9*CONST], r10w
+ lea r9d, [rcx + CONST]
+ mov r10d, CONST
+ movsxd r9, r9d
+ mov word [rdi + r9*CONST], si
+ lea esi, [rcx + CONST]
+ mov r9d, CONST
+ movsxd rsi, esi
+ mov word [rdi + rsi*CONST], r11w
+ lea esi, [rcx + CONST]
+ movsxd rsi, esi
+ mov word [rdi + rsi*CONST], r9w
+ lea esi, [rcx + CONST]
+ movsxd rsi, esi
+ mov word [rdi + rsi*CONST], r10w
+ lea esi, [rcx + CONST]
+ add ecx, CONST
+ movsxd rsi, esi
+ mov dword [rip + CONST], ecx
+ mov ecx, CONST
+ mov word [rdi + rsi*CONST], ax
+ movzx edi, dx
+ mov esi, CONST
+ mov edx, CONST
+ jmp CONST
+LABEL8:
+ lea r8, [rip + CONST]
+ movsxd rdi, edx
+ movsxd r9, dword [rip + CONST]
+ lea rcx, [rip + CONST]
+ movzx edi, word [r8 + rdi*CONST]
+ movzx esi, word [r8 + rsi*CONST]
+ mov r10d, CONST
+ mov rax, r9
+ sub di, CONST
+ sub si, CONST
+ mov word [rcx + r9*CONST], di
+ lea edi, [r9 + CONST]
+ mov r9d, CONST
+ movsxd rdi, edi
+ mov word [rcx + rdi*CONST], r9w
+ lea edi, [rax + CONST]
+ movsxd rdi, edi
+ mov word [rcx + rdi*CONST], r10w
+ lea edi, [rax + CONST]
+ add eax, CONST
+ movsxd rdi, edi
+ mov dword [rip + CONST], eax
+ mov word [rcx + rdi*CONST], si
+ movzx edi, dx
+ mov ecx, CONST
+ mov edx, CONST
+ mov esi, CONST
+ jmp CONST
+LABEL10:
+ movzx edi, di
+ xor ecx, ecx
+ mov edx, CONST
+ mov esi, CONST
+ jmp CONST
+LABEL17:
+ movzx edi, di
+ xor ecx, ecx
+ mov edx, CONST
+ mov esi, CONST
+ jmp CONST

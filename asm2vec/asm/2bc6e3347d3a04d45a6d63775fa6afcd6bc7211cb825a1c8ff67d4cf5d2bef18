@@ -1,0 +1,64 @@
+ .name fcn.00002840
+ .offset 0000000000002840
+ .file setcifsacl
+ push r13
+ add ecx, CONST
+ push r12
+ push rbp
+ push rbx
+ mov rbx, rsi
+ sub rsp, CONST
+ movzx r8d, word [rdi]
+ movsxd r10, dword [rdi + CONST]
+ mov esi, dword [rdi + CONST]
+ movsxd r12, dword [rdi + CONST]
+ mov word [rbx], r8w
+ movzx r8d, word [rdi + CONST]
+ movzx r9d, word [rdi + r10]
+ mov dword [rbx + CONST], esi
+ lea rbp, [rdi + r12]
+ mov word [rbx + CONST], r8w
+ lea r8, [rbx + r10]
+ mov dword [rbx + CONST], r12d
+ mov dword [rbx + CONST], r10d
+ mov word [r8], r9w
+ mov dword [r8 + CONST], edx
+ movsxd rdx, ecx
+ mov word [r8 + CONST], cx
+ movsxd r8, esi
+ lea r13, [rdx + CONST]
+ lea r9, [rdi + r8]
+ cmp esi, r10d
+ cjmp LABEL28
+ mov rax, r10
+ lea rdi, [rdx + r10]
+ mov rsi, r9
+ add eax, ecx
+ lea r12, [rbx + rdi]
+ mov dword [rbx + CONST], eax
+ mov rdi, r12
+ call CONST
+ movsxd rdi, eax
+ add eax, dword [rbx + CONST]
+ mov dword [rbx + CONST], eax
+ add r13, rdi
+ add rdi, r12
+LABEL58:
+ mov rsi, rbp
+ call CONST
+ add rsp, CONST
+ cdqe
+ pop rbx
+ pop rbp
+ add rax, r13
+ pop r12
+ pop r13
+ ret
+LABEL28:
+ lea rdi, [rbx + r8]
+ mov rsi, r9
+ call CONST
+ lea rdi, [rbx + r12]
+ cdqe
+ add r13, rax
+ jmp LABEL58

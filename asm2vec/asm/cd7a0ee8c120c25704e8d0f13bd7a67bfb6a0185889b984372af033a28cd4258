@@ -1,0 +1,17 @@
+ .name fcn.0000a260
+ .offset 000000000000a260
+ .file sha256sum
+ sub rsp, CONST
+ mov edi, CONST
+ call CONST
+ test rax, rax
+ cjmp LABEL4
+ cmp byte [rax], CONST
+ lea rdx, [rip + CONST]
+ cmove rax, rdx
+ add rsp, CONST
+ ret
+LABEL4:
+ lea rax, [rip + CONST]
+ add rsp, CONST
+ ret

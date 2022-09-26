@@ -1,0 +1,31 @@
+ .name fcn.00004aa0
+ .offset 0000000000004aa0
+ .file shred
+ sub rsp, CONST
+ mov qword [rsp + CONST], rdx
+ xor edx, edx
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ test sil, CONST
+ cjmp LABEL7
+LABEL23:
+ xor eax, eax
+ call CONST
+ mov edi, eax
+ call CONST
+ mov rcx, qword [rsp + CONST]
+ sub rcx, qword fs:[CONST]
+ cjmp LABEL14
+ add rsp, CONST
+ ret
+LABEL7:
+ lea rax, [rsp + CONST]
+ mov dword [rsp], CONST
+ mov edx, dword [rsp + CONST]
+ mov qword [rsp + CONST], rax
+ lea rax, [rsp + CONST]
+ mov qword [rsp + CONST], rax
+ jmp LABEL23
+LABEL14:
+ call CONST

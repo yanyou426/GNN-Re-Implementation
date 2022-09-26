@@ -1,0 +1,18 @@
+ .name fcn.00004f00
+ .offset 0000000000004f00
+ .file ksshaskpass
+ mov rax, qword [rdi]
+ mov edx, dword [rax]
+ test edx, edx
+ cjmp LABEL3
+ cmp edx, CONST
+ cjmp LABEL5
+ lock sub dword [rax], CONST
+ cjmp LABEL3
+LABEL5:
+ ret
+LABEL3:
+ mov rdi, qword [rdi]
+ mov edx, CONST
+ mov esi, CONST
+ jmp CONST

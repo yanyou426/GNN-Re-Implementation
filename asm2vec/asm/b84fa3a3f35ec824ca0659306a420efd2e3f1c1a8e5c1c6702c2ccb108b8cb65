@@ -1,0 +1,33 @@
+ .name fcn.00007b90
+ .offset 0000000000007b90
+ .file kontrast
+ test esi, esi
+ cjmp LABEL1
+ push rbx
+ mov rbx, rcx
+ test edx, edx
+ cjmp LABEL5
+ cmp edx, CONST
+ cjmp LABEL7
+ mov rax, qword [rcx + CONST]
+ mov esi, dword [rax]
+ call CONST
+ mov rdx, qword [rbx]
+ test rdx, rdx
+ cjmp LABEL7
+ mov byte [rdx], al
+LABEL7:
+ pop rbx
+ ret
+LABEL1:
+ ret
+LABEL5:
+ mov rdx, qword [rbx + CONST]
+ mov rcx, qword [rcx + CONST]
+ mov rsi, qword [rbx + CONST]
+ call CONST
+ mov rdx, qword [rbx]
+ test rdx, rdx
+ cjmp LABEL7
+ mov byte [rdx], al
+ jmp LABEL7

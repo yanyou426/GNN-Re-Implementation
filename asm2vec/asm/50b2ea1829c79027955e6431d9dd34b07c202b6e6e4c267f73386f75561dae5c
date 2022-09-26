@@ -1,0 +1,59 @@
+ .name fcn.000235a0
+ .offset 00000000000235a0
+ .file cvtsudoers
+ lea rax, [rip + CONST]
+ push r13
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ push r12
+ push rbx
+ mov r13d, dword [rax + CONST]
+ mov rbx, rdi
+ lea rdi, [rip + CONST]
+ mov ecx, r13d
+ call CONST
+ mov edi, CONST
+ call CONST
+ mov r12, rax
+ test rax, rax
+ cjmp LABEL15
+ mov qword [rax], rbx
+ mov r8, r12
+ lea rax, [rax + CONST]
+ mov ecx, r13d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ mov qword [r12 + CONST], rax
+ lea rdi, [rip + CONST]
+ mov qword [r12 + CONST], rax
+ mov qword [r12 + CONST], rax
+ mov dword [r12 + CONST], CONST
+ mov qword [r12 + CONST], CONST
+ mov qword [r12 + CONST], rax
+ mov qword [r12 + CONST], rax
+ mov qword [r12 + CONST], rax
+ mov dword [r12 + CONST], CONST
+ mov qword [r12 + CONST], CONST
+ call CONST
+LABEL53:
+ mov rax, r12
+ pop rbx
+ pop r12
+ pop r13
+ ret
+LABEL15:
+ mov ecx, r13d
+ lea r8, [rip + CONST]
+ xor eax, eax
+ mov edx, CONST
+ or ecx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ xor r8d, r8d
+ mov ecx, r13d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ jmp LABEL53

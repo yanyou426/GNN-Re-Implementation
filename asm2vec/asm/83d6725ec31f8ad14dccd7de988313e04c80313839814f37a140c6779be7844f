@@ -1,0 +1,44 @@
+ .name fcn.0000d290
+ .offset 000000000000d290
+ .file curl
+ push r12
+ mov r12, rdi
+ push rbp
+ sub rsp, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ test rdi, rdi
+ cjmp LABEL8
+LABEL25:
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL11
+ add rsp, CONST
+ pop rbp
+ pop r12
+ ret
+LABEL8:
+ mov rdi, rsi
+ mov rsi, rsp
+ mov qword [rsp], r12
+ mov rbp, rdx
+ mov qword [rsp + CONST], r12
+ mov qword [rsp + CONST], CONST
+ mov qword [rsp + CONST], CONST
+ call CONST
+ test eax, eax
+ cjmp LABEL25
+ call CONST
+ mov edi, dword [rax]
+ call CONST
+ mov rcx, r12
+ mov esi, CONST
+ mov rdi, rbp
+ mov r8, rax
+ lea rdx, [rip + CONST]
+ xor eax, eax
+ call CONST
+ jmp LABEL25
+LABEL11:
+ call CONST

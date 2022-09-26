@@ -1,0 +1,50 @@
+ .name fcn.00004f90
+ .offset 0000000000004f90
+ .file ksshaskpass
+ push r14
+ mov edx, CONST
+ push r13
+ push r12
+ mov r12, rdi
+ push rbp
+ mov rbp, rsi
+ sub rsp, CONST
+ mov r14, qword [rdi]
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ test rsi, rsi
+ cjmp LABEL13
+ mov rdi, rsi
+ call CONST
+ mov edx, eax
+LABEL13:
+ mov r13, rsp
+ mov rsi, rbp
+ mov rdi, r13
+ call CONST
+ mov rsi, r13
+ mov rdi, r14
+ call CONST
+ mov rdi, r13
+ call CONST
+ mov rdi, qword [r12]
+ cmp byte [rdi + CONST], CONST
+ cjmp LABEL28
+LABEL41:
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL31
+ add rsp, CONST
+ mov rax, r12
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ ret
+LABEL28:
+ mov esi, CONST
+ call CONST
+ jmp LABEL41
+LABEL31:
+ call CONST

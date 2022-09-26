@@ -1,0 +1,13 @@
+ .name fcn.0001ad20
+ .offset 000000000001ad20
+ .file cvtsudoers
+ push rbx
+ mov rbx, rdi
+ call CONST
+ lea rdi, [rbx + CONST]
+ call CONST
+ mov rdi, qword [rbx + CONST]
+ call CONST
+ mov qword [rbx + CONST], CONST
+ pop rbx
+ ret

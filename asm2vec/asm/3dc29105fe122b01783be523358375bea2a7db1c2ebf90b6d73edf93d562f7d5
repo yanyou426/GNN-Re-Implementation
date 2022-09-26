@@ -1,0 +1,21 @@
+ .name fcn.00008500
+ .offset 0000000000008500
+ .file cvtsudoers
+ push rbx
+ mov ebx, edi
+ call CONST
+ lea rdx, [rip + CONST]
+ mov esi, CONST
+ mov rcx, rax
+ test ebx, ebx
+ cjmp LABEL7
+ mov rdi, qword [rip + CONST]
+ xor eax, eax
+ call CONST
+ mov edi, CONST
+ call CONST
+LABEL7:
+ mov rdi, qword [rip + CONST]
+ xor eax, eax
+ pop rbx
+ jmp CONST

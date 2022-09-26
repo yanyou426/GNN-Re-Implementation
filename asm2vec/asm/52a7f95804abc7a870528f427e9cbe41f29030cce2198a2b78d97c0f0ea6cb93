@@ -1,0 +1,22 @@
+ .name fcn.0000c180
+ .offset 000000000000c180
+ .file curl
+ mov qword [rdi], CONST
+ mov rdx, rdi
+ lea rdi, [rdi + CONST]
+ xor eax, eax
+ mov qword [rdi + CONST], CONST
+ mov rcx, rdx
+ and rdi, CONST
+ sub rcx, rdi
+ add ecx, CONST
+ shr ecx, CONST
+ rep stosq qword [rdi], rax
+ mov qword [rdx + CONST], CONST
+ mov qword [rdx + CONST], CONST
+ mov qword [rdx + CONST], CONST
+ mov qword [rdx + CONST], CONST
+ mov byte [rdx + CONST], CONST
+ mov qword [rdx + CONST], CONST
+ mov byte [rdx + CONST], CONST
+ ret

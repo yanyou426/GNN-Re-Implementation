@@ -1,0 +1,32 @@
+ .name fcn.000143c0
+ .offset 00000000000143c0
+ .file curl
+ test rdi, rdi
+ cjmp LABEL1
+ push rbx
+ mov rbx, rdi
+ mov rdi, qword [rdi + CONST]
+ test rdi, rdi
+ cjmp LABEL6
+ call CONST
+ mov qword [rbx + CONST], CONST
+LABEL6:
+ mov rdi, qword [rbx + CONST]
+ call CONST
+ mov rdi, qword [rbx + CONST]
+ mov qword [rbx + CONST], CONST
+ call CONST
+ mov rdi, qword [rbx + CONST]
+ mov qword [rbx + CONST], CONST
+ call CONST
+ mov rdi, qword [rbx + CONST]
+ mov qword [rbx + CONST], CONST
+ test rdi, rdi
+ cjmp LABEL20
+ call CONST
+ mov qword [rbx + CONST], CONST
+LABEL20:
+ pop rbx
+ ret
+LABEL1:
+ ret

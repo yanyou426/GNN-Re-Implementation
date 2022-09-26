@@ -1,0 +1,15 @@
+ .name fcn.00009b70
+ .offset 0000000000009b70
+ .file sha256sum
+ push rbx
+ mov rbx, rdi
+ call CONST
+ test rax, rax
+ cjmp LABEL4
+ test rbx, rbx
+ cjmp LABEL6
+LABEL4:
+ pop rbx
+ ret
+LABEL6:
+ call CONST

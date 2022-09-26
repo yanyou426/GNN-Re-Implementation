@@ -1,0 +1,33 @@
+ .name fcn.0000c590
+ .offset 000000000000c590
+ .file weave
+ push r12
+ push rbp
+ sub rsp, CONST
+ test rdi, rdi
+ cjmp LABEL4
+ mov rbp, rdi
+ call CONST
+ mov r12d, eax
+ test eax, eax
+ cjmp LABEL9
+LABEL4:
+ mov r12d, CONST
+ add rsp, CONST
+ mov eax, r12d
+ pop rbp
+ pop r12
+ ret
+LABEL9:
+ mov rdi, rbp
+ call CONST
+ mov edi, eax
+ cmp eax, CONST
+ cjmp LABEL4
+ mov rsi, rbp
+ call CONST
+ add rsp, CONST
+ mov eax, r12d
+ pop rbp
+ pop r12
+ ret

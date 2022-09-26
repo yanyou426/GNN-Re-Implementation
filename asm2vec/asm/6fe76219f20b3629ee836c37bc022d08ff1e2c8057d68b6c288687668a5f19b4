@@ -1,0 +1,28 @@
+ .name fcn.00004f30
+ .offset 0000000000004f30
+ .file ksshaskpass
+ push r12
+ mov r12, rdi
+ push rbp
+ sub rsp, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ mov rbp, rsp
+ mov rdi, rbp
+ call CONST
+ mov rdi, r12
+ mov rsi, rbp
+ call CONST
+ mov rdi, rbp
+ call CONST
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL17
+ add rsp, CONST
+ mov rax, r12
+ pop rbp
+ pop r12
+ ret
+LABEL17:
+ call CONST

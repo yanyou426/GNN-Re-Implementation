@@ -1,0 +1,19 @@
+ .name fcn.00002ba0
+ .offset 0000000000002ba0
+ .file setcifsacl
+ push rbp
+ mov rbp, rdi
+ call CONST
+ mov rdi, qword [rip + CONST]
+ lea rsi, [rip + CONST]
+ call CONST
+ test rax, rax
+ cjmp LABEL7
+ mov rdi, rbp
+ pop rbp
+ jmp rax
+LABEL7:
+ call CONST
+ pop rbp
+ mov qword [rip + CONST], rax
+ ret

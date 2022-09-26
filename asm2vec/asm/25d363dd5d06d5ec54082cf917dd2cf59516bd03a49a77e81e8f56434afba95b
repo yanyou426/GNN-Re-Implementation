@@ -1,0 +1,52 @@
+ .name fcn.00009a00
+ .offset 0000000000009a00
+ .file kontrast
+ push r12
+ mov r12, rdi
+ mov rdi, rsi
+ push rbx
+ mov rbx, rsi
+ sub rsp, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ call CONST
+ comisd xmm0, xmmword [rip + CONST]
+ cjmp LABEL11
+ mov eax, dword [rbx + CONST]
+ mov dword [r12], eax
+ mov rax, qword [rbx + CONST]
+ mov qword [r12 + CONST], rax
+ movzx eax, word [rbx + CONST]
+ mov word [r12 + CONST], ax
+LABEL39:
+ mov rax, qword [rsp + CONST]
+ sub rax, qword fs:[CONST]
+ cjmp LABEL20
+ add rsp, CONST
+ mov rax, r12
+ pop rbx
+ pop r12
+ ret
+LABEL11:
+ mov eax, dword [rbx + CONST]
+ mov rdi, rsp
+ mov dword [rsp], eax
+ mov rax, qword [rbx + CONST]
+ mov qword [rsp + CONST], rax
+ movzx eax, word [rbx + CONST]
+ mov word [rsp + CONST], ax
+ call CONST
+ comisd xmm0, xmmword [rip + CONST]
+ cjmp LABEL35
+ mov esi, CONST
+ mov rdi, r12
+ call CONST
+ jmp LABEL39
+LABEL35:
+ mov esi, CONST
+ mov rdi, r12
+ call CONST
+ jmp LABEL39
+LABEL20:
+ call CONST

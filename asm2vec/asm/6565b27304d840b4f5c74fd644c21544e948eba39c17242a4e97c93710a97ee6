@@ -1,0 +1,24 @@
+ .name fcn.00009c90
+ .offset 0000000000009c90
+ .file sha256sum
+ push r12
+ mov r12, rsi
+ push rbp
+ mov rbp, rdi
+ mov rdi, rsi
+ sub rsp, CONST
+ call CONST
+ mov rdi, rax
+ test rax, rax
+ cjmp LABEL9
+ test r12, r12
+ cjmp LABEL11
+LABEL9:
+ add rsp, CONST
+ mov rdx, r12
+ mov rsi, rbp
+ pop rbp
+ pop r12
+ jmp CONST
+LABEL11:
+ call CONST

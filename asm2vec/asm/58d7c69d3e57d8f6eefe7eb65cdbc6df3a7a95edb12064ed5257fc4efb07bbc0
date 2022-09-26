@@ -1,0 +1,48 @@
+ .name fcn.00003620
+ .offset 0000000000003620
+ .file sha256sum
+ lea rcx, [rdi + CONST]
+ xor eax, eax
+ lea r8, [rsi + CONST]
+ test rsi, rsi
+ cjmp LABEL4
+LABEL25:
+ movzx edx, byte [rdi + rax]
+ test dl, dl
+ cjmp LABEL7
+ cmp dl, CONST
+ cjmp LABEL9
+ cmp r8, rax
+ cjmp LABEL7
+ add rax, CONST
+ movzx edx, byte [rdi + rax]
+ cmp dl, CONST
+ cjmp LABEL15
+ cmp dl, CONST
+ cjmp LABEL17
+LABEL7:
+ xor eax, eax
+ ret
+LABEL9:
+ mov byte [rcx + CONST], dl
+ mov r9, rcx
+LABEL34:
+ add rax, CONST
+ add rcx, CONST
+ cmp rsi, rax
+ cjmp LABEL25
+ add rsi, rdi
+ cmp r9, rsi
+ cjmp LABEL4
+ mov byte [r9], CONST
+LABEL4:
+ mov rax, rdi
+ ret
+LABEL17:
+ mov byte [rcx + CONST], CONST
+ mov r9, rcx
+ jmp LABEL34
+LABEL15:
+ mov byte [rcx + CONST], CONST
+ mov r9, rcx
+ jmp LABEL34

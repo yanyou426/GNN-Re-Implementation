@@ -1,0 +1,51 @@
+ .name fcn.00009d50
+ .offset 0000000000009d50
+ .file sha256sum
+ push r12
+ push rbp
+ mov rbp, rdi
+ push rbx
+ call CONST
+ mov rdi, rbp
+ test eax, eax
+ cjmp LABEL7
+ call CONST
+ test eax, eax
+ cjmp LABEL10
+LABEL33:
+ mov rdi, rbp
+ call CONST
+ test eax, eax
+ cjmp LABEL14
+ call CONST
+ mov rdi, rbp
+ mov r12d, dword [rax]
+ mov rbx, rax
+ call CONST
+ test r12d, r12d
+ cjmp LABEL21
+LABEL41:
+ pop rbx
+ pop rbp
+ pop r12
+ ret
+LABEL10:
+ mov rdi, rbp
+ call CONST
+ xor esi, esi
+ mov edx, CONST
+ mov edi, eax
+ call CONST
+ cmp rax, CONST
+ cjmp LABEL33
+LABEL14:
+ mov rdi, rbp
+LABEL7:
+ pop rbx
+ pop rbp
+ pop r12
+ jmp CONST
+LABEL21:
+ mov dword [rbx], r12d
+ mov eax, CONST
+ jmp LABEL41

@@ -1,0 +1,39 @@
+ .name fcn.000137d0
+ .offset 00000000000137d0
+ .file curl
+ cmp edi, CONST
+ cjmp LABEL1
+ lea rdx, [rip + CONST]
+ mov edi, edi
+ movsxd rax, dword [rdx + rdi*CONST]
+ add rax, rdx
+ jmp rax
+LABEL1:
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret
+ lea rax, [rip + CONST]
+ ret

@@ -1,0 +1,62 @@
+ .name fcn.00017560
+ .offset 0000000000017560
+ .file cvtsudoers
+ push r13
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ push r12
+ push rbp
+ push rbx
+ sub rsp, CONST
+ lea rax, [rip + CONST]
+ mov r12d, dword [rax + CONST]
+ mov ecx, r12d
+ call CONST
+ movsx rax, word [rip + CONST]
+ cmp ax, CONST
+ cjmp LABEL14
+ mov r13d, CONST
+ lea rbx, [rip + CONST]
+ lea rbp, [rip + CONST]
+ jmp LABEL18
+LABEL24:
+ movsx rax, word [rbx + CONST]
+ add rbx, CONST
+ cmp ax, CONST
+ cjmp LABEL22
+LABEL18:
+ cmp word [rbx + CONST], CONST
+ cjmp LABEL24
+ lea rdx, [rax*CONST]
+ sub rdx, rax
+ lea rdi, [rbp + rdx*CONST]
+ call CONST
+ test al, al
+ mov eax, CONST
+ cmove r13d, eax
+ xor eax, eax
+ add rbx, CONST
+ mov word [rbx + CONST], ax
+ movsx rax, word [rbx]
+ cmp ax, CONST
+ cjmp LABEL18
+LABEL22:
+ movzx r8d, r13b
+LABEL53:
+ mov ecx, r12d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ add rsp, CONST
+ mov eax, r13d
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ ret
+LABEL14:
+ mov r8d, CONST
+ mov r13d, CONST
+ jmp LABEL53

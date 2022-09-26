@@ -1,0 +1,27 @@
+ .name fcn.0001faa0
+ .offset 000000000001faa0
+ .file curl
+ push rbp
+ xor edx, edx
+ xor eax, eax
+ mov ebp, edi
+ push rbx
+ mov ebx, esi
+ mov esi, CONST
+ sub rsp, CONST
+ call CONST
+ test ebx, ebx
+ cjmp LABEL10
+ and ah, CONST
+LABEL21:
+ add rsp, CONST
+ mov edx, eax
+ mov edi, ebp
+ mov esi, CONST
+ pop rbx
+ xor eax, eax
+ pop rbp
+ jmp CONST
+LABEL10:
+ or ah, CONST
+ jmp LABEL21

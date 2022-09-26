@@ -1,0 +1,38 @@
+ .name fcn.0001ebe0
+ .offset 000000000001ebe0
+ .file curl
+ sub rsp, CONST
+ mov edi, CONST
+ mov rax, qword fs:[CONST]
+ mov qword [rsp + CONST], rax
+ xor eax, eax
+ lea rsi, [rsp + CONST]
+ call CONST
+ test eax, eax
+ cjmp LABEL8
+ mov rax, qword [rsp + CONST]
+ mov rcx, qword [rsp + CONST]
+ movabs rdx, CONST
+ mov qword [rsp], rax
+ mov rax, rcx
+ sar rcx, CONST
+ imul rdx
+ sar rdx, CONST
+ sub rdx, rcx
+ movsxd rdx, edx
+ mov qword [rsp + CONST], rdx
+LABEL30:
+ mov rax, qword [rsp]
+ mov rdx, qword [rsp + CONST]
+ mov rdi, qword [rsp + CONST]
+ sub rdi, qword fs:[CONST]
+ cjmp LABEL24
+ add rsp, CONST
+ ret
+LABEL8:
+ mov rdi, rsp
+ xor esi, esi
+ call CONST
+ jmp LABEL30
+LABEL24:
+ call CONST

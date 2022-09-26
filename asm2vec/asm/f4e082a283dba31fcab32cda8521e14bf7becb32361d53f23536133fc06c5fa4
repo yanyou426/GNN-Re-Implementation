@@ -1,0 +1,30 @@
+ .name fcn.000027e0
+ .offset 00000000000027e0
+ .file setcifsacl
+ push r12
+ mov edx, CONST
+ push rbp
+ mov rbp, rdi
+ add rdi, CONST
+ push rbx
+ movzx eax, byte [rsi]
+ mov rbx, rsi
+ add rsi, CONST
+ mov byte [rdi + CONST], al
+ movzx eax, byte [rsi + CONST]
+ mov byte [rdi + CONST], al
+ call CONST
+ movzx r12d, byte [rbx + CONST]
+ test r12b, r12b
+ cjmp LABEL15
+ movzx edx, r12b
+ lea rsi, [rbx + CONST]
+ lea rdi, [rbp + CONST]
+ shl rdx, CONST
+ call CONST
+LABEL15:
+ lea eax, [r12*CONST + CONST]
+ pop rbx
+ pop rbp
+ pop r12
+ ret

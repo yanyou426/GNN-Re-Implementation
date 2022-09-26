@@ -1,0 +1,21 @@
+ .name fcn.0000cbd0
+ .offset 000000000000cbd0
+ .file curl
+ sub rsp, CONST
+ mov rdi, qword [rip + CONST]
+ call CONST
+ mov rdi, qword [rip + CONST]
+ mov qword [rip + CONST], CONST
+ call CONST
+ mov rdi, qword [rip + CONST]
+ mov qword [rip + CONST], CONST
+ call CONST
+ mov rdi, qword [rip + CONST]
+ mov qword [rip + CONST], CONST
+ call CONST
+ mov rdi, qword [rip + CONST]
+ mov qword [rip + CONST], CONST
+ call CONST
+ mov qword [rip + CONST], CONST
+ add rsp, CONST
+ ret

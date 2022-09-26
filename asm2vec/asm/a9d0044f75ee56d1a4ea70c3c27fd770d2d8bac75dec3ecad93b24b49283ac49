@@ -1,0 +1,92 @@
+ .name fcn.0001d2d0
+ .offset 000000000001d2d0
+ .file cvtsudoers
+ lea rax, [rip + CONST]
+ push r12
+ mov edx, CONST
+ push rbp
+ mov rbp, rsi
+ lea rsi, [rip + CONST]
+ push rbx
+ mov r12d, dword [rax + CONST]
+ mov rbx, rdi
+ lea rdi, [rip + CONST]
+ mov ecx, r12d
+ call CONST
+ test rbp, rbp
+ cjmp LABEL13
+ lea rax, [rip + CONST]
+ mov r8, qword [rax + CONST]
+ test r8, r8
+ cjmp LABEL17
+ mov ecx, CONST
+ lea rdi, [rip + CONST]
+ mov rsi, rbx
+ repe cmpsb byte [rsi], byte [rdi]
+ seta al
+ sbb al, CONST
+ xor edx, edx
+ test al, al
+ sete dl
+LABEL83:
+ mov rsi, r8
+ mov rdi, rbp
+ call CONST
+ test eax, eax
+ cjmp LABEL31
+ mov ecx, r12d
+ xor r8d, r8d
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ pop rbx
+ xor eax, eax
+ pop rbp
+ pop r12
+ ret
+LABEL31:
+ mov ecx, r12d
+ mov r8d, CONST
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ pop rbx
+ mov eax, CONST
+ pop rbp
+ pop r12
+ ret
+LABEL17:
+ cmp byte [rbp], CONST
+ cjmp LABEL55
+ movzx eax, byte [rbp + CONST]
+ mov edx, CONST
+ cmp edx, eax
+ cjmp LABEL55
+ cmp byte [rbp + CONST], CONST
+ cjmp LABEL55
+LABEL13:
+ mov ecx, r12d
+ mov r8d, CONST
+ mov edx, CONST
+ lea rsi, [rip + CONST]
+ lea rdi, [rip + CONST]
+ call CONST
+ pop rbx
+ mov eax, CONST
+ pop rbp
+ pop r12
+ ret
+LABEL55:
+ mov ecx, CONST
+ lea rdi, [rip + CONST]
+ mov rsi, rbx
+ repe cmpsb byte [rsi], byte [rdi]
+ lea r8, [rip + CONST]
+ seta al
+ sbb al, CONST
+ xor edx, edx
+ test al, al
+ sete dl
+ jmp LABEL83

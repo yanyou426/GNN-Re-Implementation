@@ -1,0 +1,212 @@
+ .name fcn.00002080
+ .offset 0000000000002080
+ .file weave
+ push r15
+ push r14
+ push r13
+ push r12
+ push rbp
+ push rbx
+ lea rbx, [rip + CONST]
+ sub rsp, CONST
+ movsxd r13, dword [rip + CONST]
+ mov r10d, dword [rip + CONST]
+ mov dword [rsp + CONST], edi
+ movzx eax, byte [rbx + r13]
+ mov r11d, r10d
+ lea edx, [r13 + CONST]
+ mov r12, r13
+ mov byte [rsp + CONST], dil
+ sub r11d, r13d
+ mov ebp, eax
+ cmp r10d, edx
+ cjmp LABEL19
+ lea rdi, [rbx + CONST]
+ lea rcx, [rbx + r13]
+ lea rdx, [rdi + r13]
+ lea edi, [r10 + CONST]
+ sub edi, r13d
+ add rdi, rdx
+ nop dword [rax + rax]
+LABEL43:
+ movzx edx, byte [rcx + CONST]
+ add rcx, CONST
+ lea eax, [rdx + rax*CONST]
+ mov rsi, rax
+ imul rax, rax, CONST
+ shr rax, CONST
+ mov rdx, rax
+ mov eax, esi
+ sub eax, edx
+ shr eax, CONST
+ add eax, edx
+ shr eax, CONST
+ imul edx, eax, CONST
+ mov eax, esi
+ sub eax, edx
+ cmp rcx, rdi
+ cjmp LABEL43
+LABEL19:
+ cdqe
+ lea rsi, [rip + CONST]
+ movzx r8d, word [rsi + rax*CONST]
+ mov qword [rsp + CONST], rax
+ lea rax, [rip + CONST]
+ mov word [rsp + CONST], r8w
+ test r8d, r8d
+ cjmp LABEL51
+ movzx eax, byte [rsp + CONST]
+ lea rsi, [rip + CONST]
+ lea r14, [rip + CONST]
+ lea rdi, [rip + CONST]
+ mov word [rsp + CONST], ax
+ jmp LABEL57
+LABEL70:
+ movzx r8d, word [rdi + rdx*CONST]
+ mov rax, rdi
+ test r8d, r8d
+ cjmp LABEL51
+LABEL57:
+ lea eax, [r8 + CONST]
+ movsxd rdx, r8d
+ cdqe
+ movzx r9d, word [rsi + rdx*CONST]
+ movzx eax, word [rsi + rax*CONST]
+ mov rcx, r9
+ sub eax, r9d
+ cmp eax, r11d
+ cjmp LABEL70
+ movzx eax, word [r14 + rdx*CONST]
+ cmp ax, word [rsp + CONST]
+ cjmp LABEL73
+ cmp ax, CONST
+ cjmp LABEL70
+ cmp byte [rsp + CONST], CONST
+ cjmp LABEL70
+LABEL73:
+ mov r9d, r8d
+ and r9d, CONST
+ cmp r10d, r12d
+ cjmp LABEL81
+ movsxd r9, r9d
+ sub rcx, r13
+ mov rax, r13
+ mov r15, r9
+ shl r15, CONST
+ add r9, r15
+ lea r15, [rip + CONST]
+ add rcx, r9
+ add rcx, r15
+ mov r15d, ebp
+ jmp LABEL92
+LABEL100:
+ lea r9d, [rax + CONST]
+ add rax, CONST
+ cmp r10d, eax
+ cjmp LABEL96
+ movzx r15d, byte [rbx + rax]
+LABEL92:
+ mov r9d, eax
+ cmp byte [rcx + rax], r15b
+ cjmp LABEL100
+LABEL96:
+ cmp r10d, r9d
+ cjmp LABEL70
+ cmp dword [rip + CONST], r8d
+ cjmp LABEL104
+LABEL168:
+ add rsp, CONST
+ mov eax, r8d
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL51:
+ movsxd rdx, dword [rip + CONST]
+ movzx edi, word [rsp + CONST]
+ mov rsi, qword [rsp + CONST]
+ mov word [rax + rdx*CONST], di
+ lea rax, [rip + CONST]
+ mov r8, rdx
+ mov word [rax + rsi*CONST], dx
+LABEL104:
+ mov ecx, r8d
+ lea rsi, [rip + CONST]
+ shr ecx, CONST
+ lea eax, [r8 + rcx]
+ and eax, CONST
+ sub eax, ecx
+ movzx eax, al
+ mov ecx, dword [rsi + rax*CONST]
+ add r11d, ecx
+ cmp r11d, CONST
+ cjmp LABEL131
+ cmp r8d, CONST
+ cjmp LABEL133
+ cmp r10d, r12d
+ cjmp LABEL135
+ mov r9, rax
+ movsxd rdi, ecx
+ lea r11d, [r10 + CONST]
+ add rbx, r13
+ shl r9, CONST
+ sub r11d, r12d
+ add r9, rax
+ add r9, rdi
+ lea rdi, [rip + CONST]
+ add r9, rdi
+ xor edi, edi
+ jmp LABEL147
+LABEL152:
+ movzx ebp, byte [rbx + rdi + CONST]
+ add rdi, CONST
+LABEL147:
+ mov byte [r9 + rdi], bpl
+ cmp r11, rdi
+ cjmp LABEL152
+ sub r10d, r12d
+ add ecx, r10d
+LABEL135:
+ mov dword [rsi + rax*CONST], ecx
+ lea eax, [r8 + CONST]
+ lea rsi, [rip + CONST]
+ movzx edi, byte [rsp + CONST]
+ cdqe
+ mov word [rsi + rax*CONST], cx
+ lea eax, [r8 + CONST]
+ xor ecx, ecx
+ mov dword [rip + CONST], eax
+ lea rax, [rip + CONST]
+ mov word [rax + rdx*CONST], di
+ lea rax, [rip + CONST]
+ mov word [rax + rdx*CONST], cx
+ jmp LABEL168
+LABEL81:
+ mov r9d, r12d
+ jmp LABEL96
+LABEL133:
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ lea r9, [rip + CONST]
+ lea r8, [rip + CONST]
+LABEL190:
+ mov rdi, qword [rip + CONST]
+ lea rcx, [rip + CONST]
+ lea rdx, [rip + CONST]
+ xor eax, eax
+ mov esi, CONST
+ call CONST
+ call CONST
+ mov byte [rip + CONST], CONST
+ call CONST
+LABEL131:
+ mov rsi, qword [rip + CONST]
+ mov edi, CONST
+ call CONST
+ lea r9, [rip + CONST]
+ lea r8, [rip + CONST]
+ jmp LABEL190

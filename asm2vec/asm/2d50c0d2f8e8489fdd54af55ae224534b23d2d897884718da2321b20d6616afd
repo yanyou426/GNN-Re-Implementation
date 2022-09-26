@@ -1,0 +1,14 @@
+ .name fcn.000071e0
+ .offset 00000000000071e0
+ .file sfconv
+ mov rdx, rsi
+ mov rsi, qword [rdi + CONST]
+ cmp rsi, qword [rdi + CONST]
+ cjmp LABEL3
+ mov rax, qword [rdx]
+ add rsi, CONST
+ mov qword [rsi + CONST], rax
+ mov qword [rdi + CONST], rsi
+ ret
+LABEL3:
+ jmp CONST

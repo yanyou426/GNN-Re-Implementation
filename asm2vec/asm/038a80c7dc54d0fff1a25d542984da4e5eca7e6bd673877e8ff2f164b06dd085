@@ -1,0 +1,135 @@
+ .name fcn.0001c940
+ .offset 000000000001c940
+ .file curl
+ push r15
+ mov r15, rdi
+ push r14
+ push r13
+ push r12
+ push rbp
+ push rbx
+ mov rbx, rsi
+ sub rsp, CONST
+ cmp rsi, CONST
+ cjmp LABEL10
+ call CONST
+ mov rbx, rax
+LABEL10:
+ cmp rbx, CONST
+ cjmp LABEL14
+ lea rdi, [rbx*CONST + CONST]
+ call CONST
+ mov r12, rax
+ test rax, rax
+ cjmp LABEL19
+ mov r13, rax
+ test rbx, rbx
+ cjmp LABEL22
+ mov dword [rsp + CONST], CONST
+ mov dword [rsp + CONST], CONST
+ jmp LABEL25
+LABEL14:
+ mov edi, CONST
+ call CONST
+ mov r12, rax
+ test rax, rax
+ cjmp LABEL19
+ mov dword [rsp + CONST], CONST
+ mov ebx, CONST
+ mov dword [rsp + CONST], CONST
+LABEL25:
+ mov r13, r12
+ lea rbp, [r15 + rbx]
+ lea r14, [rip + CONST]
+ jmp LABEL37
+LABEL59:
+ cmp bl, CONST
+ cjmp LABEL39
+ cmp bl, CONST
+ cjmp LABEL41
+ cmp bl, CONST
+ cjmp LABEL43
+ cmp bl, CONST
+ cjmp LABEL45
+ call CONST
+ mov r9, rax
+ movzx eax, bl
+ mov rdx, qword [r9]
+ test byte [rdx + rax*CONST + CONST], CONST
+ cjmp LABEL51
+ mov byte [r13], bl
+ add r13, CONST
+LABEL91:
+ add r15, CONST
+ cmp r15, rbp
+ cjmp LABEL56
+LABEL37:
+ movzx ebx, byte [r15]
+ cmp bl, CONST
+ cjmp LABEL59
+ mov r8d, CONST
+ add r15, CONST
+ mov byte [r13 + CONST], CONST
+ add r13, CONST
+ mov word [r13 + CONST], r8w
+ cmp r15, rbp
+ cjmp LABEL37
+LABEL56:
+ mov eax, dword [rsp + CONST]
+ test eax, eax
+ cjmp LABEL22
+ mov ebp, dword [rsp + CONST]
+ mov rdi, r13
+ mov esi, CONST
+ add rbp, CONST
+ mov rdx, rbp
+ add r13, rbp
+ call CONST
+LABEL22:
+ mov byte [r13], CONST
+LABEL116:
+ add rsp, CONST
+ mov rax, r12
+ pop rbx
+ pop rbp
+ pop r12
+ pop r13
+ pop r14
+ pop r15
+ ret
+LABEL39:
+ mov edi, CONST
+ mov byte [r13 + CONST], CONST
+ add r13, CONST
+ mov word [r13 + CONST], di
+ jmp LABEL91
+LABEL41:
+ mov esi, CONST
+ mov byte [r13 + CONST], CONST
+ add r13, CONST
+ mov word [r13 + CONST], si
+ jmp LABEL91
+LABEL51:
+ mov rdi, r13
+ movzx ecx, bl
+ mov rdx, r14
+ mov esi, CONST
+ xor eax, eax
+ add r13, CONST
+ call CONST
+ jmp LABEL91
+LABEL43:
+ mov ecx, CONST
+ mov byte [r13 + CONST], CONST
+ add r13, CONST
+ mov word [r13 + CONST], cx
+ jmp LABEL91
+LABEL45:
+ mov edx, CONST
+ mov byte [r13 + CONST], CONST
+ add r13, CONST
+ mov word [r13 + CONST], dx
+ jmp LABEL91
+LABEL19:
+ xor r12d, r12d
+ jmp LABEL116

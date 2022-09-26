@@ -1,0 +1,15 @@
+ .name fcn.0001afd0
+ .offset 000000000001afd0
+ .file curl
+ test rdi, rdi
+ cjmp LABEL1
+ push rbp
+ mov rbp, rdi
+ call CONST
+ mov rdi, rbp
+ mov esi, CONST
+ pop rbp
+ mov rdx, rax
+ jmp CONST
+LABEL1:
+ ret
